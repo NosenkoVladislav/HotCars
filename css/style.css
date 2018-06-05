@@ -7,12 +7,13 @@ html {
     --mainRedDark: #df3a0d;
     --regGtey: #a4a8b6;
     --lightGrey: #e9e9e9;
+    --lightBlue: #f3f3f8;
 }
 
 body {
     font-family: SFUI-Text,Arial,sans-serif;
     font-size: 14px;
-    background-color: #f3f3f8;
+    background-color: var(--lightBlue);
 }
 
 * {
@@ -276,6 +277,200 @@ body {
     margin-right: 15px;
 }
 
+  /*********/
+ /*auction*/
+/*********/
+
+.page-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.page-title__name {
+    display: inline;
+}
+
+.page-title__value {
+    display: inline;
+    color: var(--regGtey);
+}
+
+.auction-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.auction-item-img {
+    width: 30%;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.auction-item-img img {
+    width: 100%;
+}
+
+.auction-item-text {
+    width: 70%;
+    margin-left: 20px;
+}
+
+.auction-item-title {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.auction-item-subtitle {
+    color: var(--regGtey);
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+.auction-item-car-info-wrapper {
+    display: flex;
+    margin: 7px 0;
+}
+
+.auction-item-car-info {
+    font-weight: 700;
+    background-color: var(--lightBlue);
+    padding: 7px;
+    margin-right: 5px;
+    flex-grow: 1;
+    display: flex;
+}
+
+.car-info-svg {
+    display: inline-block;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.car-info-svg svg {
+    height: inherit;
+    fill: var(--regGtey);
+}
+
+.auction-item-can-info__range .car-info-svg {
+    height: 17px;
+}
+
+.auction-item-descr {
+    color: var(--regGtey);
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-top: 10px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--lightGrey);
+    height:  43px;
+    overflow: hidden;
+}
+
+.auction-item-price {
+    display: inline-block;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--mainRed);
+    padding-top: 7px;
+}
+
+.auction-item-like-svg {
+    display: flex;
+    float: right;
+    height: 35px;
+    align-items: center;
+}
+
+.auction-item-like-svg svg:hover {
+    color: var(--mainRed);
+}
+
+  /*********/
+ /*filters*/
+/*********/
+
+.filters-main-title {
+    margin-bottom: 20px;
+}
+
+
+
+.filters-content {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.filter-item {
+    margin-bottom: 15px;
+}
+
+.filter-item-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+}
+
+.filter-item-title__br {
+    border-bottom: 1px solid var(--lightGrey);
+}
+
+.filter-item-name{
+    float: left;
+}
+
+.filter-item__curr-select {
+    display: inline-block;
+    float: right;
+}
+
+.filter-item__curr-select a {
+    color: #000;
+    text-decoration: none;
+}
+
+.filter-item__curr-select a:hover {
+    color: var(--mainRed);
+}
+
+.filter-item--variant {
+    display: inline-block;
+    color: var(--regGtey);
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border: 1px solid var(--regGtey);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.filter-item--variant:hover {
+    color: var(--mainRed);
+    border: 1px solid var(--mainRed);
+    text-decoration: none;
+}
+
+.filter-item__any {
+    display: inline-block;
+    float: right;
+    border: none;
+    color: #000;
+    text-transform: none;
+}
+
+.filter-item__any:hover {
+    color: var(--mainRed);
+    border: none;
+    text-decoration: none;
+}
+
   /*******/
  /*popup*/
 /*******/
@@ -285,7 +480,7 @@ body {
 }
 
 .popup-content {
-    box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .popup-modal-dismiss {
@@ -345,13 +540,9 @@ body {
     margin: 0 auto;
 }
 
-.login-popup {
-    height: 385px;
-}
-
 .popup-tab-content {
     text-align: center;
-    padding: 40px 60px;
+    padding: 50px 60px;
 }
 
 .popup-title {
@@ -412,10 +603,6 @@ body {
     display: none;
 }
 
-.profile-popup {
-    height: 600px;
-}
-
 .profile-set-wrapper {
     padding: 50px;
 }
@@ -425,19 +612,27 @@ body {
 }
 
 .profile-set-img {
-    width: 35%;
-    padding-left: 10%;
-    padding-top: 10%;
+    width: 30%;
     float: left;
+    text-align: center;
 }
 
 .profile-set-img svg {
-    height: 24px;
-    width: 24px;
+    height: 108px;
+    width: 108px;
     fill: var(--mainRed);
-    transform: scale(4.5);
     border: 0.5px dashed var(--mainRed);
     border-radius: 50%;
+}
+
+.profile-set-img a {
+    display: inline-block;
+    color: var(--mainRed);
+    margin-top: 10px;
+}
+
+.profile-set-img a:hover {
+    text-decoration: none;
 }
 
 .profile-set {

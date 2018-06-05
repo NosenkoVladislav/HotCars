@@ -37,7 +37,7 @@ $(function () {
 
 
     btnEnter.click(function() {
-        if(phone.value.length = 12) {
+        if(phone.value.length == 12) {
             tab.toggleClass('active');
             $('#phoneCheckTab').css('display','none');
             $('#codeCheckTab').css('display','block');
@@ -55,7 +55,8 @@ $(function () {
 
 $(function() {
     $('.js-select').select2({
-        placeholder: "Select a state"
+        tags: true,
+        tokenSeparators: [',', ' ']
     });
 });
 
