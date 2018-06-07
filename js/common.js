@@ -55,10 +55,133 @@ $(function () {
 
 $(function() {
     $('.js-select').select2({
-        tags: true,
-        tokenSeparators: [',', ' ']
+        placeholder: 'Select an option'
+    });
+    $('.filter-region-select').select2({
+        placeholder: 'Выберите область'
+    });
+    $('.filter-city-select').select2({
+        placeholder: 'Выберите город'
+    });
+    $('.filter-manufactor-select').select2({
+        placeholder: 'Выберите марку'
+    });
+    $('.filter-model-select').select2({
+        placeholder: 'Выберите модель'
+    });
+    $('.filter-gearbox-select').select2({
+        placeholder: 'Выберите тип'
+    });
+    $('.filter-body-select').select2({
+        placeholder: 'Выберите тип'
+    });
+    $('.filter-color-select').select2({
+        placeholder: 'Выберите тип'
+    });
+    $('.page-show-select').select2({
+        minimumResultsForSearch: -1
     });
 });
+
+
+$(function() {
+    $( "#slider-price-range" ).slider({
+        range: true,
+        min: 100,
+        max: 500000,
+        values: [ 100000, 300000 ],
+        slide: function( event, ui ) {
+            $( "#price-amount" ).html( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+            $( "#amount-price-1" ).val(ui.values[ 0 ]);
+            $( "#amount-price-2" ).val(ui.values[ 1 ]);
+        }
+    });
+    $( "#amount" ).html( "" + $( "#slider-price-range" ).slider( "values", 0 ) +
+        " - " + $( "#slider-price-range" ).slider( "values", 1 ) );
+
+    $( "#slider-distance-range" ).slider({
+        range: true,
+        min: 1990,
+        max: 2018,
+        values: [ 1995, 2018 ],
+        slide: function( event, ui ) {
+            $( "#amount-distance" ).html( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+            $( "#amount-distance-1" ).val(ui.values[ 0 ]);
+            $( "#amount-distance-2" ).val(ui.values[ 1 ]);
+        }
+    });
+    $( "#price-amount" ).html( "" + $( "#slider-price-range" ).slider( "values", 0 ) +
+        " - " + $( "#slider-price-range" ).slider( "values", 1 ) );
+});
+
+$('.open-car-slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    appendArrows: '.open-car-slider-control',
+    prevArrow: '<div class="open-car-slider-control__left"></div>',
+    nextArrow: '<div class="open-car-slider-control__right"></div>',
+    fade: true,
+    asNavFor: '.open-car-slider-nav'
+});
+$('.open-car-slider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.open-car-slider-for',
+    dots: false,
+    arrows: false,
+    centerMode: false,
+    focusOnSelect: true
+});
+
+$(function() {
+    var incr = $('.incr-price');
+    var decr = $('.decr-price');
+    var price = $('#auction-value');
+
+    $('.sidebar-price-auction-value').on('click',function () {
+        if(incr.click(function () {
+                price.val(parseInt(price.val()) + 100);
+                price.change();
+                return false;
+            }));
+        if(decr.click(function () {
+                price.val(parseInt(price.val()) - 100);
+                price.change();
+                return false;
+            }));
+    });
+});
+
+$(document).ready(function () {
+    Dropzone.autoDiscover = false;
+    $("#dZUpload").dropzone({
+        url: "hn_SimpeFileUploader.ashx",
+        addRemoveLinks: true,
+        success: function (file, response) {
+            var imgName = response;
+            file.previewElement.classList.add("dz-success");
+            console.log("Successfully uploaded :" + imgName);
+        },
+        error: function (file, response) {
+            file.previewElement.classList.add("dz-error");
+        }
+    });
+});
+
+Dropzone.options.dZUpload = {
+    acceptedFiles: 'image/*',
+
+    init: function () {
+        this.on("complete", function (data) {
+            var res = eval('(' + data.xhr.responseText + ')');
+            $('#newImage').text(res.Message);
+        });
+        this.on("maxfilesexceeded", function (data) {
+            this.removeFile(data);
+        });
+    }
+};
 
 
 
