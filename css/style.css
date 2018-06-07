@@ -1400,8 +1400,7 @@ body {
 /*dropzone*/
 
 .dropzone {
-    min-height: 160px;
-    min-width: 135px;
+    min-height: 163px;
     background-color: transparent;
     position: relative;
     z-index: 99;
@@ -1409,6 +1408,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     border: 1px dashed var(--mainRed);
+    margin-bottom: 5px;
 }
 
 .dropzone:hover {
@@ -1458,6 +1458,7 @@ body {
     min-height: 140px;
     position: relative;
     margin: 10px;
+    width: 100%;
 }
 
 .dz-remove {
@@ -1490,4 +1491,5 @@ body {
 .dz-preview:hover .dz-remove {
     display: block;
 }
+
 

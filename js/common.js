@@ -165,12 +165,29 @@ $(document).ready(function () {
         },
         error: function (file, response) {
             file.previewElement.classList.add("dz-error");
+        },
+        init: function () {
+            this.on("complete", function (file) {
+                if (this.getUploadingFiles().length === 0 && this.getQueuedFiles().length === 0) {
+                        $('.upload-space').css({
+                            'border' : '1px dashed var(--mainRed)',
+                            'width' : '17.5%'
+                        });
+                        $('.dropzone').css({
+                            'border' : 'none',
+                            'justify-content' : 'unset'
+                        })
+                }
+            });
         }
     });
 });
 
 Dropzone.options.dZUpload = {
     acceptedFiles: 'image/*',
+    clickable: "#uploadIcon",
+    thumbnailWidth:"250",
+    thumbnailHeight:"250",
 
     init: function () {
         this.on("complete", function (data) {
