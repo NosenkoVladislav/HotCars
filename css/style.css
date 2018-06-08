@@ -396,6 +396,13 @@ body {
     padding: 15px;
     margin-bottom: 20px;
     display: flex;
+    text-decoration: none;
+}
+
+.auction-item:hover,
+.auction-item:visited,
+.auction-item:focus{
+    text-decoration: none;
 }
 
 .auction-item-img {
@@ -418,6 +425,7 @@ body {
 .auction-item-title {
     font-size: 1.4em;
     font-weight: 700;
+    color: var(--mainRed);
 }
 
 .auction-item-subtitle {
@@ -439,6 +447,7 @@ body {
     margin-right: 5px;
     flex-grow: 1;
     display: flex;
+    color: #000;
 }
 
 .car-info-svg {
@@ -481,6 +490,7 @@ body {
     float: right;
     height: 35px;
     align-items: center;
+    color: var(--regGtey);
 }
 
 .auction-item-like-svg svg:hover {
