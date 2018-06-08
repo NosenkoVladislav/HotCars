@@ -612,6 +612,101 @@
     </div>
 </div>
 
+<a class="logInPopup" href="#logIn-modal">Log in</a>
+
+<div id="logIn-modal" class="popup-content login-popup mfp-hide">
+    <div class="popup-header clearfix">
+        <div class="popup-tab br-right active">
+            <div class="popup-tab-num">1</div>
+            <div class="popup-tab-text">Ввод номера</div>
+        </div>
+        <div class="popup-tab br-right">
+            <div class="popup-tab-num">2</div>
+            <div class="popup-tab-text">Проверка номера</div>
+        </div>
+        <a class="popup-modal-dismiss" href="#" id="popup-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="feather feather-x">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </a>
+    </div>
+    <div class="popup-tab-content" id="phoneCheckTab">
+        <div class="popup-title">Авторизация</div>
+        <div class="popup-subtitle">Чтобы войти в систему, укажите номер елефона</div>
+        <input type="text" id="logInPhone" class="form-control popoup-phone" placeholder="380">
+        <button class="btn btn-popup btn-accent" id="phoneEnter">вход</button>
+    </div>
+
+    <div class="popup-tab-content" id="codeCheckTab">
+        <div class="popup-title">Авторизация</div>
+        <div class="popup-subtitle">На ваш телефон будет отправлено СМС с кодом подтверждения</div>
+        <input type="text" id="logInPhoneConfirm" class="form-control popoup-phone popoup-phone-confirm"
+               placeholder="0000">
+        <button class="btn btn-popup btn-accent">готово</button>
+    </div>
+</div>
+
+
+<div id="profSet-modal" class="popup-content profile-popup mfp-hide">
+    <a class="popup-modal-dismiss" href="#" id="popup-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             class="feather feather-x">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+    </a>
+    <div class="profile-set-wrapper">
+        <div class="popup-title">Настройки профиля</div>
+        <div class="profile-set-img">
+            <svg id="target" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>User</title>
+                <path d="M12,8a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,12,8Zm0,4a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,12Z"/>
+                <path d="M12,5a7,7,0,1,0,7,7A7,7,0,0,0,12,5ZM8.6,16.94a5.09,5.09,0,0,1,.22-.54,3.58,3.58,0,0,1,6.37.09c.07.15.13.31.19.47A6.06,6.06,0,0,1,12,18,6,6,0,0,1,8.6,16.94Zm7.58-.65c0-.08-.06-.18-.11-.27A4.57,4.57,0,0,0,8,15.92a2.28,2.28,0,0,0-.15.36,6,6,0,1,1,8.38,0Z"/>
+            </svg>
+            <a href="#">Добавить фото</a>
+        </div>
+        <div class="profile-set">
+            <div class="profile-set__title">имя</div>
+            <div class="prof-set prof-set__name">
+                <input type="text" class="set-input" placeholder="Укажите ваше имя">
+            </div>
+            <div class="profile-set__title">фамилия</div>
+            <div class="prof-set prof-set__lname">
+                <input type="text" class="set-input" placeholder="Укажите вашу фамилию">
+            </div>
+            <div class="profile-set__title">область</div>
+            <div class="prof-set prof-set__region">
+                <select class="js-select">
+                    <option value="KY">Киевская</option>
+                    <option value="CH">Черниговская</option>
+                    <option value="LV">Львовская</option>
+                    <option value="KH">Харьковская</option>
+                </select>
+            </div>
+            <div class="profile-set__title">город</div>
+            <div class="prof-set prof-set__city">
+                <select class="js-select">
+                    <option value="KY">Киев</option>
+                    <option value="CH">Чернигов</option>
+                    <option value="LV">Львов</option>
+                    <option value="KH">Харьков</option>
+                    <option value="LU">Луганск</option>
+                </select>
+            </div>
+            <div class="profile-set__title">e-mail</div>
+            <div class="prof-set prof-set__email">
+                <input type="text" class="set-input" placeholder="Укажите e-mail">
+            </div>
+        </div>
+        <div class="popup-btn-wrapper">
+            <button class="btn btn-popup btn-accent">сохранить</button>
+        </div>
+    </div>
+</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
