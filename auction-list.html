@@ -32,10 +32,10 @@
         <div class="collapse navbar-collapse navbar-layer-one" id="navbar-collapse-1">
             <div class="container">
                 <ul class="nav navbar-nav link-black">
-                    <li class="br-right br-left"><a href="auction-list.html">Аукционы <span
+                    <li class="br-right br-left"><a  class="active" href="auction-list.html">Аукционы <span
                             class="sr-only">(current)</span></a>
                     </li>
-                    <li class="br-right"><a href="index.html" class="active" >Продажи</a></li>
+                    <li class="br-right"><a href="index.html" >Продажи</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="br-right br-left link-grey">
@@ -262,14 +262,16 @@
                             <a href="#" class="filter-item--fuel filter-item__any">Любое</a>
                         </div>
                         <div class="filter-item-content">
-                            <a href="#"
-                               class="filter-item--variant filter-item--fuel filter-item--fuel__benz">бензин</a>
-                            <a href="#" class="filter-item--variant filter-item--fuel filter-item--fuel__benzgaz">бензин/газ</a>
-                            <a href="#"
-                               class="filter-item--variant filter-item--fuel filter-item--fuel__disel">дизель</a>
-                            <a href="#"
-                               class="filter-item--variant filter-item--fuel filter-item--fuel__gibrid">гибрид</a>
-                            <a href="#" class="filter-item--variant filter-item--fuel filter-item--fuel__electro">электро</a>
+                            <input class="filter-checkbox" type="checkbox" id="benzFilter">
+                            <label class="filter-item--variant filter-item--fuel" for="benzFilter">бензин</label>
+                            <input class="filter-checkbox" type="checkbox" id="benzgazFilter">
+                            <label class="filter-item--variant filter-item--fuel" for="benzgazFilter">бензин/газ</label>
+                            <input class="filter-checkbox" type="checkbox" id="dizelFilter">
+                            <label class="filter-item--variant filter-item--fuel" for="dizelFilter">дизель</label>
+                            <input class="filter-checkbox" type="checkbox" id="gibridFilter">
+                            <label class="filter-item--variant filter-item--fuel" for="gibridFilter">гибрид</label>
+                            <input class="filter-checkbox" type="checkbox" id="electroFilter">
+                            <label class="filter-item--variant filter-item--fuel" for="electroFilter">электро</label>
                         </div>
                     </div>
                     <div class="filter-item">
@@ -278,9 +280,12 @@
                             <a href="#" class="filter-item--fuel filter-item__any">Любая</a>
                         </div>
                         <div class="filter-item-content">
-                            <a href="#" class="filter-item--variant filter-item--kpp filter-item--kpp_auto">автомат</a>
-                            <a href="#" class="filter-item--variant filter-item--kpp filter-item--kpp__variator">вариатор</a>
-                            <a href="#" class="filter-item--variant filter-item--kpp filter-item--kpp__mechanic">ручная/механика</a>
+                            <input class="filter-checkbox" type="checkbox" id="kppautozFilter">
+                            <label class="filter-item--variant filter-item--kpp" for="kppautozFilter">автомат</label>
+                            <input class="filter-checkbox" type="checkbox" id="kppvariatorFilter">
+                            <label class="filter-item--variant filter-item--kpp" for="kppvariatorFilter">вариатор</label>
+                            <input class="filter-checkbox" type="checkbox" id="ruchmehFilter">
+                            <label class="filter-item--variant filter-item--kpp" for="ruchmehFilter">ручная/механика</label>
                         </div>
                     </div>
                     <div class="filter-item">
@@ -328,9 +333,11 @@
                             <a href="#" class="filter-item--fuel filter-item__any">Любая</a>
                         </div>
                         <div class="filter-item-content">
-                            <a href="#" class="filter-item--variant filter-item--rasta filter-item--rasta__yes">растаможена</a>
-                            <a href="#" class="filter-item--variant filter-item--rasta filter-item--rasta__no">не
-                                растаможена</a></div>
+                            <input class="filter-checkbox" type="checkbox" id="restayesFilter">
+                            <label class="filter-item--variant filter-item--rasta" for="restayesFilter">растаможена</label>
+                            <input class="filter-checkbox" type="checkbox" id="restanoFilter">
+                            <label class="filter-item--variant filter-item--rasta" for="restanoFilter">не растаможена</label>
+                        </div>
                     </div>
                     <div class="filter-item">
                         <div class="filter-item-title filter-item-title__br clearfix">
@@ -338,13 +345,15 @@
                             <a href="#" class="filter-item--fuel filter-item__any">Любое</a>
                         </div>
                         <div class="filter-item-content">
-                            <a href="#" class="filter-item--variant filter-item--state filter-item--state__yes">в
-                                порядке</a>
-                            <a href="#" class="filter-item--variant filter-item--state filter-item--state__no">битые /
-                                не на ходу</a></div>
+                            <input class="filter-checkbox" type="checkbox" id="stateYesFilter">
+                            <label class="filter-item--variant filter-item--state" for="stateYesFilter">
+                                порядке</label>
+                            <input class="filter-checkbox" type="checkbox" id="stateNoFilter">
+                            <label class="filter-item--variant filter-item--state" for="stateNoFilter">битые /
+                                не на ходу</label>
+                        </div>
                     </div>
                 </div>
-
             </div>
             <div class="col-lg-9 col-lg-9">
                 <div class="auction-content">
