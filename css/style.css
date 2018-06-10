@@ -565,14 +565,14 @@ body {
 .filter-item__curr-select {
     display: inline-block;
     float: right;
+    font-weight: 500;
 }
 
-.filter-item__curr-select a {
-    color: #000;
-    text-decoration: none;
+.filter-curr:hover {
+    cursor: pointer;
 }
 
-.filter-item__curr-select a:hover {
+.filter-checkbox:checked + .filter-curr {
     color: var(--mainRed);
 }
 
@@ -614,19 +614,22 @@ body {
     border: 1px solid var(--mainRed);
 }
 
-.filter-item__any {
-    display: inline-block;
+.filter-checkbox:checked + .filter-item__all {
+    color: var(--mainRed);
+}
+
+.filter-item__all {
     float: right;
     border: none;
     color: #000;
     text-transform: none;
 }
 
-.filter-item__any:hover {
+.filter-item__all:hover {
     color: var(--mainRed);
-    border: none;
-    text-decoration: none;
+    cursor: pointer;
 }
+
 .select2-container--default .select2-selection--multiple,
 .select2-container--default.select2-container--focus .select2-selection--multiple{
     border: 1px solid var(--lightGrey);

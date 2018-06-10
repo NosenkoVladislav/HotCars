@@ -223,9 +223,12 @@
                         <div class="filter-item-title clearfix">
                             <span class="filter-item-name">цена</span>
                             <div class="filter-item__curr-select">
-                                <a href="#">USD</a>
-                                <a href="#" class="active">UAH</a>
-                                <a href="#">EUR</a>
+                                <input class="filter-checkbox" type="checkbox" id="usdFilter">
+                                <label class="filter-curr" for="usdFilter">USD</label>
+                                <input class="filter-checkbox" type="checkbox" id="uahFilter">
+                                <label class="filter-curr" for="uahFilter">UAH</label>
+                                <input class="filter-checkbox" type="checkbox" id="eurFilter">
+                                <label class="filter-curr" for="eurFilter">EUR</label>
                             </div>
                         </div>
                         <div class="filter-item-content">
@@ -259,7 +262,8 @@
                     <div class="filter-item">
                         <div class="filter-item-title filter-item-title__br clearfix">
                             <span class="filter-item-name">топливо</span>
-                            <a href="#" class="filter-item--fuel filter-item__any">Любое</a>
+                            <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyFuelFilter">
+                            <label class="filter-item__all" for="anyFuelFilter">Любое</label>
                         </div>
                         <div class="filter-item-content">
                             <input class="filter-checkbox" type="checkbox" id="benzFilter">
@@ -277,7 +281,8 @@
                     <div class="filter-item">
                         <div class="filter-item-title filter-item-title__br clearfix">
                             <span class="filter-item-name">кпп</span>
-                            <a href="#" class="filter-item--fuel filter-item__any">Любая</a>
+                            <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyKppFilter">
+                            <label class="filter-item__all" for="anyKppFilter">Любая</label>
                         </div>
                         <div class="filter-item-content">
                             <input class="filter-checkbox" type="checkbox" id="kppautozFilter">
@@ -330,19 +335,21 @@
                     <div class="filter-item">
                         <div class="filter-item-title filter-item-title__br clearfix">
                             <span class="filter-item-name">растаможка</span>
-                            <a href="#" class="filter-item--fuel filter-item__any">Любая</a>
+                            <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyRastaFilter">
+                            <label class="filter-item__all" for="anyRastaFilter">Любая</label>
                         </div>
                         <div class="filter-item-content">
-                            <input class="filter-checkbox" type="checkbox" id="restayesFilter">
-                            <label class="filter-item--variant filter-item--rasta" for="restayesFilter">растаможена</label>
-                            <input class="filter-checkbox" type="checkbox" id="restanoFilter">
-                            <label class="filter-item--variant filter-item--rasta" for="restanoFilter">не растаможена</label>
+                            <input class="filter-checkbox" type="checkbox" id="restaYesFilter">
+                            <label class="filter-item--variant filter-item--rasta" for="restaYesFilter">растаможена</label>
+                            <input class="filter-checkbox" type="checkbox" id="restaNoFilter">
+                            <label class="filter-item--variant filter-item--rasta" for="restaNoFilter">не растаможена</label>
                         </div>
                     </div>
                     <div class="filter-item">
                         <div class="filter-item-title filter-item-title__br clearfix">
                             <span class="filter-item-name">стостояниие</span>
-                            <a href="#" class="filter-item--fuel filter-item__any">Любое</a>
+                            <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyStateFilter">
+                            <label class="filter-item__all" for="anyStateFilter">Любое</label>
                         </div>
                         <div class="filter-item-content">
                             <input class="filter-checkbox" type="checkbox" id="stateYesFilter">

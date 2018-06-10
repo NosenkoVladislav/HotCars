@@ -91,13 +91,11 @@ $(function() {
         max: 500000,
         values: [ 100000, 300000 ],
         slide: function( event, ui ) {
-            $( "#price-amount" ).html( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+            // $( "#price-amount" ).html( "$" + ui.values[ 0 ] + " -$ " + ui.values[ 1 ] );
             $( "#amount-price-1" ).val(ui.values[ 0 ]);
             $( "#amount-price-2" ).val(ui.values[ 1 ]);
         }
     });
-    $( "#amount" ).html( "" + $( "#slider-price-range" ).slider( "values", 0 ) +
-        " - " + $( "#slider-price-range" ).slider( "values", 1 ) );
 
     $( "#slider-distance-range" ).slider({
         range: true,
@@ -105,13 +103,19 @@ $(function() {
         max: 2018,
         values: [ 1995, 2018 ],
         slide: function( event, ui ) {
-            $( "#amount-distance" ).html( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+            // $("#amount-distance-1" ).focusout( function () {
+            //     // ui.values[ 0 ] = $("#amount-distance-1").val;
+            //     // console.log($("#amount-distance-1" ).val);
+            //     console.log(ui.values[0]);
+            //     console.log($("#amount-distance-1").val())
+            //     ui.values[0]=$("#amount-distance-1").val();
+            // })
+            // $( "#amount-distance" ).html( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
             $( "#amount-distance-1" ).val(ui.values[ 0 ]);
             $( "#amount-distance-2" ).val(ui.values[ 1 ]);
+
         }
     });
-    $( "#price-amount" ).html( "" + $( "#slider-price-range" ).slider( "values", 0 ) +
-        " - " + $( "#slider-price-range" ).slider( "values", 1 ) );
 });
 
 $('.open-car-slider-for').slick({
@@ -200,5 +204,24 @@ Dropzone.options.dZUpload = {
     }
 };
 
+
+$(function() {
+    var filtersAll = $('.fliter-checkbox__all');
+    var filterLocal = $('.filter-checkbox')
+
+    filtersAll.change(function (event) {
+        if($(this).prop('checked') == true) {
+            $(this).closest($('.filter-item')).find(filterLocal).prop('checked', true);
+        } else {
+            $(this).closest($('.filter-item')).find(filterLocal).prop('checked', false);
+        }
+    })
+
+    filterLocal.change(function (event) {
+        if($(this).prop('checked') == false) {
+            $(this).closest($('.filter-item')).find(filtersAll).prop('checked', false);
+        }
+    })
+});
 
 
