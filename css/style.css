@@ -82,6 +82,7 @@ body {
 .link-grey,
 .link-grey a {
     color: var(--regGtey);
+    position: relative;
 }
 
 .link-black a{
@@ -403,7 +404,6 @@ body {
     margin-top: 2px;
 }
 
-
 .page-show-select {
     background-color: transparent;
     border: none;
@@ -430,6 +430,7 @@ body {
     -moz-border-radius: 7px;
     border-radius: 7px;
     overflow: hidden;
+    position: relative;
 }
 
 .auction-item-img img {
@@ -466,7 +467,42 @@ body {
     margin-right: 5px;
     flex-grow: 1;
     display: flex;
+    align-items: center;
     color: #000;
+}
+
+.link-grey .pic-counter {
+    top: 6%;
+    right: 22%;
+}
+
+.pic-counter {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: var(--mainRed);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.pic-counter-svg {
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+}
+
+.auction-item-img .pic-counter,
+.request-item .pic-counter,
+.auction-item-img .pic-counter{
+    bottom: 5%;
+    right: 5%;
+}
+
+.my-rate-cars-content .auction-item-img .pic-counter {
+    bottom: 32%;
 }
 
 .car-info-svg {
@@ -476,7 +512,6 @@ body {
 }
 
 .car-info-svg svg {
-    height: inherit;
     fill: var(--regGtey);
 }
 
@@ -532,6 +567,7 @@ body {
     font-weight: 700;
     padding: 4px 0;
     transition: transform .3s ease-in-out;
+    cursor: pointer;
 }
 
 .filters-reset:hover {
@@ -827,6 +863,7 @@ body {
 
 .popup-subtitle {
     font-weight: 300;
+    text-align: center;
 }
 
 .popoup-phone {
@@ -950,6 +987,70 @@ body {
 .popup-btn-wrapper {
     text-align: center;
 }
+
+.rate-confirm {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.rate-confirm .sidebar-price-value {
+    max-width: 200px;
+    display: inline-block;
+}
+
+.remove-car-popup {
+    width: 450px;
+}
+
+.remove-svg {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.remove-svg svg {
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid var(--lightGrey);
+    padding: 20px;
+    color: var(--mainRed);
+}
+
+.remove-car-wrapper .popup-btn-wrapper {
+    margin-top: 30px;
+}
+
+.timer {
+    font-size: 1.4em;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer-item {
+    background-color: var(--mainRed);
+    color: #fff;
+    width: 46px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.timer-separator {
+    display: flex;
+    align-items: center;
+    color: var(--mainRed);
+    justify-content: center;
+    font-size: 1.4em;
+}
+
 
   /***************/
  /*open car page*/
@@ -1130,8 +1231,7 @@ body {
 }
 
 .seller-img {
-    width: 50px;
-    height: 50px;
+    width: 30%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -1141,6 +1241,10 @@ body {
 
 .seller-img img {
     width: 100%;
+}
+
+.seller-description {
+    width: 70%;
 }
 
 .seller-name {
@@ -1185,6 +1289,8 @@ body {
 
 .sidebar-price {
     margin-top: 15px;
+    display: inline-block;
+    width: 100%;
 }
 
 .sidebar-price-title {
@@ -1218,6 +1324,15 @@ body {
 
 .sidebar-price-btn button {
     width: 100%;
+}
+
+.sidebar-price-btn__remove .btn-round {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.bet-story {
+    margin-top: 20px;
 }
 
   /******************/
@@ -1339,24 +1454,57 @@ body {
     border: 1px solid var(--lightGrey);
 }
 
-.advert-btn:first-child {
+.advert-btn:first-child,
+.advert-btn__auction {
     -webkit-border-top-right-radius: 0;
     -webkit-border-bottom-right-radius: 0;
     margin-right: -0.5px;
 }
 
-.advert-btn:last-child {
+.advert-btn:last-child,
+.advert-btn__sell{
     -webkit-border-top-left-radius: 0;
     -webkit-border-bottom-left-radius: 0;
     margin-left: -0.5px;
+}
+
+
+.advert-btn--noR {
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
 }
 
 .advert-btn:hover {
     color: var(--regGtey);
 }
 
-.advert-btn:active,
+.advert-btn:active{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: var(--mainRed);
+    color: #fff;
+}
+
 .advert-btn:focus {
+    color: var(--regGtey);
+    background-color: transparent;
+}
+
+.advert-btn.active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: var(--mainRed);
+    color: #fff;
+}
+
+.advert-tab {
+    display: none;
+}
+
+.advert-tab:checked+.advert-btn  {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -1388,6 +1536,17 @@ body {
 
 .sidebar-seller__owner .seller-phone {
     border-bottom: none;
+}
+
+.sidebar-seller__owner .seller-description {
+    width: 100%;
+    text-align: center;
+}
+
+.seller-phone.seller-phone__show{
+    border-bottom: none;
+    font-size: 1.1em;
+    display: none;
 }
 
 .advert-content {
@@ -1626,6 +1785,7 @@ body {
     overflow: hidden;
     margin-right: 18px;
     height: 100%;
+    position: relative;
 }
 
 .request-img img {
@@ -1671,4 +1831,101 @@ body {
     padding: 7px 9px;
 }
 
+  /***************/
+ /*my cars pages*/
+/***************/
 
+.my-rate-block {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--lightBlue);
+}
+
+.my-rate-img svg {
+    height: 40px;
+    width: 40px;
+    margin: -5px 10px -10px 0;
+    border: 1px solid var(--lightGrey);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    fill: var(--regGtey);
+}
+
+.my-rate-text {
+    flex-grow: 1;
+}
+
+.my-rate-text__title {
+    color: #000;
+}
+
+.my-rate-text__time {
+    color: var(--regGtey);
+}
+
+.my-rate-price .auction-item-price {
+    display: flex;
+    font-size: 1.2em;
+    padding: 0;
+    color: var(--regGtey);
+}
+
+.my-rate-price .auction-item-price .auction-item-price-svg {
+    margin-right: 5px;
+}
+
+.my-rate-block .my-rate-price .auction-item-price .auction-item-price-svg svg{
+    fill: var(--regGtey);
+}
+
+.my-rate-block.active .my-rate-price .auction-item-price {
+    color: var(--mainRed);
+}
+
+.my-rate-block.active .my-rate-price .auction-item-price .auction-item-price-svg svg {
+    fill: var(--mainRed);
+}
+
+.bet-byers-list .bet-item{
+    flex-direction: column;
+}
+
+.bet-byers-list .seller-name {
+    font-size: 1em;
+}
+
+.bet-item-info {
+    width: 100%;
+    display: flex;
+}
+
+.bet-byers-list .seller-bio {
+    padding-bottom: 5px;
+}
+
+.bet-byers-list .seller-img {
+    margin: 0;
+}
+
+.bet-byers-list .seller-description{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.bet-byers-list .bet-item-svg {
+    width: 54px;
+    text-align: center;
+}
+
+.bet-byers-list .bet-item-svg svg {
+    width: 20px;
+}
+
+.bet-byers-list .bet-item-description {
+    margin-left: 10px;
+}

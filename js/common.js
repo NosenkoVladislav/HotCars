@@ -9,15 +9,28 @@ $(function () {
         e.preventDefault();
         $.magnificPopup.close();
     });
-});
 
-$(function () {
     $('.profSetPopup').magnificPopup({
         type: 'inline',
         preloader: false,
         focus: '#username',
         modal: true
     });
+
+    $('.ratePopup').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#username',
+        modal: true
+    });
+
+    $('.removeCarPopup').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#username',
+        modal: true
+    });
+
     $(document).on('click', '.popup-modal-dismiss', function (e) {
         e.preventDefault();
         $.magnificPopup.close();
@@ -139,23 +152,64 @@ $('.open-car-slider-nav').slick({
 });
 
 $(function() {
-    var incr = $('.incr-price');
-    var decr = $('.decr-price');
     var price = $('#auction-value');
+    var priceConfirm = $('#auction-value2');
 
-    $('.sidebar-price-auction-value').on('click',function () {
-        if(incr.click(function () {
-                price.val(parseInt(price.val()) + 100);
-                price.change();
-                return false;
-            }));
-        if(decr.click(function () {
-                price.val(parseInt(price.val()) - 100);
-                price.change();
-                return false;
-            }));
+    // $('.sidebar-price-auction-value').on('click',function () {
+    $('.price-control').on('click',function () {
+        // if(incr.click(function () {
+        //         price.val(parseInt(price.val()) + 100);
+        //         price.change();
+        //         return false;
+        //     }));
+        // if(decr.click(function () {
+        //         price.val(parseInt(price.val()) - 100);
+        //         price.change();
+        //         return false;
+        //     }));
+
+        if($(this).hasClass('incr-price')) {
+            price.val(parseInt(price.val()) + 1000);
+            price.change();
+            priceConfirm.val(parseInt(priceConfirm.val()) + 1000);
+            priceConfirm.change();
+            return false;
+        }else {
+            price.val(parseInt(price.val()) - 1000);
+            price.change();
+            priceConfirm.val(parseInt(priceConfirm.val()) - 1000);
+            priceConfirm.change();
+            return false;
+        };
     });
+
 });
+
+
+$(function () {
+    var date = "2018/06/17";
+
+    $('#timer-d').countdown(date, function(event) {
+        $(this).text(
+            event.strftime('%D')
+        );
+    });
+    $('#timer-h').countdown(date, function(event) {
+        $(this).text(
+            event.strftime('%H')
+        );
+    });
+    $('#timer-m').countdown(date, function(event) {
+        $(this).text(
+            event.strftime('%M')
+        );
+    });
+    $('#timer-s').countdown(date, function(event) {
+        $(this).text(
+            event.strftime('%S')
+        );
+    });
+})
 
 $(document).ready(function () {
     Dropzone.autoDiscover = false;
@@ -207,7 +261,8 @@ Dropzone.options.dZUpload = {
 
 $(function() {
     var filtersAll = $('.fliter-checkbox__all');
-    var filterLocal = $('.filter-checkbox')
+    var filterLocal = $('.filter-checkbox');
+    var reset = $('.filters-reset');
 
     filtersAll.change(function (event) {
         if($(this).prop('checked') == true) {
@@ -222,6 +277,17 @@ $(function() {
             $(this).closest($('.filter-item')).find(filtersAll).prop('checked', false);
         }
     })
+
+    reset.click(function () {
+        filterLocal.prop('checked', false);
+    })
 });
 
-
+$(function () {
+    $('.seller-phone').click(function () {
+        if(!$(this).hasClass('seller-phone__show')){
+           $(this).css('display','none');
+           $('.seller-phone__show').css('display','block');
+        }
+    })
+})

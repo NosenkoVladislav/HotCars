@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Прожажи</title>
+    <title>My cars auction</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="plugins/Magnific-Popup/css/magnific-popup.css">
@@ -163,249 +163,76 @@
 <section class="page-content">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-lg-3">
-                <div class="filters-main-title">
-                    <div class="filters-reset">
-                        <div class="filters-reset-svg">
+            <div class="col-lg-offset-3 col-lg-9">
+                <div class="page-title-wrapper">
+                    <div class="advert-type-select">
+                        <a href="my-cars-auction.html" class="btn advert-btn advert-btn__auction active">Аукцион</a>
+                        <a href="my-cars-sales.html" class="btn advert-btn advert-btn--noR advert-btn__sell">Продажа</a>
+                        <a href="my-cars-rates.html" class="btn advert-btn advert-btn__myRate">Мои ставки</a>
+                    </div>
+                    <div class="page-show-filter">
+                        <div class="page-show-filter-svg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none"
-                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                 class="feather feather-rotate-ccw">
-                                <polyline points="1 4 1 10 7 10"></polyline>
-                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="feather feather-sliders">
+                                <line x1="4" y1="21" x2="4" y2="14"></line>
+                                <line x1="4" y1="10" x2="4" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12" y2="3"></line>
+                                <line x1="20" y1="21" x2="20" y2="16"></line>
+                                <line x1="20" y1="12" x2="20" y2="3"></line>
+                                <line x1="1" y1="14" x2="7" y2="14"></line>
+                                <line x1="9" y1="8" x2="15" y2="8"></line>
+                                <line x1="17" y1="16" x2="23" y2="16"></line>
                             </svg>
                         </div>
-                        <span class="filters-reset__name">Сбросить фильтры</span>
-                    </div>
-                </div>
-                <div class="filters-content">
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">область</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-region-select" multiple="multiple">
-                                <option value="KY">Киевская</option>
-                                <option value="CH">Черниговская</option>
-                                <option value="LV">Львовская</option>
-                                <option value="KH">Харьковская</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">город</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-city-select" multiple="multiple">
-                                <option value="KY">Киев</option>
-                                <option value="CH">Чернигов</option>
-                                <option value="LV">Львов</option>
-                                <option value="KH">Харьков</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">марка</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-manufactor-select" multiple="multiple">
-                                <option value="KY">Honda</option>
-                                <option value="CH">Audi</option>
-                                <option value="LV">Ford</option>
-                                <option value="KH">Acura</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">модель</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-model-select" multiple="multiple">
-                                <option value="KY">Киевская</option>
-                                <option value="CH">Черниговская</option>
-                                <option value="LV">Львовская</option>
-                                <option value="KH">Харьковская</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">цена</span>
-                            <div class="filter-item__curr-select">
-                                <input class="filter-checkbox" type="checkbox" id="usdFilter">
-                                <label class="filter-curr" for="usdFilter">USD</label>
-                                <input class="filter-checkbox" type="checkbox" id="uahFilter">
-                                <label class="filter-curr" for="uahFilter">UAH</label>
-                                <input class="filter-checkbox" type="checkbox" id="eurFilter">
-                                <label class="filter-curr" for="eurFilter">EUR</label>
-                            </div>
-                        </div>
-                        <div class="filter-item-content">
-                            <form method="post" action="">
-                                <div class="filter-input-wrapper">
-                                    <input id="amount-price-1" class="filter-input">
-                                    <span>-</span>
-                                    <input id="amount-price-2" class="filter-input">
-                                </div>
-                                <!--<input type="submit" name="submit_range" value="Submit">-->
-                            </form>
-                            <div id="slider-price-range"></div>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">год выпуска</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <form method="post" action="">
-                                <div class="filter-input-wrapper">
-                                    <input id="amount-distance-1" class="filter-input">
-                                    <span>-</span>
-                                    <input id="amount-distance-2" class="filter-input">
-                                </div>
-                                <!--<input type="submit" name="submit_range" value="Submit">-->
-                            </form>
-                            <div id="slider-distance-range"></div>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title filter-item-title__br clearfix">
-                            <span class="filter-item-name">топливо</span>
-                            <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyFuelFilter">
-                            <label class="filter-item__all" for="anyFuelFilter">Любое</label>
-                        </div>
-                        <div class="filter-item-content">
-                            <input class="filter-checkbox" type="checkbox" id="benzFilter">
-                            <label class="filter-item--variant filter-item--fuel" for="benzFilter">бензин</label>
-                            <input class="filter-checkbox" type="checkbox" id="benzgazFilter">
-                            <label class="filter-item--variant filter-item--fuel" for="benzgazFilter">бензин/газ</label>
-                            <input class="filter-checkbox" type="checkbox" id="dizelFilter">
-                            <label class="filter-item--variant filter-item--fuel" for="dizelFilter">дизель</label>
-                            <input class="filter-checkbox" type="checkbox" id="gibridFilter">
-                            <label class="filter-item--variant filter-item--fuel" for="gibridFilter">гибрид</label>
-                            <input class="filter-checkbox" type="checkbox" id="electroFilter">
-                            <label class="filter-item--variant filter-item--fuel" for="electroFilter">электро</label>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title filter-item-title__br clearfix">
-                            <span class="filter-item-name">кпп</span>
-                            <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyKppFilter">
-                            <label class="filter-item__all" for="anyKppFilter">Любая</label>
-                        </div>
-                        <div class="filter-item-content">
-                            <input class="filter-checkbox" type="checkbox" id="kppautozFilter">
-                            <label class="filter-item--variant filter-item--kpp" for="kppautozFilter">автомат</label>
-                            <input class="filter-checkbox" type="checkbox" id="kppvariatorFilter">
-                            <label class="filter-item--variant filter-item--kpp" for="kppvariatorFilter">вариатор</label>
-                            <input class="filter-checkbox" type="checkbox" id="ruchmehFilter">
-                            <label class="filter-item--variant filter-item--kpp" for="ruchmehFilter">ручная/механика</label>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">привод</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-gearbox-select" multiple="multiple">
-                                <option value="KY">Киевская</option>
-                                <option value="CH">Черниговская</option>
-                                <option value="LV">Львовская</option>
-                                <option value="KH">Харьковская</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">кузов</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-body-select" multiple="multiple">
-                                <option value="KY">Универсал</option>
-                                <option value="CH">Седан</option>
-                                <option value="LV">Хетчбек</option>
-                                <option value="KH">Минивен</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">цвет</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-color-select" multiple="multiple">
-                                <option value="KY">Синий</option>
-                                <option value="CH">Красный</option>
-                                <option value="LV">Белый</option>
-                                <option value="KH">Черный</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title filter-item-title__br clearfix">
-                            <span class="filter-item-name">растаможка</span>
-                            <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyRastaFilter">
-                            <label class="filter-item__all" for="anyRastaFilter">Любая</label>
-                        </div>
-                        <div class="filter-item-content">
-                            <input class="filter-checkbox" type="checkbox" id="restaYesFilter">
-                            <label class="filter-item--variant filter-item--rasta" for="restaYesFilter">растаможена</label>
-                            <input class="filter-checkbox" type="checkbox" id="restaNoFilter">
-                            <label class="filter-item--variant filter-item--rasta" for="restaNoFilter">не растаможена</label>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title filter-item-title__br clearfix">
-                            <span class="filter-item-name">стостояниие</span>
-                            <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyStateFilter">
-                            <label class="filter-item__all" for="anyStateFilter">Любое</label>
-                        </div>
-                        <div class="filter-item-content">
-                            <input class="filter-checkbox" type="checkbox" id="stateYesFilter">
-                            <label class="filter-item--variant filter-item--state" for="stateYesFilter">
-                                порядке</label>
-                            <input class="filter-checkbox" type="checkbox" id="stateNoFilter">
-                            <label class="filter-item--variant filter-item--state" for="stateNoFilter">битые /
-                                не на ходу</label>
-                        </div>
+                        <select class="js-select page-show-select">
+                            <option value="date" class="page-show-option">По дате добавления</option>
+                            <option value="popul" class="page-show-option">По пулярности</option>
+                            <option value="pricelow" class="page-show-option">По убыванию цен</option>
+                            <option value="priveinc" class="page-show-option">По возрастанию цен</option>
+                        </select>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-9 col-lg-9">
-                <div class="auction-content">
-                    <div class="page-title-wrapper">
-                        <div class="page-title">
-                            <div class="page-title__name">Продажи</div>
-                            <div class="page-title__value">(235)</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-lg-3">
+                <div class="sidebar-block sidebar-seller sidebar-seller__owner">
+                    <div class="seller-bio">
+                        <div class="seller-img">
+                            <img src="assets/images/profile-avatar.png" alt="Profile image">
                         </div>
-                        <div class="page-show-filter">
-                            <div class="page-show-filter-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-sliders">
-                                    <line x1="4" y1="21" x2="4" y2="14"></line>
-                                    <line x1="4" y1="10" x2="4" y2="3"></line>
-                                    <line x1="12" y1="21" x2="12" y2="12"></line>
-                                    <line x1="12" y1="8" x2="12" y2="3"></line>
-                                    <line x1="20" y1="21" x2="20" y2="16"></line>
-                                    <line x1="20" y1="12" x2="20" y2="3"></line>
-                                    <line x1="1" y1="14" x2="7" y2="14"></line>
-                                    <line x1="9" y1="8" x2="15" y2="8"></line>
-                                    <line x1="17" y1="16" x2="23" y2="16"></line>
-                                </svg>
-                            </div>
-                            <select class="js-select page-show-select">
-                                <option value="date" class="page-show-option">По дате добавления</option>
-                                <option value="popul" class="page-show-option">По пулярности</option>
-                                <option value="pricelow" class="page-show-option">По убыванию цен</option>
-                                <option value="priveinc" class="page-show-option">По возрастанию цен</option>
-                            </select>
+                        <div class="seller-description">
+                            <div class="seller-name">Дмитрий Яковенко</div>
                         </div>
                     </div>
-                    <a href="open-car.html" class="auction-item">
+                    <div class="seller-info">
+                        <div class="sidebar-seller-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="feather feather-phone">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="seller-contact seller-phone seller-phone">+38 063 822 93 02</div>
+                    </div>
+                    <div class="seller-info">
+                        <div class="sidebar-seller-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="feather feather-edit-2">
+                                <polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>
+                            </svg>
+                        </div>
+                        <div class="seller-contact">Изменить номер</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-9 col-lg-9">
+                <div class="my-cars-content">
+                    <a href="open-car-my-auction.html" class="auction-item">
                         <div class="auction-item-img">
                             <img src="assets/images/car-example.png" alt="auction car">
                             <div class="pic-counter">
@@ -462,28 +289,38 @@
                                 Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
                                 полностью обслужен.
                             </div>
-                            <div class="auction-item-price">584 474 грн</div>
-                            <div class="auction-item-like-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-heart">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
+                            <div class="auction-item-price-block">
+                                <div class="auction-item-price">
+                                    <div class="auction-item-price-svg">
+                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 16 17"><title>Auction</title>
+                                            <path d="M15.53,14.87,9,8.4a21.27,21.27,0,0,0,1.77-2.15.74.74,0,0,0,.93-1.15L7,.47A.75.75,0,1,0,5.95,1.53l.2.2A19.21,19.21,0,0,0,1.43,6.4a.74.74,0,0,0-1,.07.75.75,0,0,0,0,1.06l4.66,4.63A.75.75,0,1,0,6.19,11.1L6,11A17.63,17.63,0,0,0,7.9,9.46l6.57,6.48a.75.75,0,1,0,1.05-1.07ZM5,9.89,2.51,7.45h0A17.71,17.71,0,0,1,7.19,2.83l0,0L9.66,5.23a.72.72,0,0,0-.15.14A17.78,17.78,0,0,1,5,9.89Z"/>
+                                            <path d="M6.49,14.65H1.61a.75.75,0,1,0,0,1.5H6.49a.75.75,0,1,0,0-1.5Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="auction-item-price-value">584 474 грн</div>
+                                </div>
+                                <div class="auction-item-like-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round" class="feather feather-heart">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </a>
-                    <a href="open-car.html" class="auction-item">
+                    <a href="open-car-my-auction.html" class="auction-item">
                         <div class="auction-item-img">
                             <img src="assets/images/car-example.png" alt="auction car">
                             <div class="pic-counter">
-                                <div class="pic-counter_value">12</div>
+                                <div class="pic-counter_value">2</div>
                                 <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 24 24"><title>
                                     Image</title>
                                     <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
                                     <circle cx="8.5" cy="9.5" r="1"/>
                                 </svg>
-
                             </div>
                         </div>
                         <div class="auction-item-text">
@@ -530,96 +367,38 @@
                                 Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
                                 полностью обслужен.
                             </div>
-                            <div class="auction-item-price">584 474 грн</div>
-                            <div class="auction-item-like-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-heart">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
+                            <div class="auction-item-price-block">
+                                <div class="auction-item-price">
+                                    <div class="auction-item-price-svg">
+                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 16 17"><title>Auction</title>
+                                            <path d="M15.53,14.87,9,8.4a21.27,21.27,0,0,0,1.77-2.15.74.74,0,0,0,.93-1.15L7,.47A.75.75,0,1,0,5.95,1.53l.2.2A19.21,19.21,0,0,0,1.43,6.4a.74.74,0,0,0-1,.07.75.75,0,0,0,0,1.06l4.66,4.63A.75.75,0,1,0,6.19,11.1L6,11A17.63,17.63,0,0,0,7.9,9.46l6.57,6.48a.75.75,0,1,0,1.05-1.07ZM5,9.89,2.51,7.45h0A17.71,17.71,0,0,1,7.19,2.83l0,0L9.66,5.23a.72.72,0,0,0-.15.14A17.78,17.78,0,0,1,5,9.89Z"/>
+                                            <path d="M6.49,14.65H1.61a.75.75,0,1,0,0,1.5H6.49a.75.75,0,1,0,0-1.5Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="auction-item-price-value">584 474 грн</div>
+                                </div>
+                                <div class="auction-item-like-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round" class="feather feather-heart">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </a>
-                    <a href="open-car.html" class="auction-item">
+                    <a href="open-car-my-auction.html" class="auction-item">
                         <div class="auction-item-img">
+                            <img src="assets/images/car-example.png" alt="auction car">
                             <div class="pic-counter">
-                                <div class="pic-counter_value">7</div>
+                                <div class="pic-counter_value">2</div>
                                 <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 24 24"><title>
                                     Image</title>
                                     <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
                                     <circle cx="8.5" cy="9.5" r="1"/>
                                 </svg>
-
-                            </div>
-                            <img src="assets/images/car-example.png" alt="auction car">
-                        </div>
-                        <div class="auction-item-text">
-                            <div class="auction-item-title">Ford Edge Lux, 2017</div>
-                            <div class="auction-item-subtitle-wrapper">
-                                <div class="auction-item-subtitle auction-item-subtitle__city">Киев</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__date">11.03.2018</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__time">10:15</div>
-                            </div>
-                            <div class="auction-item-car-info-wrapper">
-                                <div class="auction-item-car-info auction-item-can-info__range">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 177.51 91.25"><title>probeg</title>
-                                            <path d="M89.54.67C40.79.67.79,40.67.79,89.42h12.5c0-41.88,34.38-76.25,76.25-76.25s76.25,34.37,76.25,76.25h12.5C178.92,40.67,138.92.67,89.54.67Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                            <path d="M97,83.8,114.54,45,75.79,62.55a15.65,15.65,0,0,0,7.5,29.38A14.84,14.84,0,0,0,97,83.8Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                        </svg>
-                                    </div>
-                                    <span>210 000 км</span>
-                                </div>
-                                <div class="auction-item-car-info auction-item-can-info__engine">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 159.5 114.76"><title>Dvig</title>
-                                            <path d="M155.19,33H134.31c-2.59,0-5.67,2.71-5.67,5v7.67h-7.33V37.6c0-1.72-1.71-2.87-3.33-3.22H107.23l-4.72-9.9a8.14,8.14,0,0,0-7.1-4.54H78.64V11.49H91.86c2.5,0,4.78-2.59,4.78-5.44C96.64,3.58,94.51.6,91.86.6h-36C53.36.6,51.08,3.2,51.08,6c0,2.47,2.13,5.44,4.78,5.44h15v8.44H54.08a8.55,8.55,0,0,0-6.93,4.41L42,33.06l-19-.46c-2.48,0-6.31,3.28-6.31,6.11V61.49H11.53V35.83a5.44,5.44,0,0,0-10.89,0v64a5.44,5.44,0,1,0,10.89,0V69.49h5.11V90.94C16.64,93.41,20.45,95,23,95H43.18l15.41,16.54c1.18,1.18,2.78,2.57,4.38,2.57h55.11c3.29,0,6.11-3.85,6.11-7V88.6h5.11v8.11c0,2.26,3,4.78,5,4.78h21.78c2.42,0,2.78-3,2.78-4.78V38C158.86,36,157.88,33,155.19,33ZM147.75,89.6h-.56v1h-7.44V77.72H113.08v25.56H65l-13.41-15-3.49-4.11H27.75V45H48.59l7.56-14.22H93.59l7.12,14.24,7.11.2,3-.34.22,11.67h28.24V43.72h8.44Z"/>
-                                        </svg>
-                                    </div>
-                                    <span>3.0 АМТ, 420 л.с.</span>
-                                </div>
-                                <div class="auction-item-car-info auction-item-can-info__fuel">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 51.64 65.19"><title>Patrol</title>
-                                            <path d="M45,.76H21.9L13.27,9.62l-4-4L.37,14.07l4.17,4.5L.88,22.33v36.6a5.34,5.34,0,0,0,5.33,5.33H45a5.34,5.34,0,0,0,5.33-5.33V6.09A5.34,5.34,0,0,0,45,.76Zm-21,5H38.08L33.8,10.3H19.59ZM7.38,14.29l1.78-1.7.61.61L8,15Zm38,44.64a.33.33,0,0,1-.33.33H6.21a.33.33,0,0,1-.33-.33V24.36l8.84-9.06H36l9-9.54H45a.34.34,0,0,1,.33.33Z"/>
-                                            <path d="M27.87,24.57l-1.75-1.69-1.74,1.7c-.9.88-8.76,8.75-8.76,15.79a10.51,10.51,0,0,0,17.95,7.42,10.41,10.41,0,0,0,3.06-7.42C36.62,33.26,28.76,25.44,27.87,24.57ZM30,44.26a5.51,5.51,0,0,1-9.41-3.89c0-3.26,3.15-7.63,5.51-10.34,2.32,2.68,5.5,7.08,5.5,10.35A5.44,5.44,0,0,1,30,44.26Z"/>
-                                        </svg>
-                                    </div>
-                                    <span>газ</span>
-                                </div>
-                            </div>
-                            <div class="auction-item-descr">
-                                Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
-                                полностью обслужен.
-                            </div>
-                            <div class="auction-item-price">584 474 грн</div>
-                            <div class="auction-item-like-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-heart">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="open-car.html" class="auction-item">
-                        <div class="auction-item-img">
-                            <img src="assets/images/car-example.png" alt="auction car">
-                            <div class="pic-counter">
-                                <div class="pic-counter_value">5</div>
-                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 24 24"><title>
-                                    Image</title>
-                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
-                                    <circle cx="8.5" cy="9.5" r="1"/>
-                                </svg>
-
                             </div>
                         </div>
                         <div class="auction-item-text">
@@ -666,28 +445,38 @@
                                 Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
                                 полностью обслужен.
                             </div>
-                            <div class="auction-item-price">584 474 грн</div>
-                            <div class="auction-item-like-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-heart">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
+                            <div class="auction-item-price-block">
+                                <div class="auction-item-price">
+                                    <div class="auction-item-price-svg">
+                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 16 17"><title>Auction</title>
+                                            <path d="M15.53,14.87,9,8.4a21.27,21.27,0,0,0,1.77-2.15.74.74,0,0,0,.93-1.15L7,.47A.75.75,0,1,0,5.95,1.53l.2.2A19.21,19.21,0,0,0,1.43,6.4a.74.74,0,0,0-1,.07.75.75,0,0,0,0,1.06l4.66,4.63A.75.75,0,1,0,6.19,11.1L6,11A17.63,17.63,0,0,0,7.9,9.46l6.57,6.48a.75.75,0,1,0,1.05-1.07ZM5,9.89,2.51,7.45h0A17.71,17.71,0,0,1,7.19,2.83l0,0L9.66,5.23a.72.72,0,0,0-.15.14A17.78,17.78,0,0,1,5,9.89Z"/>
+                                            <path d="M6.49,14.65H1.61a.75.75,0,1,0,0,1.5H6.49a.75.75,0,1,0,0-1.5Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="auction-item-price-value">584 474 грн</div>
+                                </div>
+                                <div class="auction-item-like-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round" class="feather feather-heart">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </a>
-                    <a href="open-car.html" class="auction-item">
+                    <a href="open-car-my-auction.html" class="auction-item">
                         <div class="auction-item-img">
                             <img src="assets/images/car-example.png" alt="auction car">
                             <div class="pic-counter">
-                                <div class="pic-counter_value">10</div>
+                                <div class="pic-counter_value">2</div>
                                 <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 24 24"><title>
                                     Image</title>
                                     <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
                                     <circle cx="8.5" cy="9.5" r="1"/>
                                 </svg>
-
                             </div>
                         </div>
                         <div class="auction-item-text">
@@ -734,91 +523,30 @@
                                 Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
                                 полностью обслужен.
                             </div>
-                            <div class="auction-item-price">584 474 грн</div>
-                            <div class="auction-item-like-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-heart">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
+                            <div class="auction-item-price-block">
+                                <div class="auction-item-price">
+                                    <div class="auction-item-price-svg">
+                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 16 17"><title>Auction</title>
+                                            <path d="M15.53,14.87,9,8.4a21.27,21.27,0,0,0,1.77-2.15.74.74,0,0,0,.93-1.15L7,.47A.75.75,0,1,0,5.95,1.53l.2.2A19.21,19.21,0,0,0,1.43,6.4a.74.74,0,0,0-1,.07.75.75,0,0,0,0,1.06l4.66,4.63A.75.75,0,1,0,6.19,11.1L6,11A17.63,17.63,0,0,0,7.9,9.46l6.57,6.48a.75.75,0,1,0,1.05-1.07ZM5,9.89,2.51,7.45h0A17.71,17.71,0,0,1,7.19,2.83l0,0L9.66,5.23a.72.72,0,0,0-.15.14A17.78,17.78,0,0,1,5,9.89Z"/>
+                                            <path d="M6.49,14.65H1.61a.75.75,0,1,0,0,1.5H6.49a.75.75,0,1,0,0-1.5Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="auction-item-price-value">584 474 грн</div>
+                                </div>
+                                <div class="auction-item-like-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round" class="feather feather-heart">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </a>
-                    <a href="open-car.html" class="auction-item">
-                        <div class="auction-item-img">
-                            <img src="assets/images/car-example.png" alt="auction car">
-                            <div class="pic-counter">
-                                <div class="pic-counter_value">15</div>
-                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 24 24"><title>
-                                    Image</title>
-                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
-                                    <circle cx="8.5" cy="9.5" r="1"/>
-                                </svg>
-
-                            </div>
-                        </div>
-                        <div class="auction-item-text">
-                            <div class="auction-item-title">Ford Edge Lux, 2017</div>
-                            <div class="auction-item-subtitle-wrapper">
-                                <div class="auction-item-subtitle auction-item-subtitle__city">Киев</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__date">11.03.2018</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__time">10:15</div>
-                            </div>
-                            <div class="auction-item-car-info-wrapper">
-                                <div class="auction-item-car-info auction-item-can-info__range">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 177.51 91.25"><title>probeg</title>
-                                            <path d="M89.54.67C40.79.67.79,40.67.79,89.42h12.5c0-41.88,34.38-76.25,76.25-76.25s76.25,34.37,76.25,76.25h12.5C178.92,40.67,138.92.67,89.54.67Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                            <path d="M97,83.8,114.54,45,75.79,62.55a15.65,15.65,0,0,0,7.5,29.38A14.84,14.84,0,0,0,97,83.8Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                        </svg>
-                                    </div>
-                                    <span>210 000 км</span>
-                                </div>
-                                <div class="auction-item-car-info auction-item-can-info__engine">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 159.5 114.76"><title>Dvig</title>
-                                            <path d="M155.19,33H134.31c-2.59,0-5.67,2.71-5.67,5v7.67h-7.33V37.6c0-1.72-1.71-2.87-3.33-3.22H107.23l-4.72-9.9a8.14,8.14,0,0,0-7.1-4.54H78.64V11.49H91.86c2.5,0,4.78-2.59,4.78-5.44C96.64,3.58,94.51.6,91.86.6h-36C53.36.6,51.08,3.2,51.08,6c0,2.47,2.13,5.44,4.78,5.44h15v8.44H54.08a8.55,8.55,0,0,0-6.93,4.41L42,33.06l-19-.46c-2.48,0-6.31,3.28-6.31,6.11V61.49H11.53V35.83a5.44,5.44,0,0,0-10.89,0v64a5.44,5.44,0,1,0,10.89,0V69.49h5.11V90.94C16.64,93.41,20.45,95,23,95H43.18l15.41,16.54c1.18,1.18,2.78,2.57,4.38,2.57h55.11c3.29,0,6.11-3.85,6.11-7V88.6h5.11v8.11c0,2.26,3,4.78,5,4.78h21.78c2.42,0,2.78-3,2.78-4.78V38C158.86,36,157.88,33,155.19,33ZM147.75,89.6h-.56v1h-7.44V77.72H113.08v25.56H65l-13.41-15-3.49-4.11H27.75V45H48.59l7.56-14.22H93.59l7.12,14.24,7.11.2,3-.34.22,11.67h28.24V43.72h8.44Z"/>
-                                        </svg>
-                                    </div>
-                                    <span>3.0 АМТ, 420 л.с.</span>
-                                </div>
-                                <div class="auction-item-car-info auction-item-can-info__fuel">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 51.64 65.19"><title>Patrol</title>
-                                            <path d="M45,.76H21.9L13.27,9.62l-4-4L.37,14.07l4.17,4.5L.88,22.33v36.6a5.34,5.34,0,0,0,5.33,5.33H45a5.34,5.34,0,0,0,5.33-5.33V6.09A5.34,5.34,0,0,0,45,.76Zm-21,5H38.08L33.8,10.3H19.59ZM7.38,14.29l1.78-1.7.61.61L8,15Zm38,44.64a.33.33,0,0,1-.33.33H6.21a.33.33,0,0,1-.33-.33V24.36l8.84-9.06H36l9-9.54H45a.34.34,0,0,1,.33.33Z"/>
-                                            <path d="M27.87,24.57l-1.75-1.69-1.74,1.7c-.9.88-8.76,8.75-8.76,15.79a10.51,10.51,0,0,0,17.95,7.42,10.41,10.41,0,0,0,3.06-7.42C36.62,33.26,28.76,25.44,27.87,24.57ZM30,44.26a5.51,5.51,0,0,1-9.41-3.89c0-3.26,3.15-7.63,5.51-10.34,2.32,2.68,5.5,7.08,5.5,10.35A5.44,5.44,0,0,1,30,44.26Z"/>
-                                        </svg>
-                                    </div>
-                                    <span>газ</span>
-                                </div>
-                            </div>
-                            <div class="auction-item-descr">
-                                Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
-                                полностью обслужен.
-                            </div>
-                            <div class="auction-item-price">584 474 грн</div>
-                            <div class="auction-item-like-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-heart">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="btn__more">
-                    <button class="btn btn-accent btn-round">Показать еще 10 авто</button>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 
 <section class="footer">
@@ -978,6 +706,7 @@
     </div>
 </section>
 
+<a class="logInPopup" href="#logIn-modal">Log in</a>
 
 <div id="logIn-modal" class="popup-content login-popup mfp-hide">
     <div class="popup-header clearfix">
@@ -1072,6 +801,98 @@
     </div>
 </div>
 
+<div id="logIn-modal" class="popup-content login-popup mfp-hide">
+    <div class="popup-header clearfix">
+        <div class="popup-tab br-right active">
+            <div class="popup-tab-num">1</div>
+            <div class="popup-tab-text">Ввод номера</div>
+        </div>
+        <div class="popup-tab br-right">
+            <div class="popup-tab-num">2</div>
+            <div class="popup-tab-text">Проверка номера</div>
+        </div>
+        <a class="popup-modal-dismiss" href="#" id="popup-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="feather feather-x">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </a>
+    </div>
+    <div class="popup-tab-content" id="phoneCheckTab">
+        <div class="popup-title">Авторизация</div>
+        <div class="popup-subtitle">Чтобы войти в систему, укажите номер елефона</div>
+        <input type="text" id="logInPhone" class="form-control popoup-phone" placeholder="380">
+        <button class="btn btn-popup btn-accent" id="phoneEnter">вход</button>
+    </div>
+
+    <div class="popup-tab-content" id="codeCheckTab">
+        <div class="popup-title">Авторизация</div>
+        <div class="popup-subtitle">На ваш телефон будет отправлено СМС с кодом подтверждения</div>
+        <input type="text" id="logInPhoneConfirm" class="form-control popoup-phone popoup-phone-confirm"
+               placeholder="0000">
+        <button class="btn btn-popup btn-accent">готово</button>
+    </div>
+</div>
+
+
+<div id="profSet-modal" class="popup-content profile-popup mfp-hide">
+    <a class="popup-modal-dismiss" href="#" id="popup-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             class="feather feather-x">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+    </a>
+    <div class="profile-set-wrapper">
+        <div class="popup-title">Настройки профиля</div>
+        <div class="profile-set-img">
+            <svg id="target" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>User</title>
+                <path d="M12,8a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,12,8Zm0,4a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,12Z"/>
+                <path d="M12,5a7,7,0,1,0,7,7A7,7,0,0,0,12,5ZM8.6,16.94a5.09,5.09,0,0,1,.22-.54,3.58,3.58,0,0,1,6.37.09c.07.15.13.31.19.47A6.06,6.06,0,0,1,12,18,6,6,0,0,1,8.6,16.94Zm7.58-.65c0-.08-.06-.18-.11-.27A4.57,4.57,0,0,0,8,15.92a2.28,2.28,0,0,0-.15.36,6,6,0,1,1,8.38,0Z"/>
+            </svg>
+            <a href="#">Добавить фото</a>
+        </div>
+        <div class="profile-set">
+            <div class="profile-set__title">имя</div>
+            <div class="prof-set prof-set__name">
+                <input type="text" class="set-input" placeholder="Укажите ваше имя">
+            </div>
+            <div class="profile-set__title">фамилия</div>
+            <div class="prof-set prof-set__lname">
+                <input type="text" class="set-input" placeholder="Укажите вашу фамилию">
+            </div>
+            <div class="profile-set__title">область</div>
+            <div class="prof-set prof-set__region">
+                <select class="js-select">
+                    <option value="KY">Киевская</option>
+                    <option value="CH">Черниговская</option>
+                    <option value="LV">Львовская</option>
+                    <option value="KH">Харьковская</option>
+                </select>
+            </div>
+            <div class="profile-set__title">город</div>
+            <div class="prof-set prof-set__city">
+                <select class="js-select">
+                    <option value="KY">Киев</option>
+                    <option value="CH">Чернигов</option>
+                    <option value="LV">Львов</option>
+                    <option value="KH">Харьков</option>
+                    <option value="LU">Луганск</option>
+                </select>
+            </div>
+            <div class="profile-set__title">e-mail</div>
+            <div class="prof-set prof-set__email">
+                <input type="text" class="set-input" placeholder="Укажите e-mail">
+            </div>
+        </div>
+        <div class="popup-btn-wrapper">
+            <button class="btn btn-popup btn-accent">сохранить</button>
+        </div>
+    </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="plugins/bootstrap/js/bootstrap.min.js"></script>

@@ -55,7 +55,7 @@
                         <a href="#" class="dropdown-toggle br-right" data-toggle="dropdown" role="button"
                            aria-haspopup="true" aria-expanded="false">Мой аккаунт <span class="caret"></span></a>
                         <ul class="dropdown-menu account-dropdown">
-                            <li><a href="#"><span class="nav-icon"><i class="fas fa-car"></i></span>Мои авто</a></li>
+                            <li><a href="my-cars-auction.html"><span class="nav-icon"><i class="fas fa-car"></i></span>Мои авто</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a class="profSetPopup" href="#profSet-modal"><span class="nav-icon"><i class="fas fa-cog"></i></span>Настройки</a></li>
                             <li role="separator" class="divider"></li>
@@ -124,6 +124,7 @@
                             </div>
                             <span>Чаты</span>
                         </a>
+                        <div class="pic-counter">5</div>
                     </li>
                     <li class="link-grey">
                         <a href="requests-page.html">
@@ -138,20 +139,21 @@
                             </div>
                             <span>Запросы</span>
                         </a>
+                        <div class="pic-counter">12</div>
                     </li>
                     <!--TODO-->
                     <!--UNLOGIN USER ICON-->
-                    <!--<li class="link-grey">-->
-                    <!--<a href="#logIn-modal" class="logInPopup">-->
-                    <!--<div class="header-icon header-icon__unlogin">-->
-                    <!--<svg id="target" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
-                    <!--<path d="M12,8a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,12,8Zm0,4a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,12Z"/>-->
-                    <!--<path d="M12,5a7,7,0,1,0,7,7A7,7,0,0,0,12,5ZM8.6,16.94a5.09,5.09,0,0,1,.22-.54,3.58,3.58,0,0,1,6.37.09c.07.15.13.31.19.47A6.06,6.06,0,0,1,12,18,6,6,0,0,1,8.6,16.94Zm7.58-.65c0-.08-.06-.18-.11-.27A4.57,4.57,0,0,0,8,15.92a2.28,2.28,0,0,0-.15.36,6,6,0,1,1,8.38,0Z"/>-->
-                    <!--</svg>-->
-                    <!--</div>-->
-                    <!--<span>Авторизация</span>-->
-                    <!--</a>-->
-                    <!--</li>-->
+                    <li class="link-grey">
+                        <a href="#logIn-modal" class="logInPopup">
+                            <div class="header-icon header-icon__unlogin">
+                                <svg id="target" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12,8a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,12,8Zm0,4a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,12Z"/>
+                                    <path d="M12,5a7,7,0,1,0,7,7A7,7,0,0,0,12,5ZM8.6,16.94a5.09,5.09,0,0,1,.22-.54,3.58,3.58,0,0,1,6.37.09c.07.15.13.31.19.47A6.06,6.06,0,0,1,12,18,6,6,0,0,1,8.6,16.94Zm7.58-.65c0-.08-.06-.18-.11-.27A4.57,4.57,0,0,0,8,15.92a2.28,2.28,0,0,0-.15.36,6,6,0,1,1,8.38,0Z"/>
+                                </svg>
+                            </div>
+                            <span>Авторизация</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -163,7 +165,7 @@
         <div class="row">
             <div class="col-md-3 col-lg-3">
                 <div class="filters-main-title">
-                    <a href="#" class="filters-reset">
+                    <div class="filters-reset">
                         <div class="filters-reset-svg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none"
@@ -174,7 +176,7 @@
                             </svg>
                         </div>
                         <span class="filters-reset__name">Сбросить фильтры</span>
-                    </a>
+                    </div>
                 </div>
                 <div class="filters-content">
                     <div class="filter-item">
@@ -406,6 +408,15 @@
                     <a href="open-car-auction.html" class="auction-item">
                         <div class="auction-item-img">
                             <img src="assets/images/car-example.png" alt="auction car">
+                            <div class="pic-counter">
+                                <div class="pic-counter_value">2</div>
+                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 24 24"><title>
+                                    Image</title>
+                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
+                                    <circle cx="8.5" cy="9.5" r="1"/>
+                                </svg>
+                            </div>
                         </div>
                         <div class="auction-item-text">
                             <div class="auction-item-title">Ford Edge Lux, 2017</div>
@@ -475,6 +486,15 @@
                     <a href="open-car-auction.html" class="auction-item">
                         <div class="auction-item-img">
                             <img src="assets/images/car-example.png" alt="auction car">
+                            <div class="pic-counter">
+                                <div class="pic-counter_value">2</div>
+                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 24 24"><title>
+                                    Image</title>
+                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
+                                    <circle cx="8.5" cy="9.5" r="1"/>
+                                </svg>
+                            </div>
                         </div>
                         <div class="auction-item-text">
                             <div class="auction-item-title">Ford Edge Lux, 2017</div>
@@ -544,6 +564,15 @@
                     <a href="open-car-auction.html" class="auction-item">
                         <div class="auction-item-img">
                             <img src="assets/images/car-example.png" alt="auction car">
+                            <div class="pic-counter">
+                                <div class="pic-counter_value">12</div>
+                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 24 24"><title>
+                                    Image</title>
+                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
+                                    <circle cx="8.5" cy="9.5" r="1"/>
+                                </svg>
+                            </div>
                         </div>
                         <div class="auction-item-text">
                             <div class="auction-item-title">Ford Edge Lux, 2017</div>
@@ -613,6 +642,15 @@
                     <a href="open-car-auction.html" class="auction-item">
                         <div class="auction-item-img">
                             <img src="assets/images/car-example.png" alt="auction car">
+                            <div class="pic-counter">
+                                <div class="pic-counter_value">8</div>
+                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 24 24"><title>
+                                    Image</title>
+                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
+                                    <circle cx="8.5" cy="9.5" r="1"/>
+                                </svg>
+                            </div>
                         </div>
                         <div class="auction-item-text">
                             <div class="auction-item-title">Ford Edge Lux, 2017</div>
@@ -682,6 +720,15 @@
                     <a href="open-car-auction.html" class="auction-item">
                         <div class="auction-item-img">
                             <img src="assets/images/car-example.png" alt="auction car">
+                            <div class="pic-counter">
+                                <div class="pic-counter_value">13</div>
+                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 24 24"><title>
+                                    Image</title>
+                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
+                                    <circle cx="8.5" cy="9.5" r="1"/>
+                                </svg>
+                            </div>
                         </div>
                         <div class="auction-item-text">
                             <div class="auction-item-title">Ford Edge Lux, 2017</div>
@@ -751,6 +798,15 @@
                     <a href="open-car-auction.html" class="auction-item">
                         <div class="auction-item-img">
                             <img src="assets/images/car-example.png" alt="auction car">
+                            <div class="pic-counter">
+                                <div class="pic-counter_value">10</div>
+                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 24 24"><title>
+                                    Image</title>
+                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
+                                    <circle cx="8.5" cy="9.5" r="1"/>
+                                </svg>
+                            </div>
                         </div>
                         <div class="auction-item-text">
                             <div class="auction-item-title">Ford Edge Lux, 2017</div>
@@ -820,6 +876,15 @@
                     <a href="open-car-auction.html" class="auction-item">
                         <div class="auction-item-img">
                             <img src="assets/images/car-example.png" alt="auction car">
+                            <div class="pic-counter">
+                                <div class="pic-counter_value">9</div>
+                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 24 24"><title>
+                                    Image</title>
+                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
+                                    <circle cx="8.5" cy="9.5" r="1"/>
+                                </svg>
+                            </div>
                         </div>
                         <div class="auction-item-text">
                             <div class="auction-item-title">Ford Edge Lux, 2017</div>
@@ -1038,9 +1103,9 @@
                     </div>
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <div class="footer-logo">
+                    <a href="index.html" class="footer-logo">
                         <img src="assets/images/Logo-icon.svg" alt="">
-                    </div>
+                    </a>
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <div class="footer-share">
@@ -1251,6 +1316,7 @@
 <script src="plugins/select2/js/select2.js"></script>
 <script src="plugins/jquery-ui/jquery-ui.js"></script>
 <script src="plugins/dropzone/dropzone.js"></script>
+<script src="plugins/jquery.countdown-2.2.0/jquery.countdown.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>
