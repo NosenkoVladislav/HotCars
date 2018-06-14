@@ -155,19 +155,7 @@ $(function() {
     var price = $('#auction-value');
     var priceConfirm = $('#auction-value2');
 
-    // $('.sidebar-price-auction-value').on('click',function () {
     $('.price-control').on('click',function () {
-        // if(incr.click(function () {
-        //         price.val(parseInt(price.val()) + 100);
-        //         price.change();
-        //         return false;
-        //     }));
-        // if(decr.click(function () {
-        //         price.val(parseInt(price.val()) - 100);
-        //         price.change();
-        //         return false;
-        //     }));
-
         if($(this).hasClass('incr-price')) {
             price.val(parseInt(price.val()) + 1000);
             price.change();
@@ -291,3 +279,16 @@ $(function () {
         }
     })
 })
+
+$(".form-control").on('click', function (e) {
+    e.preventDefault();
+    if ($(window).width() < 600) {
+        $(this).focus(function () {
+            $(this).addClass('active')
+        })
+        $(this).focusout(function () {
+            $(this).removeClass('active')
+        })
+    }
+
+});
