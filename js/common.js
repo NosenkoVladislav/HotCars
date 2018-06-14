@@ -290,5 +290,21 @@ $(".form-control").on('click', function (e) {
             $(this).removeClass('active')
         })
     }
+});
+
+
+$( document ).ready(function() {
+    btn = $('.filters-show-btn');
+
+    function hideFilters() {
+        if ($(window).width() < 991) {
+            $('.filters').fadeOut(0.1);
+        } else {
+            $('.filters').fadeIn(0.1);
+            // btn.fadeOut(1);
+        }
+    }
+    $( window ).resize(hideFilters());
+
 
 });

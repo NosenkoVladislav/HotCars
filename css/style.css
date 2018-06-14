@@ -179,6 +179,11 @@ body {
     justify-content: center;
 }
 
+.navbar-form .input-search {
+    width: 70%;
+    display: flex;
+}
+
 .input-search .header-search {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -273,6 +278,7 @@ body {
 
 .header-search {
     z-index: 2 !important;
+    padding-right: 31px;
 }
 
 
@@ -285,7 +291,94 @@ body {
     margin-right: 8px;
 }
 
-/*footer*/
+  /************/
+ /*pagination*/
+/************/
+
+.page-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-item .page-link {
+    background-color: transparent;
+    color: var(--regGtey);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 0 2px;
+    text-decoration: none;
+}
+
+.page-item .page-link:active,
+.page-item .page-link:hover
+{
+    background-color: var(--mainRed);
+    color: #fff;
+}
+
+.page-item .page-link:focus,
+.page-nav .page-link:focus{
+    background-color: transparent;
+    color: var(--regGtey);
+}
+
+.page-nav .page-link:active,
+.page-nav .page-link:hover {
+    color: var(--mainRed);
+    background-color: transparent;
+}
+
+.page-nav.nav-disable .page-link:hover {
+    color: var(--lightGrey);
+}
+
+.page-item .page-link.current {
+    background-color: var(--mainRed);
+    color: #fff;
+}
+
+.pagination .page-nav .page-link{
+    display: flex;
+    align-items: center;
+}
+
+.page-nav {
+    background-color: transparent;
+}
+
+.page-nav .page-link {
+    background-color: transparent;
+    border: none;
+    color: var(--regGtey);
+}
+
+.page-nav-prev .page-link svg {
+    margin-right: 10px;
+}
+
+.page-nav-next .page-link svg {
+    margin-left: 10px;
+}
+
+.page-num {
+    display: flex;
+}
+
+.page-num-mob {
+    color: var(--regGtey);
+    font-size: 1.2em;
+}
+
+    /*footer*/
 
 .footer {
     border-top: 1px solid var(--lightGrey);
@@ -358,6 +451,7 @@ body {
 .footer-share__facebook {
     margin-right: 15px;
 }
+
 
   /*********/
  /*auction*/

@@ -164,212 +164,215 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-lg-3">
-                <div class="filters-main-title">
-                    <div class="filters-reset">
-                        <div class="filters-reset-svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none"
-                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                 class="feather feather-rotate-ccw">
-                                <polyline points="1 4 1 10 7 10"></polyline>
-                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
-                            </svg>
-                        </div>
-                        <span class="filters-reset__name">Сбросить фильтры</span>
-                    </div>
-                </div>
-                <div class="filters-content">
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">область</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-region-select" multiple="multiple">
-                                <option value="KY">Киевская</option>
-                                <option value="CH">Черниговская</option>
-                                <option value="LV">Львовская</option>
-                                <option value="KH">Харьковская</option>
-                            </select>
+
+                <div class="filters">
+                    <div class="filters-main-title">
+                        <div class="filters-reset">
+                            <div class="filters-reset-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none"
+                                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                     class="feather feather-rotate-ccw">
+                                    <polyline points="1 4 1 10 7 10"></polyline>
+                                    <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                                </svg>
+                            </div>
+                            <span class="filters-reset__name">Сбросить фильтры</span>
                         </div>
                     </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">город</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-city-select" multiple="multiple">
-                                <option value="KY">Киев</option>
-                                <option value="CH">Чернигов</option>
-                                <option value="LV">Львов</option>
-                                <option value="KH">Харьков</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">марка</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-manufactor-select" multiple="multiple">
-                                <option value="KY">Honda</option>
-                                <option value="CH">Audi</option>
-                                <option value="LV">Ford</option>
-                                <option value="KH">Acura</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">модель</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-model-select" multiple="multiple">
-                                <option value="KY">Киевская</option>
-                                <option value="CH">Черниговская</option>
-                                <option value="LV">Львовская</option>
-                                <option value="KH">Харьковская</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">цена</span>
-                            <div class="filter-item__curr-select">
-                                <input class="filter-checkbox" type="checkbox" id="usdFilter">
-                                <label class="filter-curr" for="usdFilter">USD</label>
-                                <input class="filter-checkbox" type="checkbox" id="uahFilter">
-                                <label class="filter-curr" for="uahFilter">UAH</label>
-                                <input class="filter-checkbox" type="checkbox" id="eurFilter">
-                                <label class="filter-curr" for="eurFilter">EUR</label>
+                    <div class="filters-content">
+                        <div class="filter-item">
+                            <div class="filter-item-title clearfix">
+                                <span class="filter-item-name">область</span>
+                            </div>
+                            <div class="filter-item-content">
+                                <select class="js-select filter-region-select" multiple="multiple">
+                                    <option value="KY">Киевская</option>
+                                    <option value="CH">Черниговская</option>
+                                    <option value="LV">Львовская</option>
+                                    <option value="KH">Харьковская</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="filter-item-content">
-                            <form method="post" action="">
-                                <div class="filter-input-wrapper">
-                                    <input id="amount-price-1" class="filter-input">
-                                    <span>-</span>
-                                    <input id="amount-price-2" class="filter-input">
+                        <div class="filter-item">
+                            <div class="filter-item-title clearfix">
+                                <span class="filter-item-name">город</span>
+                            </div>
+                            <div class="filter-item-content">
+                                <select class="js-select filter-city-select" multiple="multiple">
+                                    <option value="KY">Киев</option>
+                                    <option value="CH">Чернигов</option>
+                                    <option value="LV">Львов</option>
+                                    <option value="KH">Харьков</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-item-title clearfix">
+                                <span class="filter-item-name">марка</span>
+                            </div>
+                            <div class="filter-item-content">
+                                <select class="js-select filter-manufactor-select" multiple="multiple">
+                                    <option value="KY">Honda</option>
+                                    <option value="CH">Audi</option>
+                                    <option value="LV">Ford</option>
+                                    <option value="KH">Acura</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-item-title clearfix">
+                                <span class="filter-item-name">модель</span>
+                            </div>
+                            <div class="filter-item-content">
+                                <select class="js-select filter-model-select" multiple="multiple">
+                                    <option value="KY">Киевская</option>
+                                    <option value="CH">Черниговская</option>
+                                    <option value="LV">Львовская</option>
+                                    <option value="KH">Харьковская</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-item-title clearfix">
+                                <span class="filter-item-name">цена</span>
+                                <div class="filter-item__curr-select">
+                                    <input class="filter-checkbox" type="checkbox" id="usdFilter">
+                                    <label class="filter-curr" for="usdFilter">USD</label>
+                                    <input class="filter-checkbox" type="checkbox" id="uahFilter">
+                                    <label class="filter-curr" for="uahFilter">UAH</label>
+                                    <input class="filter-checkbox" type="checkbox" id="eurFilter">
+                                    <label class="filter-curr" for="eurFilter">EUR</label>
                                 </div>
-                                <!--<input type="submit" name="submit_range" value="Submit">-->
-                            </form>
-                            <div id="slider-price-range"></div>
+                            </div>
+                            <div class="filter-item-content">
+                                <form method="post" action="">
+                                    <div class="filter-input-wrapper">
+                                        <input id="amount-price-1" class="filter-input">
+                                        <span>-</span>
+                                        <input id="amount-price-2" class="filter-input">
+                                    </div>
+                                    <!--<input type="submit" name="submit_range" value="Submit">-->
+                                </form>
+                                <div id="slider-price-range"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">год выпуска</span>
+                        <div class="filter-item">
+                            <div class="filter-item-title clearfix">
+                                <span class="filter-item-name">год выпуска</span>
+                            </div>
+                            <div class="filter-item-content">
+                                <form method="post" action="">
+                                    <div class="filter-input-wrapper">
+                                        <input id="amount-distance-1" class="filter-input">
+                                        <span>-</span>
+                                        <input id="amount-distance-2" class="filter-input">
+                                    </div>
+                                    <!--<input type="submit" name="submit_range" value="Submit">-->
+                                </form>
+                                <div id="slider-distance-range"></div>
+                            </div>
                         </div>
-                        <div class="filter-item-content">
-                            <form method="post" action="">
-                                <div class="filter-input-wrapper">
-                                    <input id="amount-distance-1" class="filter-input">
-                                    <span>-</span>
-                                    <input id="amount-distance-2" class="filter-input">
-                                </div>
-                                <!--<input type="submit" name="submit_range" value="Submit">-->
-                            </form>
-                            <div id="slider-distance-range"></div>
+                        <div class="filter-item">
+                            <div class="filter-item-title filter-item-title__br clearfix">
+                                <span class="filter-item-name">топливо</span>
+                                <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyFuelFilter">
+                                <label class="filter-item__all" for="anyFuelFilter">Любое</label>
+                            </div>
+                            <div class="filter-item-content">
+                                <input class="filter-checkbox" type="checkbox" id="benzFilter">
+                                <label class="filter-item--variant filter-item--fuel" for="benzFilter">бензин</label>
+                                <input class="filter-checkbox" type="checkbox" id="benzgazFilter">
+                                <label class="filter-item--variant filter-item--fuel" for="benzgazFilter">бензин/газ</label>
+                                <input class="filter-checkbox" type="checkbox" id="dizelFilter">
+                                <label class="filter-item--variant filter-item--fuel" for="dizelFilter">дизель</label>
+                                <input class="filter-checkbox" type="checkbox" id="gibridFilter">
+                                <label class="filter-item--variant filter-item--fuel" for="gibridFilter">гибрид</label>
+                                <input class="filter-checkbox" type="checkbox" id="electroFilter">
+                                <label class="filter-item--variant filter-item--fuel" for="electroFilter">электро</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title filter-item-title__br clearfix">
-                            <span class="filter-item-name">топливо</span>
-                            <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyFuelFilter">
-                            <label class="filter-item__all" for="anyFuelFilter">Любое</label>
+                        <div class="filter-item">
+                            <div class="filter-item-title filter-item-title__br clearfix">
+                                <span class="filter-item-name">кпп</span>
+                                <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyKppFilter">
+                                <label class="filter-item__all" for="anyKppFilter">Любая</label>
+                            </div>
+                            <div class="filter-item-content">
+                                <input class="filter-checkbox" type="checkbox" id="kppautozFilter">
+                                <label class="filter-item--variant filter-item--kpp" for="kppautozFilter">автомат</label>
+                                <input class="filter-checkbox" type="checkbox" id="kppvariatorFilter">
+                                <label class="filter-item--variant filter-item--kpp" for="kppvariatorFilter">вариатор</label>
+                                <input class="filter-checkbox" type="checkbox" id="ruchmehFilter">
+                                <label class="filter-item--variant filter-item--kpp" for="ruchmehFilter">ручная/механика</label>
+                            </div>
                         </div>
-                        <div class="filter-item-content">
-                            <input class="filter-checkbox" type="checkbox" id="benzFilter">
-                            <label class="filter-item--variant filter-item--fuel" for="benzFilter">бензин</label>
-                            <input class="filter-checkbox" type="checkbox" id="benzgazFilter">
-                            <label class="filter-item--variant filter-item--fuel" for="benzgazFilter">бензин/газ</label>
-                            <input class="filter-checkbox" type="checkbox" id="dizelFilter">
-                            <label class="filter-item--variant filter-item--fuel" for="dizelFilter">дизель</label>
-                            <input class="filter-checkbox" type="checkbox" id="gibridFilter">
-                            <label class="filter-item--variant filter-item--fuel" for="gibridFilter">гибрид</label>
-                            <input class="filter-checkbox" type="checkbox" id="electroFilter">
-                            <label class="filter-item--variant filter-item--fuel" for="electroFilter">электро</label>
+                        <div class="filter-item">
+                            <div class="filter-item-title clearfix">
+                                <span class="filter-item-name">привод</span>
+                            </div>
+                            <div class="filter-item-content">
+                                <select class="js-select filter-gearbox-select" multiple="multiple">
+                                    <option value="KY">Киевская</option>
+                                    <option value="CH">Черниговская</option>
+                                    <option value="LV">Львовская</option>
+                                    <option value="KH">Харьковская</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title filter-item-title__br clearfix">
-                            <span class="filter-item-name">кпп</span>
-                            <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyKppFilter">
-                            <label class="filter-item__all" for="anyKppFilter">Любая</label>
+                        <div class="filter-item">
+                            <div class="filter-item-title clearfix">
+                                <span class="filter-item-name">кузов</span>
+                            </div>
+                            <div class="filter-item-content">
+                                <select class="js-select filter-body-select" multiple="multiple">
+                                    <option value="KY">Универсал</option>
+                                    <option value="CH">Седан</option>
+                                    <option value="LV">Хетчбек</option>
+                                    <option value="KH">Минивен</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="filter-item-content">
-                            <input class="filter-checkbox" type="checkbox" id="kppautozFilter">
-                            <label class="filter-item--variant filter-item--kpp" for="kppautozFilter">автомат</label>
-                            <input class="filter-checkbox" type="checkbox" id="kppvariatorFilter">
-                            <label class="filter-item--variant filter-item--kpp" for="kppvariatorFilter">вариатор</label>
-                            <input class="filter-checkbox" type="checkbox" id="ruchmehFilter">
-                            <label class="filter-item--variant filter-item--kpp" for="ruchmehFilter">ручная/механика</label>
+                        <div class="filter-item">
+                            <div class="filter-item-title clearfix">
+                                <span class="filter-item-name">цвет</span>
+                            </div>
+                            <div class="filter-item-content">
+                                <select class="js-select filter-color-select" multiple="multiple">
+                                    <option value="KY">Синий</option>
+                                    <option value="CH">Красный</option>
+                                    <option value="LV">Белый</option>
+                                    <option value="KH">Черный</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">привод</span>
+                        <div class="filter-item">
+                            <div class="filter-item-title filter-item-title__br clearfix">
+                                <span class="filter-item-name">растаможка</span>
+                                <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyRastaFilter">
+                                <label class="filter-item__all" for="anyRastaFilter">Любая</label>
+                            </div>
+                            <div class="filter-item-content">
+                                <input class="filter-checkbox" type="checkbox" id="restaYesFilter">
+                                <label class="filter-item--variant filter-item--rasta" for="restaYesFilter">растаможена</label>
+                                <input class="filter-checkbox" type="checkbox" id="restaNoFilter">
+                                <label class="filter-item--variant filter-item--rasta" for="restaNoFilter">не растаможена</label>
+                            </div>
                         </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-gearbox-select" multiple="multiple">
-                                <option value="KY">Киевская</option>
-                                <option value="CH">Черниговская</option>
-                                <option value="LV">Львовская</option>
-                                <option value="KH">Харьковская</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">кузов</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-body-select" multiple="multiple">
-                                <option value="KY">Универсал</option>
-                                <option value="CH">Седан</option>
-                                <option value="LV">Хетчбек</option>
-                                <option value="KH">Минивен</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">цвет</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-color-select" multiple="multiple">
-                                <option value="KY">Синий</option>
-                                <option value="CH">Красный</option>
-                                <option value="LV">Белый</option>
-                                <option value="KH">Черный</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title filter-item-title__br clearfix">
-                            <span class="filter-item-name">растаможка</span>
-                            <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyRastaFilter">
-                            <label class="filter-item__all" for="anyRastaFilter">Любая</label>
-                        </div>
-                        <div class="filter-item-content">
-                            <input class="filter-checkbox" type="checkbox" id="restaYesFilter">
-                            <label class="filter-item--variant filter-item--rasta" for="restaYesFilter">растаможена</label>
-                            <input class="filter-checkbox" type="checkbox" id="restaNoFilter">
-                            <label class="filter-item--variant filter-item--rasta" for="restaNoFilter">не растаможена</label>
-                        </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title filter-item-title__br clearfix">
-                            <span class="filter-item-name">стостояниие</span>
-                            <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyStateFilter">
-                            <label class="filter-item__all" for="anyStateFilter">Любое</label>
-                        </div>
-                        <div class="filter-item-content">
-                            <input class="filter-checkbox" type="checkbox" id="stateYesFilter">
-                            <label class="filter-item--variant filter-item--state" for="stateYesFilter">
-                                порядке</label>
-                            <input class="filter-checkbox" type="checkbox" id="stateNoFilter">
-                            <label class="filter-item--variant filter-item--state" for="stateNoFilter">битые /
-                                не на ходу</label>
+                        <div class="filter-item">
+                            <div class="filter-item-title filter-item-title__br clearfix">
+                                <span class="filter-item-name">стостояниие</span>
+                                <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyStateFilter">
+                                <label class="filter-item__all" for="anyStateFilter">Любое</label>
+                            </div>
+                            <div class="filter-item-content">
+                                <input class="filter-checkbox" type="checkbox" id="stateYesFilter">
+                                <label class="filter-item--variant filter-item--state" for="stateYesFilter">
+                                    порядке</label>
+                                <input class="filter-checkbox" type="checkbox" id="stateNoFilter">
+                                <label class="filter-item--variant filter-item--state" for="stateNoFilter">битые /
+                                    не на ходу</label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -814,7 +817,54 @@
                     </a>
                 </div>
                 <div class="btn__more">
-                    <button class="btn btn-accent btn-round">Показать еще 10 авто</button>
+                    <nav>
+                        <ul class="pagination page-pagination">
+                            <li class="page-nav page-nav-prev nav-disable">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                         stroke-linecap="round" stroke-linejoin="round"
+                                         class="feather feather-chevrons-left">
+                                        <polyline
+                                                points="11 17 6 12 11 7"></polyline>
+                                        <polyline
+                                                points="18 17 13 12 18 7"></polyline>
+                                    </svg>
+                                    <span class="sr-only">Previous</span>
+                                    Назад
+                                </a>
+                            </li>
+                            <div class="page-num">
+                                <li class="page-item"><a class="page-link current" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            </div>
+                            <div class="page-num-mob">
+                                <div class="page-counter">
+                                    <span class="page-current">1</span>
+                                    <span>/</span>
+                                    <span class="page-total">20</span>
+                                </div>
+                            </div>
+                            <li class="page-nav page-nav-next">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    Вперед
+                                    <span class="sr-only">Next</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                         stroke-linecap="round" stroke-linejoin="round"
+                                         class="feather feather-chevrons-right">
+                                        <polyline
+                                                points="13 17 18 12 13 7"></polyline>
+                                        <polyline
+                                                points="6 17 11 12 6 7"></polyline>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>

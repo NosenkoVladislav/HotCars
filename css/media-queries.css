@@ -1,11 +1,27 @@
+@media only screen and (min-width : 1200px) {
+    .page-num-mob {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 1199px) {
+    .navbar-form .input-search {
+        width: 100%;
+    }
+
+    .page-num-mob {
+        display: none;
+    }
+}
+
 @media only screen and (max-width : 992px) {
     .nav>li>a {
-        padding: 10px 10px;
+        padding: 12px 10px;
     }
 
     .curr-select a,
     .lang-select a{
-        padding: 10px 2px;
+        padding: 12px 2px;
     }
 
     .layer-two-container {
@@ -13,24 +29,25 @@
     }
 
     .nav-brand {
-        width: 29%;
+        width: 50%;
     }
 
-    .layer-two-container .navbar-grow {
+     .navbar-grow {
+        order: 2;
         flex-grow: 0;
-        width: 39%;
+        width: 100%;
     }
 
     .nav-icons {
-        width: 33%;
+        width: 50%;
         display: flex;
         justify-content: flex-end;
     }
 
-    .input-search input,
-    .input-search input:focus{
-        /*width: 200px !important;*/
+    .auction-content .page-title-wrapper {
+        margin-top: 20px;
     }
+
 }
 
 @media only screen and (min-width : 768px) {
@@ -102,16 +119,26 @@
 }
 
 @media only screen and (max-width : 586px) {
-    .input-search input,
-    .input-search input:focus{
-        /*width: 150px !important;*/
+    .auction-content .page-title-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
     }
 
-    .input-search input.active:focus {
-        /*width: 500px !important;*/
+    .auction-content .page-show-filter {
+        margin-top: 10px;
     }
 
     .auction-item-descr {
         height: 70px;
+    }
+    
+    .page-num-mob {
+        display: block;
+    }
+    
+    .page-num {
+        display: none;
     }
 }
