@@ -376,6 +376,7 @@ body {
 .page-num-mob {
     color: var(--regGtey);
     font-size: 1.2em;
+    display: none;
 }
 
     /*footer*/
@@ -652,6 +653,24 @@ body {
   /*********/
  /*filters*/
 /*********/
+
+.show-filters {
+    display: none;
+    padding: 10px 15px;
+    width: 155px;
+    text-align: center;
+}
+
+.show-filters i {
+    margin-left: 5px;
+}
+
+/*.show-filters.fixed-top {*/
+    /*position: fixed;*/
+    /*z-index: 9;*/
+    /*top: 5px;*/
+    /*left: 12px;*/
+/*}*/
 
 .filters-main-title {
     margin-bottom: 20px;
@@ -1714,6 +1733,15 @@ body {
     padding-bottom: 6px;
     border: none;
     border-bottom: 1px solid var(--regGtey);
+}
+
+.advert-radio {
+    display: none;
+}
+
+.advert-radio:checked + .advert-opt-list-item {
+    color: var(--mainRed);
+    border-color: var(--mainRed);
 }
 
 /*dropzone*/

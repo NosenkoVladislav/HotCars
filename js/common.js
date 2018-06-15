@@ -116,14 +116,6 @@ $(function() {
         max: 2018,
         values: [ 1995, 2018 ],
         slide: function( event, ui ) {
-            // $("#amount-distance-1" ).focusout( function () {
-            //     // ui.values[ 0 ] = $("#amount-distance-1").val;
-            //     // console.log($("#amount-distance-1" ).val);
-            //     console.log(ui.values[0]);
-            //     console.log($("#amount-distance-1").val())
-            //     ui.values[0]=$("#amount-distance-1").val();
-            // })
-            // $( "#amount-distance" ).html( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
             $( "#amount-distance-1" ).val(ui.values[ 0 ]);
             $( "#amount-distance-2" ).val(ui.values[ 1 ]);
 
@@ -293,18 +285,58 @@ $(".form-control").on('click', function (e) {
 });
 
 
-$( document ).ready(function() {
-    btn = $('.filters-show-btn');
-
-    function hideFilters() {
+$(document).ready( function() {
+    $(window).resize(function () {
         if ($(window).width() < 991) {
-            $('.filters').fadeOut(0.1);
+            $('.filters').fadeOut(1);
         } else {
-            $('.filters').fadeIn(0.1);
-            // btn.fadeOut(1);
+            $('.filters').fadeIn(1);
         }
-    }
-    $( window ).resize(hideFilters());
+    });
 
+    if ($(window).width() < 991) {
+        $('.filters').fadeOut(1);
+    } else {
+        $('.filters').fadeIn(1);
+    }
+
+
+    $('.show-filters').click(function (){
+       $('.filters').slideToggle('slow');
+    });
 
 });
+
+// $(function () {
+//     $(window).resize(function () {
+//         if ($(window).width() < 768) {
+//             $('.navbar').addClass('navbar-fixed-top');
+//         } else {
+//             $('.navbar').removeClass('navbar-fixed-top');
+//         };
+//     });
+//
+//     if ($(window).width() < 767) {
+//         $('.navbar').addClass('navbar-fixed-top');
+//     } else {
+//         $('.navbar').removeClass('navbar-fixed-top');
+//     };
+// });
+//
+// $(function () {
+//     filter =$('.show-filters');
+//
+//     $(window).scroll(function (event) {
+//         var scroll = $(window).scrollTop();
+//         var smLogo = $('.navbar-brand-sm');
+//
+//         if(scroll > 20){
+//             filter.addClass('fixed-top');
+//             smLogo.fadeOut(0.1);
+//         } else {
+//             filter.removeClass('fixed-top');
+//             smLogo.fadeIn(0.1);
+//         }
+//     });
+// })
+

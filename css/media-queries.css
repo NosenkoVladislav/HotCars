@@ -1,16 +1,15 @@
-@media only screen and (min-width : 1200px) {
-    .page-num-mob {
-        display: none;
-    }
-}
-
 @media only screen and (max-width : 1199px) {
     .navbar-form .input-search {
         width: 100%;
     }
 
-    .page-num-mob {
-        display: none;
+    .sidebar-seller-svg {
+        padding: 0;
+    }
+
+    .sidebar-seller__owner .seller-img {
+        height: 100px;
+        width: 100px;
     }
 }
 
@@ -29,17 +28,17 @@
     }
 
     .nav-brand {
-        width: 50%;
+        width: 30%;
     }
 
      .navbar-grow {
-        order: 2;
-        flex-grow: 0;
-        width: 100%;
+         flex-grow: 0;
+         width: 37%;
     }
 
     .nav-icons {
-        width: 50%;
+        width: 33%;
+        padding: 0;
         display: flex;
         justify-content: flex-end;
     }
@@ -48,6 +47,9 @@
         margin-top: 20px;
     }
 
+    .show-filters {
+        display: block;
+    }
 }
 
 @media only screen and (min-width : 768px) {
@@ -57,13 +59,22 @@
 }
 
 @media only screen and (max-width : 767px) {
+    /*.page-content {*/
+        /*margin-top: 70px;*/
+    /*}*/
+
     .container-fluid {
         padding-left: 15px;
         padding-right: 15px;
     }
 
+    .navbar-layer-two.navbar-collapse.in {
+        overflow: visible;
+    }
+
     .navbar {
         min-height: 50px;
+        z-index: 9;
     }
 
     .navbar .container-fluid .navbar-brand-sm {
@@ -81,23 +92,36 @@
         border: none;
     }
 
+    .layer-two-container {
+        padding: 0;
+    }
+
     .nav-brand {
         display: none;
     }
 
-    .layer-two-container .navbar-grow {
-        width: 60%;
-    }
-
     .nav-icons {
-        width: 48%;
+        width: 40%;
         display: flex;
         justify-content: flex-end;
         font-size: 0.9em;
+        order: 2;
+        margin: 0;
     }
 
-    .navbar-grow .input-group {
-        display: inline-block;
+    .navbar-grow {
+        order: 1;
+        width: 60%;
+        margin: 0;
+    }
+
+    .navbar-grow .navbar-form--search {
+        margin: 5px 0 25px 0;
+        padding: 0;
+    }
+
+    .input-search .input-group-btn {
+        width: auto;
     }
 
     .auction-item {
@@ -116,9 +140,78 @@
     .auction-item-descr {
         height: auto;
     }
+
+    .input-group-btn.open .dropdown-menu {
+        position: absolute;
+        background-color: #fff;
+    }
+
+    .navbar-nav .open .dropdown-menu {
+        -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    }
 }
 
 @media only screen and (max-width : 586px) {
+    .nav-icons {
+        order: 1;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .navbar-grow {
+        order: 2;
+        width: 100%;
+    }
+
+    .navbar-layer-one .container {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-layer-one .container .nav{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-layer-one .container .nav:first-child {
+        width: 100%;
+
+    }
+
+    .navbar-layer-one .container .nav:last-child {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navbar-layer-one .container .nav .dropdown {
+        width: 100%;
+        order: 3;
+    }
+
+    .navbar-layer-one .container .nav .sale-car {
+        width: 100%;
+        order: 4;
+        text-align: center;
+    }
+
+    .navbar-layer-one .container .nav .br-left.link-grey {
+        order: 2;
+        width: 50%;
+    }
+    
+    .lang-select {
+        text-align: right;
+    }
+
+    .navbar-layer-one .container .nav .br-right{
+        order: 1;
+        width: 50%;
+    }
+
     .auction-content .page-title-wrapper {
         display: flex;
         flex-direction: column;
@@ -141,4 +234,5 @@
     .page-num {
         display: none;
     }
+
 }

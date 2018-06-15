@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Прожажи</title>
+    <title>Продажи</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="plugins/Magnific-Popup/css/magnific-popup.css">
@@ -62,7 +62,7 @@
                             <li><a href="#"><span class="nav-icon"><i class="fas fa-power-off"></i></span>Выйти</a></li>
                         </ul>
                     </li>
-                    <li><a href="advert.html" class="btn-accent">Продать машину</a></li>
+                    <li class="sale-car"><a href="advert.html" class="btn-accent">Продать машину</a></li>
                 </ul>
             </div>
         </div>
@@ -164,7 +164,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-lg-3">
-
+                <div class="show-filters btn-accent btn-round">Фильтр<i class="fas fa-filter"></i></div>
                 <div class="filters">
                     <div class="filters-main-title">
                         <div class="filters-reset">
@@ -186,7 +186,7 @@
                                 <span class="filter-item-name">область</span>
                             </div>
                             <div class="filter-item-content">
-                                <select class="js-select filter-region-select" multiple="multiple">
+                                <select id='regSelect' class="js-select filter-region-select" multiple="multiple">
                                     <option value="KY">Киевская</option>
                                     <option value="CH">Черниговская</option>
                                     <option value="LV">Львовская</option>
