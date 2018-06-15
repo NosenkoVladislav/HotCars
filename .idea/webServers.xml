@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3221c96c-b437-41f0-8097-398c2f4d2a4c" name="SandBox" url="http://waydev.ftp.tools">
+        <fileTransfer host="waydev.ftp.tools" port="21" rootFolder="/wayappdevelopment.tech/hotcar-dev/">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -11,6 +11,8 @@
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="plugins/select2/css/select2.css">
     <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="plugins/ion-rangeSlider/css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="plugins/ion-rangeSlider/css/ion.rangeSlider.skinFlat.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -247,14 +249,11 @@
                             </div>
                             <div class="filter-item-content">
                                 <form method="post" action="">
-                                    <div class="filter-input-wrapper">
-                                        <input id="amount-price-1" class="filter-input">
-                                        <span>-</span>
-                                        <input id="amount-price-2" class="filter-input">
-                                    </div>
-                                    <!--<input type="submit" name="submit_range" value="Submit">-->
+                                    <input id="amount-price-1" class="filter-input">
+                                    <span>-</span>
+                                    <input id="amount-price-2" class="filter-input">
+                                    <input id="slider-price-range">
                                 </form>
-                                <div id="slider-price-range"></div>
                             </div>
                         </div>
                         <div class="filter-item">
@@ -263,14 +262,11 @@
                             </div>
                             <div class="filter-item-content">
                                 <form method="post" action="">
-                                    <div class="filter-input-wrapper">
-                                        <input id="amount-distance-1" class="filter-input">
-                                        <span>-</span>
-                                        <input id="amount-distance-2" class="filter-input">
-                                    </div>
-                                    <!--<input type="submit" name="submit_range" value="Submit">-->
+                                    <input id="amount-year-1" class="filter-input">
+                                    <span>-</span>
+                                    <input id="amount-year-2" class="filter-input">
+                                    <input id="slider-year-range">
                                 </form>
-                                <div id="slider-distance-range"></div>
                             </div>
                         </div>
                         <div class="filter-item">
@@ -1132,6 +1128,7 @@
 <script src="plugins/jquery-ui/jquery-ui.js"></script>
 <script src="plugins/dropzone/dropzone.js"></script>
 <script src="plugins/jquery.countdown-2.2.0/jquery.countdown.min.js"></script>
+<script src="plugins/ion-rangeSlider/js/ion.rangeSlider.js"></script>
 <script src="js/common.js"></script>
 
 </body>

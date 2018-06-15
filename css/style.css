@@ -837,51 +837,6 @@ body {
 
 /*slider range custom*/
 
-.ui-slider-horizontal {
-    height: 3px;
-}
-
-.ui-slider-horizontal .ui-slider-handle {
-    top: -6px;
-}
-
-.ui-widget.ui-widget-content {
-    background-color: #b2b7c6;
-    border: none;
-    margin: 15px 0;
-}
-
-.ui-widget-header {
-    background-color: var(--mainRed);
-}
-
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-    background-color: var(--mainRed);
-    box-shadow: 0 0 0 2px rgba(234, 222, 222, 0.37);
-    border: none;
-}
-
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
-    background-color: var(--mainRed);
-    box-shadow: 0 0 0 2px rgba(234, 222, 222, 0.37);
-}
-
-.ui-slider .ui-slider-handle {
-    height: 15px;
-    width: 15px;
-}
-
-.filter-input-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .filter-input-wrapper span {
     color: var(--regGtey);
@@ -889,12 +844,40 @@ body {
 }
 
 .filter-input {
-    width: 40%;
+    width: 46%;
     text-align: center;
     color: var(--mainRed);
     padding: 4px;
     font-weight: 300;
     border: 1px solid var(--lightGrey);
+}
+
+.irs-line,
+.irs-bar{
+    height: 3px;
+    top: 31px;
+    background-color: var(--regGtey);
+}
+
+.irs-bar {
+    background-color: var(--mainRed);
+}
+
+.irs-slider {
+    background-color: var(--mainRed);
+    border: 2px solid #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    -webkit-box-shadow: 0px 0px 1px 0px #0000006b;
+    -moz-box-shadow: 0px 0px 1px 0px #0000006b;
+    box-shadow: 0px 0px 1px 0px #0000006b;
+}
+
+.irs-slider:hover {
+    cursor: pointer;
 }
   /*******/
  /*popup*/

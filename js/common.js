@@ -98,29 +98,121 @@ $(function() {
 
 
 $(function() {
-    $( "#slider-price-range" ).slider({
-        range: true,
-        min: 100,
-        max: 500000,
-        values: [ 100000, 300000 ],
-        slide: function( event, ui ) {
-            // $( "#price-amount" ).html( "$" + ui.values[ 0 ] + " -$ " + ui.values[ 1 ] );
-            $( "#amount-price-1" ).val(ui.values[ 0 ]);
-            $( "#amount-price-2" ).val(ui.values[ 1 ]);
-        }
-    });
+    function distanceRange() {
+        var $range = $("#slider-price-range"),
+            $input1 = $("#amount-price-1"),
+            $input2 = $("#amount-price-2"),
+            instance, min,max;
 
-    $( "#slider-distance-range" ).slider({
-        range: true,
-        min: 1990,
-        max: 2018,
-        values: [ 1995, 2018 ],
-        slide: function( event, ui ) {
-            $( "#amount-distance-1" ).val(ui.values[ 0 ]);
-            $( "#amount-distance-2" ).val(ui.values[ 1 ]);
+        $range.ionRangeSlider({
+            type: "double",
+            min: 1000,
+            max: 30000,
+            from: 2000,
+            to: 15000,
+            step: 1000,
+            hide_from_to: true,
+            hide_min_max: true,
+            onStart: function (data) {
+                $input1.prop("value", data.from);
+                $input2.prop("value", data.to);
+            },
+            onChange: function (data) {
+                $input1.prop("value", data.from);
+                $input2.prop("value", data.to);
+            }
+        });
+        instance = $range.data("ionRangeSlider");
 
-        }
-    });
+        $input1.on("change keyup", function () {
+            var val = $(this).prop("value");
+
+            // validate
+            if (val < min) {
+                val = min;
+            } else if (val > max) {
+                val = max;
+            }
+
+            instance.update({
+                from: val
+            });
+        });
+
+        $input2.on("change keyup", function () {
+            var val = $(this).prop("value");
+
+            // validate
+            if (val < min) {
+                val = min;
+            } else if (val > max) {
+                val = max;
+            }
+
+            instance.update({
+                to: val
+            });
+        });
+    };
+
+    function yearRange() {
+        var $range = $("#slider-year-range"),
+            $input1 = $("#amount-year-1"),
+            $input2 = $("#amount-year-2"),
+            instance,min,max;
+
+        $range.ionRangeSlider({
+            type: "double",
+            min: 1980,
+            max: 2018,
+            from: 2000,
+            to: 2018,
+            step: 1,
+            hide_from_to: true,
+            hide_min_max: true,
+            onStart: function (data) {
+                $input1.prop("value", data.from);
+                $input2.prop("value", data.to);
+            },
+            onChange: function (data) {
+                $input1.prop("value", data.from);
+                $input2.prop("value", data.to);
+            }
+        });
+        instance = $range.data("ionRangeSlider");
+
+        $input1.on("change keyup", function () {
+            var val = $(this).prop("value");
+
+            // validate
+            if (val < min) {
+                val = min;
+            } else if (val > max) {
+                val = max;
+            }
+            instance.update({
+                from: val
+            });
+        });
+
+        $input2.on("change keyup", function () {
+            var val = $(this).prop("value");
+
+            // validate
+            if (val < min) {
+                val = min;
+            } else if (val > max) {
+                val = max;
+            }
+            instance.update({
+                to: val
+            });
+        });
+    };
+
+    distanceRange();
+    yearRange();
+
 });
 
 $('.open-car-slider-for').slick({
@@ -142,6 +234,7 @@ $('.open-car-slider-nav').slick({
     centerMode: false,
     focusOnSelect: true
 });
+
 
 $(function() {
     var price = $('#auction-value');
@@ -209,7 +302,8 @@ $(document).ready(function () {
                 if (this.getUploadingFiles().length === 0 && this.getQueuedFiles().length === 0) {
                         $('.upload-space').css({
                             'border' : '1px dashed var(--mainRed)',
-                            'width' : '17.5%'
+                            'width' : '17.5%',
+                            'min-height' : 'auto'
                         });
                         $('.dropzone').css({
                             'border' : 'none',
@@ -301,27 +395,31 @@ $(document).ready( function() {
     }
 
 
-    $('.show-filters').click(function (){
-       $('.filters').slideToggle('slow');
+    // $('.show-filters').click(function (){
+    //    $('.filters').slideToggle('slow');
+    // });
+
+    $(".show-filters").click(function(){
+        $(".filters").animate({width: 'toggle'},200);
     });
 
 });
 
-// $(function () {
-//     $(window).resize(function () {
-//         if ($(window).width() < 768) {
-//             $('.navbar').addClass('navbar-fixed-top');
-//         } else {
-//             $('.navbar').removeClass('navbar-fixed-top');
-//         };
-//     });
-//
-//     if ($(window).width() < 767) {
-//         $('.navbar').addClass('navbar-fixed-top');
-//     } else {
-//         $('.navbar').removeClass('navbar-fixed-top');
-//     };
-// });
+$(function () {
+    $(window).resize(function () {
+        if ($(window).width() < 768) {
+            $('.navbar').addClass('navbar-fixed-top');
+        } else {
+            $('.navbar').removeClass('navbar-fixed-top');
+        };
+    });
+
+    if ($(window).width() < 767) {
+        $('.navbar').addClass('navbar-fixed-top');
+    } else {
+        $('.navbar').removeClass('navbar-fixed-top');
+    };
+});
 //
 // $(function () {
 //     filter =$('.show-filters');

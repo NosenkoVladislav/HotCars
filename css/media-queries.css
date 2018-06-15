@@ -11,6 +11,7 @@
         height: 100px;
         width: 100px;
     }
+
 }
 
 @media only screen and (max-width : 992px) {
@@ -50,6 +51,14 @@
     .show-filters {
         display: block;
     }
+
+    .page-title-wrapper__advert .page-title{
+        font-size: 1.4em;
+    }
+
+    .page-title-wrapper__advert .advert-btn {
+        padding: 10px;
+    }
 }
 
 @media only screen and (min-width : 768px) {
@@ -59,9 +68,9 @@
 }
 
 @media only screen and (max-width : 767px) {
-    /*.page-content {*/
-        /*margin-top: 70px;*/
-    /*}*/
+    .page-content {
+        margin-top: 70px;
+    }
 
     .container-fluid {
         padding-left: 15px;
@@ -75,6 +84,10 @@
     .navbar {
         min-height: 50px;
         z-index: 9;
+    }
+
+    .navbar.navbar-fixed-top {
+        z-index: 999;
     }
 
     .navbar .container-fluid .navbar-brand-sm {
@@ -151,6 +164,33 @@
         -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
         box-shadow: 0 6px 12px rgba(0,0,0,.175);
     }
+
+    .sidebar-seller__owner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 1.3em;
+    }
+
+    .sidebar-seller__owner .seller-bio:first-child {
+        width: 100%;
+    }
+
+    .seller-info:nth-child(2) {
+        border: none;
+        margin-right: 10px;
+    }
+
+    .page-title-wrapper__advert .page-title {
+        font-size: 1.6em;
+    }
+    
+    .page-title-wrapper__advert .advert-btn {
+        padding: 12px 15px;
+    }
 }
 
 @media only screen and (max-width : 586px) {
@@ -178,7 +218,6 @@
 
     .navbar-layer-one .container .nav:first-child {
         width: 100%;
-
     }
 
     .navbar-layer-one .container .nav:last-child {
@@ -235,4 +274,43 @@
         display: none;
     }
 
+    .page-title-wrapper__advert .page-title {
+        font-size: 1.3em;
+    }
+
+    .page-title-wrapper__advert .advert-btn {
+        padding: 10px;
+    }
+
+    .advert-opt {
+        width: 100%;
+    }
+
+    .advert-opt-select {
+        width: 100%;
+    }
+
+    .advert-opt__long {
+        margin-bottom: 5px;
+    }
+
+    .advert-opt-list-item {
+        margin-bottom: 10px;
+    }
+
+    .dropzone {
+        justify-content: center !important;
+    }
+
+}
+
+@media only screen and (max-width : 475px) {
+    .page-title-wrapper__advert {
+        flex-direction: column;
+    }
+
+    .page-title-wrapper__advert .page-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
 }
