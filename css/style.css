@@ -672,6 +672,11 @@ body {
     left: 12px;
 }
 
+.filters {
+    position: relative;
+    z-index: 8;
+}
+
 .filters-main-title {
     margin-bottom: 20px;
 }

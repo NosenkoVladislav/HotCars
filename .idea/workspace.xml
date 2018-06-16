@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7e978ac-c309-4601-8880-a0d000bc6cc3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/advert.html" afterPath="$PROJECT_DIR$/advert.html" />
-      <change beforePath="$PROJECT_DIR$/auction-list.html" afterPath="$PROJECT_DIR$/auction-list.html" />
-      <change beforePath="$PROJECT_DIR$/css/media-queries.css" afterPath="$PROJECT_DIR$/css/media-queries.css" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
-      <change beforePath="$PROJECT_DIR$/my-cars-auction.html" afterPath="$PROJECT_DIR$/my-cars-auction.html" />
-      <change beforePath="$PROJECT_DIR$/my-cars-rates.html" afterPath="$PROJECT_DIR$/my-cars-rates.html" />
-      <change beforePath="$PROJECT_DIR$/my-cars-sales.html" afterPath="$PROJECT_DIR$/my-cars-sales.html" />
-      <change beforePath="$PROJECT_DIR$/open-car-auction.html" afterPath="$PROJECT_DIR$/open-car-auction.html" />
-      <change beforePath="$PROJECT_DIR$/open-car-my-auction.html" afterPath="$PROJECT_DIR$/open-car-my-auction.html" />
-      <change beforePath="$PROJECT_DIR$/open-car.html" afterPath="$PROJECT_DIR$/open-car.html" />
-      <change beforePath="$PROJECT_DIR$/plugins/ion-rangeSlider/css/ion.rangeSlider.skinFlat.css" afterPath="$PROJECT_DIR$/plugins/ion-rangeSlider/css/ion.rangeSlider.skinFlat.css" />
-      <change beforePath="$PROJECT_DIR$/requests-page.html" afterPath="$PROJECT_DIR$/requests-page.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="412" column="9" lean-forward="false" selection-start-line="412" selection-start-column="9" selection-end-line="412" selection-end-column="9" />
+            <state relative-caret-position="472">
+              <caret line="438" column="43" lean-forward="true" selection-start-line="438" selection-start-column="43" selection-end-line="438" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -81,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="667" column="0" lean-forward="false" selection-start-line="667" selection-start-column="0" selection-end-line="672" selection-end-column="1" />
+            <state relative-caret-position="490">
+              <caret line="676" column="14" lean-forward="false" selection-start-line="676" selection-start-column="14" selection-end-line="676" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -162,10 +149,10 @@
         <option value="$PROJECT_DIR$/open-car-my-auction.html" />
         <option value="$PROJECT_DIR$/open-car-auction.html" />
         <option value="$PROJECT_DIR$/requests-page.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/media-queries.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/common.js" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -274,12 +261,12 @@
       <workItem from="1527774497763" duration="135146000" />
       <workItem from="1528467679511" duration="94820000" />
       <workItem from="1529064902492" duration="5193000" />
-      <workItem from="1529075022337" duration="25808000" />
+      <workItem from="1529075022337" duration="26119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260967000" />
+    <option name="totallyTimeSpent" value="261278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -613,14 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="667" column="0" lean-forward="false" selection-start-line="667" selection-start-column="0" selection-end-line="672" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/media-queries.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -647,8 +626,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="412" column="9" lean-forward="false" selection-start-line="412" selection-start-column="9" selection-end-line="412" selection-end-column="9" />
+        <state relative-caret-position="472">
+          <caret line="438" column="43" lean-forward="true" selection-start-line="438" selection-start-column="43" selection-end-line="438" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="676" column="14" lean-forward="false" selection-start-line="676" selection-start-column="14" selection-end-line="676" selection-end-column="14" />
           <folding />
         </state>
       </provider>
