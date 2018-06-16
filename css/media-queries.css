@@ -28,13 +28,17 @@
         flex-wrap: wrap;
     }
 
+    .navbar .container-fluid .navbar-brand.navbar-brand-lg {
+        width: 155px;
+    }
+
     .nav-brand {
-        width: 30%;
+        width: 22%;
     }
 
      .navbar-grow {
          flex-grow: 0;
-         width: 37%;
+         width: 45%;
     }
 
     .nav-icons {
@@ -50,6 +54,7 @@
 
     .show-filters {
         display: block;
+        margin-bottom: 10px;
     }
 
     .page-title-wrapper__advert .page-title{
@@ -87,7 +92,7 @@
     }
 
     .navbar.navbar-fixed-top {
-        z-index: 999;
+        z-index: 9;
     }
 
     .navbar .container-fluid .navbar-brand-sm {
@@ -190,6 +195,10 @@
     
     .page-title-wrapper__advert .advert-btn {
         padding: 12px 15px;
+    }
+
+    .page-show-filter .select2-container {
+        width: auto !important;
     }
 }
 

@@ -665,12 +665,12 @@ body {
     margin-left: 5px;
 }
 
-/*.show-filters.fixed-top {*/
-    /*position: fixed;*/
-    /*z-index: 9;*/
-    /*top: 5px;*/
-    /*left: 12px;*/
-/*}*/
+.show-filters.fixed-top {
+    position: fixed;
+    z-index: 9;
+    top: 5px;
+    left: 12px;
+}
 
 .filters-main-title {
     margin-bottom: 20px;
