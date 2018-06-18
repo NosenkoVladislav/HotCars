@@ -62,7 +62,7 @@
                             <li><a href="#"><span class="nav-icon"><i class="fas fa-power-off"></i></span>Выйти</a></li>
                         </ul>
                     </li>
-                    <li class="sale-car"><a href="advert.html" class="btn-accent">Продать машину</a></li>
+                    <li class="sale-car"><a href="advert-sale.html" class="btn-accent">Продать машину</a></li>
                 </ul>
             </div>
         </div>
@@ -169,10 +169,8 @@
                         <div class="page-title__name">Размещение объявления</div>
                     </div>
                     <div class="advert-type-select">
-                        <input class="advert-tab" type="radio" name="advert-type" id="AdvertAuction">
-                        <label class="btn advert-btn advert-btn__auction" for="AdvertAuction">Аукцион</label>
-                        <input class="advert-tab" type="radio" name="advert-type" id="AdvertSale">
-                        <label class="btn advert-btn advert-btn__sell" for="AdvertSale">Продажа</label>
+                        <a href="advert-auction.html" class="btn advert-btn advert-btn__auction" for="AdvertAuction">Аукцион</a>
+                        <a href="advert-sale.html" class="btn advert-btn advert-btn__sell active" for="AdvertSale">Продажа</a>
                     </div>
                 </div>
             </div>
@@ -367,6 +365,23 @@
                             <label for="stateYes" class="advert-opt-list-item">в порядке</label>
                             <input type="radio" class="advert-radio" id="stateNo" name="advertState">
                             <label for="stateNo" class="advert-opt-list-item">битая / не на ходу</label>
+                        </div>
+                    </div>
+                    <div class="advert-opt advert-opt__long">
+                        <div class="advert-opt-name">описание</div>
+                        <input type="text" class="advert-opt-input" placeholder="Введите описание авто(по желанию)">
+                    </div>
+                    <div class="advert-opt advert-opt__long">
+                        <div class="advert-opt-name">стоимость</div>
+                        <div class="advert-counter-value">грн</div>
+                        <div class="advert-opt-list advert-opt-list__curr">
+                            <input type="text" class="advert-opt-input" placeholder="Укажите стоимость">
+                            <input type="radio" class="advert-radio" id="currUSD" name="advertCurrency">
+                            <label for="currUSD" class="advert-opt-list-item">USD</label>
+                            <input type="radio" class="advert-radio" id="currUAH" name="advertCurrency">
+                            <label for="currUAH" class="advert-opt-list-item">UAH</label>
+                            <input type="radio" class="advert-radio" id="currEUR" name="advertCurrency">
+                            <label for="currEUR" class="advert-opt-list-item">EUR</label>
                         </div>
                     </div>
                 </div>

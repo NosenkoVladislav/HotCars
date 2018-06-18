@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Open car auction</title>
+    <title>Advert</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="plugins/Magnific-Popup/css/magnific-popup.css">
@@ -11,7 +11,6 @@
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="plugins/select2/css/select2.css">
     <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.css">
-    <link rel="stylesheet" href="plugins/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -164,266 +163,234 @@
 <section class="page-content">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9">
-                <div class="page-control">
-                    <div class="page-control--left">
-                        <a href="#" class="page-control__nav page-control-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                 stroke-linejoin="round" class="feather feather-chevron-left">
-                                <polyline points="15 18 9 12 15 6"></polyline>
-                            </svg>
-                            <span class="page-control__nav--value">Аукционы</span>
-                        </a>
+            <div class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9 col-lg-offset-3 col-lg-9">
+                <div class="page-title-wrapper page-title-wrapper__advert">
+                    <div class="page-title">
+                        <div class="page-title__name">Размещение объявления</div>
                     </div>
-                    <div class="page-control--right">
-                        <a href="#" class="page-control__share page-control-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                 stroke-linejoin="round" class="feather feather-share-2">
-                                <circle cx="18" cy="5" r="3"></circle>
-                                <circle cx="6" cy="12" r="3"></circle>
-                                <circle cx="18" cy="19" r="3"></circle>
-                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-                            </svg>
-                        </a>
-                        <a href="#" class="page-control__favorite page-control-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                 stroke-linejoin="round" class="feather feather-heart">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                            </svg>
-                        </a>
+                    <div class="advert-type-select">
+                        <a href="advert-auction.html" class="btn advert-btn advert-btn__auction active" for="AdvertAuction">Аукцион</a>
+                        <a href="advert-sale.html" class="btn advert-btn advert-btn__sell" for="AdvertSale">Продажа</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-9">
-                <div class="open-car">
-                    <div class="open-car-title">
-                        <div class="open-car-title__name">Ford Edge Lux, 2017</div>
-                        <div class="open-car-title__sub">
-                            <div class="open-car-title__place">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span class="open-car-title__place--lav">Киев</span>
-                            </div>
-                            <div class="open-car-title__time">
-                                <i class="far fa-clock"></i>
-                                <span class="open-car-title__time--lav">3 часа назад</span>
-                            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                <div class="sidebar-block sidebar-seller sidebar-seller__owner">
+                    <div class="seller-bio">
+                        <div class="seller-img">
+                            <img src="assets/images/profile-avatar.png" alt="Profile image">
+                        </div>
+                        <div class="seller-description">
+                            <div class="seller-name">Дмитрий Яковенко</div>
                         </div>
                     </div>
-                    <div class="open-car-slider">
-                        <div class="open-car-slider-control"></div>
-                        <div class="open-car-slider-for">
-                            <div class="open-car-show-item">
-                                <img src="assets/images/1.jpg" alt="slide 1">
-                            </div>
-                            <div class="open-car-show-item">
-                                <img src="assets/images/2.jpg" alt="slide 2">
-                            </div>
-                            <div class="open-car-show-item">
-                                <img src="assets/images/3.jpg" alt="slide 3">
-                            </div>
-                            <div class="open-car-show-item">
-                                <img src="assets/images/4.jpg" alt="slide 4">
-                            </div>
-                            <div class="open-car-show-item">
-                                <img src="assets/images/5.jpg" alt="slide 5">
-                            </div>
-                            <div class="open-car-show-item">
-                                <img src="assets/images/6.jpg" alt="slide 1">
-                            </div>
-                            <div class="open-car-show-item">
-                                <img src="assets/images/7.jpg" alt="slide 2">
-                            </div>
+                    <div class="seller-info">
+                        <div class="sidebar-seller-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="feather feather-phone">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
                         </div>
-                        <div class="open-car-slider-nav">
-                            <div class="open-car-nav-item">
-                                <img src="assets/images/1.jpg" alt="slide 1">
-                            </div>
-                            <div class="open-car-nav-item">
-                                <img src="assets/images/2.jpg" alt="slide 1">
-                            </div>
-                            <div class="open-car-nav-item">
-                                <img src="assets/images/3.jpg" alt="slide 3">
-                            </div>
-                            <div class="open-car-nav-item">
-                                <img src="assets/images/4.jpg" alt="slide 4">
-                            </div>
-                            <div class="open-car-nav-item">
-                                <img src="assets/images/5.jpg" alt="slide 5">
-                            </div>
-                            <div class="open-car-nav-item">
-                                <img src="assets/images/6.jpg" alt="slide 1">
-                            </div>
-                            <div class="open-car-nav-item">
-                                <img src="assets/images/7.jpg" alt="slide 2">
-                            </div>
-                        </div>
+                        <div class="seller-contact seller-phone seller-phone">+38 063 822 93 02</div>
                     </div>
-                    <div class="open-car-text">
-                        <div class="open-car-param-list">
-                            <div class="car-param-item">
-                                <div class="car-param--name">Пробег</div>
-                                <div class="car-param--value car-param__range">294 тыс.км</div>
-                            </div>
-                            <div class="car-param-item">
-                                <div class="car-param--name">Двигатель</div>
-                                <div class="car-param--value car-param__engine">1.3 л, дизель</div>
-                            </div>
-                            <div class="car-param-item">
-                                <div class="car-param--name">Коробка передач</div>
-                                <div class="car-param--value car-param__transmis">Ручная/Механика</div>
-                            </div>
-                            <div class="car-param-item">
-                                <div class="car-param--name">Тип привода</div>
-                                <div class="car-param--value car-param__drive">Передний привод</div>
-                            </div>
-                            <div class="car-param-item">
-                                <div class="car-param--name">Цвет</div>
-                                <div class="car-param--value car-param__color">Белый</div>
-                            </div>
-                            <div class="car-param-item">
-                                <div class="car-param--name">Растаможка</div>
-                                <div class="car-param--value car-param__border">Растаможен</div>
+                    <div class="seller-info">
+                        <div class="sidebar-seller-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="feather feather-edit-2">
+                                <polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>
+                            </svg>
+                        </div>
+                        <div class="seller-contact">Изменить номер</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                <div class="advert-content clearfix">
+                    <div class="advert-opt advert-opt__long">
+                        <div class="advert-opt-name">фото</div>
+                        <div class="advert-counter-value">6</div>
+                        <div class="advert-fileupload">
+                            <div id="dZUpload" class="dropzone">
+                                <div class="upload-space dz-preview dz-processing dz-error dz-complete dz-image-preview" id="uploadIcon">
+                                    <div class="dropzone-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24"
+                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                             stroke-linejoin="round" class="feather feather-camera">
+                                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                            <circle cx="12" cy="13" r="4"></circle>
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="open-car-description">
-                            Не бит, не крашен. На ходу. Турбо-дизель, интеркуллер, грузовая подвеска 475 кг. Очень
-                            экономное и энергичное авто. Усилитель
-                            руля, эл. стеклоподъемники, бортовой компьютер.
+                        <div class="advert-opt">
+                            <div class="advert-opt-name">марка</div>
+                            <div class="advert-opt-select">
+                                <select class="js-select">
+                                    <option value="KY">Киевская</option>
+                                    <option value="CH">Черниговская</option>
+                                    <option value="LV">Львовская</option>
+                                    <option value="KH">Харьковская</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="advert-opt">
+                            <div class="advert-opt-name">модель</div>
+                            <div class="advert-opt-select">
+                                <select class="js-select">
+                                    <option value="KY">Киевская</option>
+                                    <option value="CH">Черниговская</option>
+                                    <option value="LV">Львовская</option>
+                                    <option value="KH">Харьковская</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="advert-opt">
+                            <div class="advert-opt-name">год выпуска</div>
+                            <div class="advert-opt-select">
+                                <select class="js-select">
+                                    <option value="KY">Киевская</option>
+                                    <option value="CH">Черниговская</option>
+                                    <option value="LV">Львовская</option>
+                                    <option value="KH">Харьковская</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="advert-opt">
+                            <div class="advert-opt-name">пробег</div>
+                            <div class="advert-counter-value">км</div>
+                            <input type="text" class="advert-opt-input" placeholder="Укажите пробег">
+                        </div>
+                        <div class="advert-opt">
+                            <div class="advert-opt-name">область</div>
+                            <div class="advert-opt-select">
+                                <select class="js-select">
+                                    <option value="KY">Киевская</option>
+                                    <option value="CH">Черниговская</option>
+                                    <option value="LV">Львовская</option>
+                                    <option value="KH">Харьковская</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="advert-opt">
+                            <div class="advert-opt-name">город</div>
+                            <div class="advert-opt-select">
+                                <select class="js-select">
+                                    <option value="KY">Киевская</option>
+                                    <option value="CH">Черниговская</option>
+                                    <option value="LV">Львовская</option>
+                                    <option value="KH">Харьковская</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="advert-opt advert-opt__long">
+                            <div class="advert-opt-name">кпп</div>
+                            <div class="advert-opt-list">
+                                <input type="radio" class="advert-radio" id="kppAuto" name="advertKpp">
+                                <label for="kppAuto" class="advert-opt-list-item">автомат</label>
+                                <input type="radio" class="advert-radio" id="kppVariator" name="advertKpp">
+                                <label for="kppVariator" class="advert-opt-list-item">вариатор</label>
+                                <input type="radio" class="advert-radio" id="kppMix" name="advertKpp">
+                                <label for="kppMix" class="advert-opt-list-item">ручная/механика</label>
+                            </div>
+                        </div>
+                        <div class="advert-opt advert-opt__long">
+                            <div class="advert-opt-name">тип привода</div>
+                            <div class="advert-opt-list">
+                                <input type="radio" class="advert-radio" id="driveFront" name="advertDrive">
+                                <label for="driveFront" class="advert-opt-list-item">передний</label>
+                                <input type="radio" class="advert-radio" id="driveBack" name="advertDrive">
+                                <label for="driveBack" class="advert-opt-list-item">задний</label>
+                                <input type="radio" class="advert-radio" id="driveFull" name="advertDrive">
+                                <label for="driveFull" class="advert-opt-list-item">полный</label>
+                            </div>
+                        </div>
+                        <div class="advert-opt">
+                            <div class="advert-opt-name">топливо</div>
+                            <div class="advert-opt-select">
+                                <select class="js-select">
+                                    <option value="KY">бензин</option>
+                                    <option value="CH">газ</option>
+                                    <option value="LV">газ/бензин</option>
+                                    <option value="KH">дизель</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="advert-opt">
+                            <div class="advert-opt-name">пробег</div>
+                            <div class="advert-counter-value">км</div>
+                            <input type="text" class="advert-opt-input" placeholder="Укажите объем двигателя">
+                        </div>
+                        <div class="advert-opt">
+                            <div class="advert-opt-name">цвет</div>
+                            <div class="advert-opt-select">
+                                <select class="js-select">
+                                    <option value="KY">Киевская</option>
+                                    <option value="CH">Черниговская</option>
+                                    <option value="LV">Львовская</option>
+                                    <option value="KH">Харьковская</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="advert-opt">
+                            <div class="advert-opt-name">кузов</div>
+                            <div class="advert-opt-select">
+                                <select class="js-select">
+                                    <option value="KY">Киевская</option>
+                                    <option value="CH">Черниговская</option>
+                                    <option value="LV">Львовская</option>
+                                    <option value="KH">Харьковская</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="advert-opt advert-opt__long">
+                            <div class="advert-opt-name">растаможка</div>
+                            <div class="advert-opt-list">
+                                <input type="radio" class="advert-radio" id="borderYes" name="advertBorder">
+                                <label for="borderYes" class="advert-opt-list-item">растаможена</label>
+                                <input type="radio" class="advert-radio" id="borderNo" name="advertBorder">
+                                <label for="borderNo" class="advert-opt-list-item">не растаможена</label>
+                            </div>
+                        </div>
+                        <div class="advert-opt advert-opt__long">
+                            <div class="advert-opt-name">состояние</div>
+                            <div class="advert-opt-list">
+                                <input type="radio" class="advert-radio" id="stateYes" name="advertState">
+                                <label for="stateYes" class="advert-opt-list-item">в порядке</label>
+                                <input type="radio" class="advert-radio" id="stateNo" name="advertState">
+                                <label for="stateNo" class="advert-opt-list-item">битая / не на ходу</label>
+                            </div>
+                        </div>
+                        <div class="advert-opt advert-opt__long">
+                            <div class="advert-opt-name">описание</div>
+                            <input type="text" class="advert-opt-input" placeholder="Введите описание авто(по желанию)">
+                        </div>
+                        <div class="advert-opt advert-opt__long">
+                            <div class="advert-opt-name">стоимость</div>
+                            <div class="advert-counter-value">грн</div>
+                            <div class="advert-opt-list advert-opt-list__curr">
+                                <input type="text" class="advert-opt-input" placeholder="Укажите минимальную ставку">
+                                <input type="radio" class="advert-radio" id="currUSD" name="advertCurrency">
+                                <label for="currUSD" class="advert-opt-list-item">USD</label>
+                                <input type="radio" class="advert-radio" id="currUAH" name="advertCurrency">
+                                <label for="currUAH" class="advert-opt-list-item">UAH</label>
+                                <input type="radio" class="advert-radio" id="currEUR" name="advertCurrency">
+                                <label for="currEUR" class="advert-opt-list-item">EUR</label>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="btn__more">
-                    <button class="btn btn-accent btn-round">Показать больше похожих авто</button>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="sidebar-right">
-                    <div class="sidebar-block sidebar-seller">
-                        <div class="seller-bio">
-                            <div class="seller-img">
-                                <img src="assets/images/profile-avatar.png" alt="Profile image">
-                            </div>
-                            <div class="seller-description">
-                                <div class="seller-name">Дмитрий Яковенко</div>
-                                <div class="seller-status">Продавец</div>
-                            </div>
-                        </div>
-                        <div class="seller-info">
-                            <div class="sidebar-seller-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-phone">
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                </svg>
-                            </div>
-                            <div class="seller-contact seller-phone">Показать номер</div>
-                            <div class="seller-contact seller-phone seller-phone__show">+38 063 822 93 02</div>
-                        </div>
-                        <div class="seller-info">
-                            <div class="sidebar-seller-svg">
-                                <?xml version="1.0" encoding="UTF-8"?>
-                                <svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1"
-                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <title>3H</title>
-                                    <desc>Created with Sketch.</desc>
-                                    <defs></defs>
-                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g id="Группы-Открыт-поиск-Copy" transform="translate(-25.000000, -762.000000)"
-                                           fill="#0B1A2B">
-                                            <path d="M43.9082278,772.335443 C44.4329114,772.335443 44.8575949,772.759494 44.8575949,773.28481 C44.8575949,773.810127 44.4329114,774.234177 43.9082278,774.234177 L30.9721519,774.234177 C30.4474684,774.234177 30.0227848,773.810127 30.0227848,773.28481 C30.0227848,772.759494 30.4474684,772.335443 30.9721519,772.335443 L43.9082278,772.335443 Z M30.9721519,767.506329 L43.9082278,767.506329 C44.4329114,767.506329 44.8575949,767.93038 44.8575949,768.455696 C44.8575949,768.974684 44.4329114,769.405063 43.9082278,769.405063 L30.9721519,769.405063 C30.4474684,769.405063 30.0227848,768.974684 30.0227848,768.455696 C30.0227848,767.93038 30.4474684,767.506329 30.9721519,767.506329 Z M48.1012658,777.620253 C48.1012658,777.683544 47.978481,777.803797 47.7848101,777.803797 L36.5506329,777.803797 C36.535443,777.803797 36.521519,777.803797 36.5063291,777.803797 C36.4727848,777.810127 36.4398734,777.810127 36.4063291,777.816456 C36.3772152,777.822785 36.3481013,777.829114 36.3189873,777.835443 C36.2886076,777.841772 36.2594937,777.85443 36.2297468,777.860759 C36.2,777.873418 36.171519,777.886076 36.143038,777.898734 C36.1164557,777.911392 36.0911392,777.924051 36.0658228,777.936709 C36.0360759,777.955696 36.0082278,777.974684 35.9810127,778 C35.9689873,778.006329 35.9563291,778.012658 35.9449367,778.018987 L30.5379747,782.506329 L30.5379747,778.753165 C30.5379747,778.227848 30.1132911,777.803797 29.5886076,777.803797 L27.2151899,777.803797 C27.0221519,777.803797 26.8987342,777.683544 26.8987342,777.620253 L26.8987342,764.075949 C26.8987342,764.012658 27.0221519,763.898734 27.2151899,763.898734 L47.7848101,763.898734 C47.978481,763.898734 48.1012658,764.012658 48.1012658,764.075949 L48.1012658,777.620253 Z M27.2151899,762 C25.9943038,762 25,762.93038 25,764.075949 L25,777.620253 C25,778.772152 25.9943038,779.702532 27.2151899,779.702532 L28.6392405,779.702532 L28.6392405,784.525316 C28.6392405,784.892405 28.8518987,785.227848 29.185443,785.386076 C29.3139241,785.449367 29.4518987,785.474684 29.5886076,785.474684 C29.8063291,785.474684 30.021519,785.398734 30.1949367,785.259494 L36.893038,779.702532 L47.7848101,779.702532 C49.0063291,779.702532 50,778.772152 50,777.620253 L50,764.075949 C50,762.93038 49.0063291,762 47.7848101,762 L27.2151899,762 Z"
-                                                  id="3H"></path>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="seller-contact seller-phone">Чат с продавцом</div>
-                        </div>
-                    </div>
-                    <div class="sidebar-block sidebar-price">
-                        <div class="sidebar-price-title">
-                            <div class="sidebar-price__name">аукцион</div>
-                            <div class="sidebar-price__curr">(UAH)</div>
-                        </div>
-                        <div class="sidebar-price-value sidebar-price-auction-value">
-                            <div class="price-control incr-price">+</div>
-                            <input class="auction-price" id="auction-value" readonly="readonly" value="590000">
-                            <div class="price-control decr-price">-</div>
-                        </div>
-                        <div class="sidebar-price-btn">
-                            <a href="#rate-modal" class="btn btn-accent btn-round ratePopup">Сделать ставку</a>
-                        </div>
-                    </div>
-
-                    <div class="sidebar-block bet-story">
-                        <div class="sidebar-price-title">
-                            <div class="sidebar-price__name">история ставок</div>
-                            <div class="sidebar-price__curr">(UAH)</div>
-                        </div>
-                        <div class="bet-list">
-                            <div class="bet-item">
-                                <div class="bet-item-svg">
-                                    <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                         viewBox="0 0 16 17"><title>Auction</title>
-                                        <path d="M15.53,14.87,9,8.4a21.27,21.27,0,0,0,1.77-2.15.74.74,0,0,0,.93-1.15L7,.47A.75.75,0,1,0,5.95,1.53l.2.2A19.21,19.21,0,0,0,1.43,6.4a.74.74,0,0,0-1,.07.75.75,0,0,0,0,1.06l4.66,4.63A.75.75,0,1,0,6.19,11.1L6,11A17.63,17.63,0,0,0,7.9,9.46l6.57,6.48a.75.75,0,1,0,1.05-1.07ZM5,9.89,2.51,7.45h0A17.71,17.71,0,0,1,7.19,2.83l0,0L9.66,5.23a.72.72,0,0,0-.15.14A17.78,17.78,0,0,1,5,9.89Z"/>
-                                        <path d="M6.49,14.65H1.61a.75.75,0,1,0,0,1.5H6.49a.75.75,0,1,0,0-1.5Z"/>
-                                    </svg>
-                                </div>
-                                <div class="bet-item-description">
-                                    <div class="bet-item-price">490250</div>
-                                    <div class="bet-item-time">5 минут назад</div>
-                                </div>
-                            </div>
-                            <div class="bet-item">
-                                <div class="bet-item-svg">
-                                    <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                         viewBox="0 0 16 17"><title>Auction</title>
-                                        <path d="M15.53,14.87,9,8.4a21.27,21.27,0,0,0,1.77-2.15.74.74,0,0,0,.93-1.15L7,.47A.75.75,0,1,0,5.95,1.53l.2.2A19.21,19.21,0,0,0,1.43,6.4a.74.74,0,0,0-1,.07.75.75,0,0,0,0,1.06l4.66,4.63A.75.75,0,1,0,6.19,11.1L6,11A17.63,17.63,0,0,0,7.9,9.46l6.57,6.48a.75.75,0,1,0,1.05-1.07ZM5,9.89,2.51,7.45h0A17.71,17.71,0,0,1,7.19,2.83l0,0L9.66,5.23a.72.72,0,0,0-.15.14A17.78,17.78,0,0,1,5,9.89Z"/>
-                                        <path d="M6.49,14.65H1.61a.75.75,0,1,0,0,1.5H6.49a.75.75,0,1,0,0-1.5Z"/>
-                                    </svg>
-                                </div>
-                                <div class="bet-item-description">
-                                    <div class="bet-item-price">490250</div>
-                                    <div class="bet-item-time">5 минут назад</div>
-                                </div>
-                            </div>
-                            <div class="bet-item">
-                                <div class="bet-item-svg">
-                                    <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                         viewBox="0 0 16 17"><title>Auction</title>
-                                        <path d="M15.53,14.87,9,8.4a21.27,21.27,0,0,0,1.77-2.15.74.74,0,0,0,.93-1.15L7,.47A.75.75,0,1,0,5.95,1.53l.2.2A19.21,19.21,0,0,0,1.43,6.4a.74.74,0,0,0-1,.07.75.75,0,0,0,0,1.06l4.66,4.63A.75.75,0,1,0,6.19,11.1L6,11A17.63,17.63,0,0,0,7.9,9.46l6.57,6.48a.75.75,0,1,0,1.05-1.07ZM5,9.89,2.51,7.45h0A17.71,17.71,0,0,1,7.19,2.83l0,0L9.66,5.23a.72.72,0,0,0-.15.14A17.78,17.78,0,0,1,5,9.89Z"/>
-                                        <path d="M6.49,14.65H1.61a.75.75,0,1,0,0,1.5H6.49a.75.75,0,1,0,0-1.5Z"/>
-                                    </svg>
-                                </div>
-                                <div class="bet-item-description">
-                                    <div class="bet-item-price">490250</div>
-                                    <div class="bet-item-time">5 минут назад</div>
-                                </div>
-                            </div>
-                            <div class="bet-item">
-                                <div class="bet-item-svg">
-                                    <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                         viewBox="0 0 16 17"><title>Auction</title>
-                                        <path d="M15.53,14.87,9,8.4a21.27,21.27,0,0,0,1.77-2.15.74.74,0,0,0,.93-1.15L7,.47A.75.75,0,1,0,5.95,1.53l.2.2A19.21,19.21,0,0,0,1.43,6.4a.74.74,0,0,0-1,.07.75.75,0,0,0,0,1.06l4.66,4.63A.75.75,0,1,0,6.19,11.1L6,11A17.63,17.63,0,0,0,7.9,9.46l6.57,6.48a.75.75,0,1,0,1.05-1.07ZM5,9.89,2.51,7.45h0A17.71,17.71,0,0,1,7.19,2.83l0,0L9.66,5.23a.72.72,0,0,0-.15.14A17.78,17.78,0,0,1,5,9.89Z"/>
-                                        <path d="M6.49,14.65H1.61a.75.75,0,1,0,0,1.5H6.49a.75.75,0,1,0,0-1.5Z"/>
-                                    </svg>
-                                </div>
-                                <div class="bet-item-description">
-                                    <div class="bet-item-price">490250</div>
-                                    <div class="bet-item-time">1 час назад</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="btn btn-accent btn-round">Разместить авто</button>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 
 <section class="footer">
@@ -583,6 +550,7 @@
     </div>
 </section>
 
+<a class="logInPopup" href="#logIn-modal">Log in</a>
 
 <div id="logIn-modal" class="popup-content login-popup mfp-hide">
     <div class="popup-header clearfix">
@@ -618,6 +586,7 @@
         <button class="btn btn-popup btn-accent">готово</button>
     </div>
 </div>
+
 
 <div id="profSet-modal" class="popup-content profile-popup mfp-hide">
     <a class="popup-modal-dismiss" href="#" id="popup-close">
@@ -676,7 +645,43 @@
     </div>
 </div>
 
-<div id="rate-modal" class="popup-content profile-popup mfp-hide">
+<div id="logIn-modal" class="popup-content login-popup mfp-hide">
+    <div class="popup-header clearfix">
+        <div class="popup-tab br-right active">
+            <div class="popup-tab-num">1</div>
+            <div class="popup-tab-text">Ввод номера</div>
+        </div>
+        <div class="popup-tab br-right">
+            <div class="popup-tab-num">2</div>
+            <div class="popup-tab-text">Проверка номера</div>
+        </div>
+        <a class="popup-modal-dismiss" href="#" id="popup-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 class="feather feather-x">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </a>
+    </div>
+    <div class="popup-tab-content" id="phoneCheckTab">
+        <div class="popup-title">Авторизация</div>
+        <div class="popup-subtitle">Чтобы войти в систему, укажите номер елефона</div>
+        <input type="text" id="logInPhone" class="form-control popoup-phone" placeholder="380">
+        <button class="btn btn-popup btn-accent" id="phoneEnter">вход</button>
+    </div>
+
+    <div class="popup-tab-content" id="codeCheckTab">
+        <div class="popup-title">Авторизация</div>
+        <div class="popup-subtitle">На ваш телефон будет отправлено СМС с кодом подтверждения</div>
+        <input type="text" id="logInPhoneConfirm" class="form-control popoup-phone popoup-phone-confirm"
+               placeholder="0000">
+        <button class="btn btn-popup btn-accent">готово</button>
+    </div>
+</div>
+
+
+<div id="profSet-modal" class="popup-content profile-popup mfp-hide">
     <a class="popup-modal-dismiss" href="#" id="popup-close">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -686,20 +691,53 @@
         </svg>
     </a>
     <div class="profile-set-wrapper">
-        <div class="popup-title">Подтвердите ставку</div>
-        <div class="popup-subtitle">Подтверждая вашу цену, Вы обязуетесь купить автомобиль в случае победы</div>
-        <div class="rate-confirm">
-            <div class="sidebar-price-value sidebar-price-auction-value">
-                <div class="price-control incr-price">+</div>
-                <input class="auction-price" id="auction-value2" readonly="readonly" value="590000">
-                <div class="price-control decr-price">-</div>
+        <div class="popup-title">Настройки профиля</div>
+        <div class="profile-set-img">
+            <svg id="target" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>User</title>
+                <path d="M12,8a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,12,8Zm0,4a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,12Z"/>
+                <path d="M12,5a7,7,0,1,0,7,7A7,7,0,0,0,12,5ZM8.6,16.94a5.09,5.09,0,0,1,.22-.54,3.58,3.58,0,0,1,6.37.09c.07.15.13.31.19.47A6.06,6.06,0,0,1,12,18,6,6,0,0,1,8.6,16.94Zm7.58-.65c0-.08-.06-.18-.11-.27A4.57,4.57,0,0,0,8,15.92a2.28,2.28,0,0,0-.15.36,6,6,0,1,1,8.38,0Z"/>
+            </svg>
+            <a href="#">Добавить фото</a>
+        </div>
+        <div class="profile-set">
+            <div class="profile-set__title">имя</div>
+            <div class="prof-set prof-set__name">
+                <input type="text" class="set-input" placeholder="Укажите ваше имя">
+            </div>
+            <div class="profile-set__title">фамилия</div>
+            <div class="prof-set prof-set__lname">
+                <input type="text" class="set-input" placeholder="Укажите вашу фамилию">
+            </div>
+            <div class="profile-set__title">область</div>
+            <div class="prof-set prof-set__region">
+                <select class="js-select">
+                    <option value="KY">Киевская</option>
+                    <option value="CH">Черниговская</option>
+                    <option value="LV">Львовская</option>
+                    <option value="KH">Харьковская</option>
+                </select>
+            </div>
+            <div class="profile-set__title">город</div>
+            <div class="prof-set prof-set__city">
+                <select class="js-select">
+                    <option value="KY">Киев</option>
+                    <option value="CH">Чернигов</option>
+                    <option value="LV">Львов</option>
+                    <option value="KH">Харьков</option>
+                    <option value="LU">Луганск</option>
+                </select>
+            </div>
+            <div class="profile-set__title">e-mail</div>
+            <div class="prof-set prof-set__email">
+                <input type="text" class="set-input" placeholder="Укажите e-mail">
             </div>
         </div>
         <div class="popup-btn-wrapper">
-            <button class="btn btn-accent btn-round">Сделать ставку</button>
+            <button class="btn btn-popup btn-accent">сохранить</button>
         </div>
     </div>
 </div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="plugins/bootstrap/js/bootstrap.min.js"></script>

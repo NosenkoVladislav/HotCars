@@ -546,6 +546,14 @@ body {
     color: var(--mainRed);
 }
 
+.auction-item-title:hover,
+.auction-item-title:active,
+.auction-item-title:visited,
+.auction-item-title:focus{
+    color: var(--mainRed);
+    text-decoration: none;
+}
+
 .auction-item-subtitle {
     color: var(--regGtey);
     display: inline-block;
@@ -657,7 +665,7 @@ body {
 .show-filters {
     display: none;
     padding: 10px 15px;
-    width: 155px;
+    width: 160px;
     text-align: center;
 }
 
@@ -669,7 +677,7 @@ body {
     position: fixed;
     z-index: 9;
     top: 5px;
-    left: 12px;
+    left: 10px;
 }
 
 .filters {
@@ -1723,6 +1731,16 @@ body {
     border-bottom: 1px solid var(--regGtey);
 }
 
+
+.advert-opt-list .advert-opt-input {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.advert-opt-list__curr .advert-opt-list-item {
+    margin-bottom: 0;
+}
+
 .advert-radio {
     display: none;
 }
@@ -1765,11 +1783,13 @@ body {
 }
 
 .dz-image {
-    object-fit: cover;
+    height: 100%;
 }
 
 .dz-image img {
     width: 100%;
+    height: inherit;
+    object-fit: cover;
 }
 
 .dz-preview {
@@ -1839,7 +1859,8 @@ body {
 .btn-change-req,
 .btn-change-req:hover,
 .btn-change-req:focus {
-    padding: 10px 43px;
+    padding: 10px 0px;
+    width: 100%;
     background-color: var(--regGtey);
     text-transform: uppercase;
     color: #fff;
@@ -2041,4 +2062,30 @@ body {
 
 .bet-byers-list .bet-item-description {
     margin-left: 10px;
+}
+
+.auction-item-like-svg svg:hover {
+    animation: hurtDance 1s infinite;
+}
+
+@keyframes hurtDance {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(-10deg) scale(1.1);
+    }
+
+    50% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    75% {
+        transform: rotate(10deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
 }
