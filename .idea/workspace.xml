@@ -3,19 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a7e978ac-c309-4601-8880-a0d000bc6cc3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/advert.html" afterPath="$PROJECT_DIR$/advert-sale.html" />
+      <change beforePath="$PROJECT_DIR$/advert-auction.html" afterPath="$PROJECT_DIR$/advert-auction.html" />
+      <change beforePath="$PROJECT_DIR$/advert-sale.html" afterPath="$PROJECT_DIR$/advert-sale.html" />
       <change beforePath="$PROJECT_DIR$/auction-list.html" afterPath="$PROJECT_DIR$/auction-list.html" />
       <change beforePath="$PROJECT_DIR$/css/media-queries.css" afterPath="$PROJECT_DIR$/css/media-queries.css" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
       <change beforePath="$PROJECT_DIR$/my-cars-auction.html" afterPath="$PROJECT_DIR$/my-cars-auction.html" />
       <change beforePath="$PROJECT_DIR$/my-cars-rates.html" afterPath="$PROJECT_DIR$/my-cars-rates.html" />
       <change beforePath="$PROJECT_DIR$/my-cars-sales.html" afterPath="$PROJECT_DIR$/my-cars-sales.html" />
       <change beforePath="$PROJECT_DIR$/open-car-auction.html" afterPath="$PROJECT_DIR$/open-car-auction.html" />
-      <change beforePath="$PROJECT_DIR$/open-car-my-auction.html" afterPath="$PROJECT_DIR$/open-car-my-auction.html" />
       <change beforePath="$PROJECT_DIR$/open-car.html" afterPath="$PROJECT_DIR$/open-car.html" />
-      <change beforePath="$PROJECT_DIR$/requests-page.html" afterPath="$PROJECT_DIR$/requests-page.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,110 +27,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="advert-sale.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/advert-sale.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="172" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="754" selection-end-column="7" />
-              <folding>
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="advert-auction.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/advert-auction.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="377" column="115" lean-forward="false" selection-start-line="377" selection-start-column="115" selection-end-line="377" selection-end-column="115" />
-              <folding>
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="1044" column="55" lean-forward="false" selection-start-line="1044" selection-start-column="50" selection-end-line="1044" selection-end-column="55" />
-              <folding>
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#6;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auction-list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auction-list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="78" column="54" lean-forward="false" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="54" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="439" column="3" lean-forward="false" selection-start-line="439" selection-start-column="3" selection-end-line="439" selection-end-column="3" />
+            <state relative-caret-position="350">
+              <caret line="424" column="53" lean-forward="true" selection-start-line="424" selection-start-column="53" selection-end-line="424" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requests-page.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requests-page.html">
+      <file leaf-file-name="media-queries.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/media-queries.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="191" column="44" lean-forward="false" selection-start-line="191" selection-start-column="44" selection-end-line="191" selection-end-column="69" />
+            <state relative-caret-position="350">
+              <caret line="56" column="28" lean-forward="false" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="673" column="15" lean-forward="false" selection-start-line="673" selection-start-column="15" selection-end-line="673" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-cars-rates.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-cars-rates.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="199" column="44" lean-forward="false" selection-start-line="199" selection-start-column="44" selection-end-line="199" selection-end-column="44" />
               <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media-queries.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/media-queries.css">
+      <file leaf-file-name="my-cars-sales.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-cars-sales.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="852">
-              <caret line="355" column="1" lean-forward="false" selection-start-line="355" selection-start-column="1" selection-end-line="355" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="492">
+              <caret line="232" column="50" lean-forward="false" selection-start-line="232" selection-start-column="50" selection-end-line="232" selection-end-column="50" />
+              <folding>
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+      <file leaf-file-name="my-cars-auction.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-cars-auction.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="1737" column="1" lean-forward="false" selection-start-line="1737" selection-start-column="1" selection-end-line="1737" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="621">
+              <caret line="232" column="63" lean-forward="false" selection-start-line="232" selection-start-column="63" selection-end-line="232" selection-end-column="63" />
+              <folding>
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,36 +109,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dz</find>
-      <find>slider-pr</find>
-      <find>input</find>
-      <find>slider</find>
-      <find>.filter-input</find>
-      <find>aminate</find>
-      <find>range</find>
-      <find>i</find>
-      <find>fixed-</find>
-      <find>.navbar.navbar-fixed-top</find>
-      <find>настройки</find>
-      <find>filtersBtn</find>
-      <find>fixed-top</find>
-      <find>open</find>
-      <find>.auction-item-title</find>
-      <find>open-car</find>
-      <find>аукционы</find>
-      <find>height</find>
-      <find>drop</find>
-      <find>.dz-image</find>
-      <find>filter-content</find>
-      <find>filters</find>
-      <find>.btn-change-req</find>
-      <find>.form-contro</find>
-      <find>form-</find>
-      <find>form-control</find>
-      <find>advert</find>
-      <find>.advert-opt-input</find>
-      <find>продажа</find>
       <find>укажите сто</find>
+      <find>по жел</find>
+      <find>advert-opt__long</find>
+      <find>490250</find>
+      <find>не</find>
+      <find>/images/6</find>
+      <find>show</find>
+      <find>slick</find>
+      <find>form-control</find>
+      <find>year-</find>
+      <find>price-</find>
+      <find>drop</find>
+      <find>dz</find>
+      <find>топл</find>
+      <find>dZup</find>
+      <find>advert-opt-input</find>
+      <find>.dropzone</find>
+      <find>.btn-round</find>
+      <find>.open-car-slider-control</find>
+      <find>998</find>
+      <find>offset</find>
+      <find>advert-btn</find>
+      <find>advert-type</find>
+      <find>page-show-filter-svg</find>
+      <find>.my-rate-cars-content .auction-item-img .pic-counter</find>
+      <find>navbar-fixed-top</find>
+      <find>.navbar.navbar-fixed-top</find>
+      <find>show-filters</find>
+      <find>show-</find>
+      <find>.show-filters.fixed-top</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,21 +158,21 @@
         <option value="$PROJECT_DIR$/my-cars-rate.html" />
         <option value="$PROJECT_DIR$/assets/images/image.svg" />
         <option value="$PROJECT_DIR$/assets/images/chevrons-right.svg" />
-        <option value="$PROJECT_DIR$/my-cars-auction.html" />
-        <option value="$PROJECT_DIR$/my-cars-rates.html" />
-        <option value="$PROJECT_DIR$/my-cars-sales.html" />
-        <option value="$PROJECT_DIR$/open-car.html" />
         <option value="$PROJECT_DIR$/open-car-my-auction.html" />
-        <option value="$PROJECT_DIR$/open-car-auction.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/auction-list.html" />
         <option value="$PROJECT_DIR$/requests-page.html" />
-        <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/advert.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/advert-sale.html" />
         <option value="$PROJECT_DIR$/advert-auction.html" />
+        <option value="$PROJECT_DIR$/open-car-auction.html" />
+        <option value="$PROJECT_DIR$/auction-list.html" />
+        <option value="$PROJECT_DIR$/js/common.js" />
+        <option value="$PROJECT_DIR$/open-car.html" />
+        <option value="$PROJECT_DIR$/my-cars-rates.html" />
+        <option value="$PROJECT_DIR$/my-cars-auction.html" />
+        <option value="$PROJECT_DIR$/my-cars-sales.html" />
         <option value="$PROJECT_DIR$/css/media-queries.css" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -322,18 +281,18 @@
       <workItem from="1527774497763" duration="135146000" />
       <workItem from="1528467679511" duration="94820000" />
       <workItem from="1529064902492" duration="5193000" />
-      <workItem from="1529075022337" duration="37237000" />
+      <workItem from="1529075022337" duration="52829000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272396000" />
+    <option name="totallyTimeSpent" value="287988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14646997" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -559,58 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/open-car-auction.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="713" column="36" lean-forward="false" selection-start-line="713" selection-start-column="36" selection-end-line="713" selection-end-column="36" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/open-car.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="597" column="36" lean-forward="false" selection-start-line="597" selection-start-column="36" selection-end-line="597" selection-end-column="36" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-cars-sales.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="844" column="0" lean-forward="true" selection-start-line="844" selection-start-column="0" selection-end-line="844" selection-end-column="0" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-cars-auction.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="906" column="36" lean-forward="false" selection-start-line="906" selection-start-column="36" selection-end-line="906" selection-end-column="36" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my-cars-rates.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="173" column="53" lean-forward="false" selection-start-line="173" selection-start-column="53" selection-end-line="173" selection-end-column="53" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requests-page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -622,24 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auction-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="78" column="54" lean-forward="false" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="54" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="439" column="3" lean-forward="false" selection-start-line="439" selection-start-column="3" selection-end-line="439" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../HotCars-Master/hotcar/resources/views/layouts/web/web-base.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -648,10 +537,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/advert-auction.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="377" column="115" lean-forward="false" selection-start-line="377" selection-start-column="89" selection-end-line="377" selection-end-column="115" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/open-car-auction.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="238" column="60" lean-forward="true" selection-start-line="238" selection-start-column="60" selection-end-line="238" selection-end-column="60" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="1044" column="55" lean-forward="false" selection-start-line="1044" selection-start-column="50" selection-end-line="1044" selection-end-column="55" />
+        <state relative-caret-position="60">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="17" selection-end-column="72" />
           <folding>
             <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -663,18 +586,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="1737" column="1" lean-forward="false" selection-start-line="1737" selection-start-column="1" selection-end-line="1737" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/advert-sale.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="172" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="754" selection-end-column="7" />
+        <state relative-caret-position="550">
+          <caret line="229" column="30" lean-forward="true" selection-start-line="229" selection-start-column="30" selection-end-line="229" selection-end-column="30" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -687,26 +602,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/advert-auction.html">
+    <entry file="file://$PROJECT_DIR$/open-car.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="377" column="115" lean-forward="false" selection-start-line="377" selection-start-column="115" selection-end-line="377" selection-end-column="115" />
+        <state relative-caret-position="292">
+          <caret line="238" column="43" lean-forward="true" selection-start-line="238" selection-start-column="43" selection-end-line="238" selection-end-column="43" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-cars-rates.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="199" column="44" lean-forward="false" selection-start-line="199" selection-start-column="44" selection-end-line="199" selection-end-column="44" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-cars-auction.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="232" column="63" lean-forward="false" selection-start-line="232" selection-start-column="63" selection-end-line="232" selection-end-column="63" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-cars-sales.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="232" column="50" lean-forward="false" selection-start-line="232" selection-start-column="50" selection-end-line="232" selection-end-column="50" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="424" column="53" lean-forward="true" selection-start-line="424" selection-start-column="53" selection-end-line="424" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/media-queries.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="355" column="1" lean-forward="false" selection-start-line="355" selection-start-column="1" selection-end-line="355" selection-end-column="1" />
+        <state relative-caret-position="350">
+          <caret line="56" column="28" lean-forward="false" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="673" column="15" lean-forward="false" selection-start-line="673" selection-start-column="15" selection-end-line="673" selection-end-column="15" />
           <folding />
         </state>
       </provider>

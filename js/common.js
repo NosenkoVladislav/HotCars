@@ -279,7 +279,7 @@ $(function () {
     });
 });
 //dropzone initialization
-$(document).ready(function () {
+$(function () {
     Dropzone.autoDiscover = false;
     $("#dZUpload").dropzone({
         url: "hn_SimpeFileUploader.ashx",
@@ -303,7 +303,7 @@ $(document).ready(function () {
                     $('.dropzone').css({
                         'border': 'none',
                         'justify-content': 'unset'
-                    })
+                    });
                 }
             });
         }
@@ -315,13 +315,12 @@ Dropzone.options.dZUpload = {
     clickable: "#uploadIcon",
     thumbnailWidth:"250",
     thumbnailHeight:"250",
-
     init: function () {
         this.on("complete", function (data) {
             var res = eval('(' + data.xhr.responseText + ')');
             $('#newImage').text(res.Message);
         });
-        this.on("maxfilesexceeded", function (data) {
+        dr.on("maxfilesexceeded", function (data) {
             this.removeFile(data);
         });
     }
@@ -455,4 +454,36 @@ $(function () {
         }
     });
 });
+//bet list alignment
+$(function () {
+    carBlock = $('.open-car');
+    betList = $('.bet-list');
+
+    var cHeight = carBlock.outerHeight();
+    var bHeight = betList.outerHeight();
+    if(bHeight > cHeight/3) {
+        betList.css({
+            'maxHeight' : cHeight/2.41,
+            'overflowY' : 'scroll'
+        })
+    }
+})
+//slider img width fix
+$(function () {
+    nav = $('.open-car-slider-nav');
+    track = $('.open-car-slider-nav').find('.slick-track');
+    img = $('.open-car-slider-nav').find('.slick-slide');
+
+    if(track.find('div').length < 5) {
+        track.css({
+            'width' : '100%'
+        });
+        img.css({
+            'width': '35%'
+        })
+    }
+});
+
+
+
 

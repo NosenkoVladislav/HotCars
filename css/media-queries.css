@@ -73,6 +73,10 @@
         width: 50%;
     }
 
+    .sidebar-price {
+        margin-bottom: 30px;
+    }
+
 }
 
 @media only screen and (min-width : 768px) {
@@ -101,7 +105,7 @@
     }
 
     .navbar.navbar-fixed-top {
-        z-index: 9;
+        z-index: 50;
     }
 
     .navbar .container-fluid .navbar-brand-sm {
@@ -336,6 +340,31 @@
         width: 70%;
     }
 
+    .popup-content {
+        width: auto;
+    }
+
+    .profile-set-wrapper {
+        padding: 15px;
+    }
+
+    .profile-set {
+        width: 100%;
+        float: none;
+    }
+
+    .profile-set-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column
+    }
+
+    .advert-type-select .advert-btn {
+        padding: 10px 5px;;
+    }
+
 }
 
 @media only screen and (max-width : 475px) {
@@ -353,4 +382,36 @@
         margin-right: 0;
         margin-bottom: 10px;
     }
+
+    .popup-tab {
+        padding: 15px 5px;
+    }
+
+    .popup-tab-num {
+        margin-right: 2px;
+    }
+
+    .popup-modal-dismiss {
+        margin: 13px 5px 13px 0;
+    }
+
+    .btn-popup {
+        width: 100%;
+    }
+
+    .btn-round {
+        padding: 10px;
+    }
+
+    .advert-type-select {
+        flex-direction: column;
+    }
+
+    .advert-type-select .advert-btn {
+        padding: 5px 10px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    
 }
