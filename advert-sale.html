@@ -213,7 +213,7 @@
                 <div class="advert-content clearfix">
                     <div class="advert-opt advert-opt__long">
                         <div class="advert-opt-name">фото</div>
-                        <div class="advert-counter-value">6</div>
+                        <div class="advert-counter-value">0</div>
                         <div class="advert-fileupload">
                             <div id="dZUpload" class="dropzone">
                                 <div class="upload-space dz-preview dz-processing dz-error dz-complete dz-image-preview" id="uploadIcon">
@@ -243,7 +243,7 @@
                     <div class="advert-opt">
                         <div class="advert-opt-name">модель</div>
                         <div class="advert-opt-select">
-                            <select class="js-select">
+                            <select class="js-selec filter-model-select-2">
                                 <option value="KY">Киевская</option>
                                 <option value="CH">Черниговская</option>
                                 <option value="LV">Львовская</option>
@@ -265,7 +265,7 @@
                     <div class="advert-opt">
                         <div class="advert-opt-name">пробег</div>
                         <div class="advert-counter-value">км</div>
-                        <input type="text" class="advert-opt-input" placeholder="Укажите пробег">
+                        <input type="text" class="advert-opt-input advert-opt-input__num" placeholder="Укажите пробег">
                     </div>
                     <div class="advert-opt">
                         <div class="advert-opt-name">область</div>
@@ -325,7 +325,7 @@
                         <div class="advert-opt">
                             <div class="advert-opt-name">пробег</div>
                             <div class="advert-counter-value">км</div>
-                            <input type="text" class="advert-opt-input" placeholder="Укажите объем двигателя">
+                            <input type="text" class="advert-opt-input advert-opt-input__num" placeholder="Укажите объем двигателя">
                         </div>
                     <div class="advert-opt">
                         <div class="advert-opt-name">цвет</div>
@@ -375,7 +375,7 @@
                         <div class="advert-opt-name">стоимость</div>
                         <div class="advert-counter-value">грн</div>
                         <div class="advert-opt-list advert-opt-list__curr">
-                            <input type="text" class="advert-opt-input" placeholder="Укажите стоимость">
+                            <input type="text" class="advert-opt-input advert-opt-input__num" placeholder="Укажите стоимость">
                             <input type="radio" class="advert-radio" id="currUSD" name="advertCurrency">
                             <label for="currUSD" class="advert-opt-list-item">USD</label>
                             <input type="radio" class="advert-radio" id="currUAH" name="advertCurrency">
@@ -387,7 +387,7 @@
                 </div>
             </div>
              <div class="btn__more">
-                 <button class="btn btn-accent btn-round">Разместить авто</button>
+                 <button class="btn btn-accent btn-round" id="advertPost">Разместить авто</button>
              </div>
         </div>
     </div>

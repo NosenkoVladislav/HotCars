@@ -95,6 +95,11 @@ $(function() {
     $('.page-show-select').select2({
         minimumResultsForSearch: -1
     });
+
+    $('.filter-model-select-2').select2({
+        placeholder: 'Выберите модель',
+        allowClear: true
+    });
 });
 //filters range slider
 $(function() {
@@ -282,19 +287,22 @@ $(function () {
 $(function () {
     Dropzone.autoDiscover = false;
     $("#dZUpload").dropzone({
-        url: "hn_SimpeFileUploader.ashx",
+        url: "http://hotcar-dev.wayappdevelopment.tech/adverts/new",
         addRemoveLinks: true,
-        success: function (file, response) {
-            var imgName = response;
-            file.previewElement.classList.add("dz-success");
-            console.log("Successfully uploaded :" + imgName);
-        },
-        error: function (file, response) {
-            file.previewElement.classList.add("dz-error");
-        },
-        init: function () {
-            this.on("complete", function (file) {
-                if (this.getUploadingFiles().length === 0 && this.getQueuedFiles().length === 0) {
+        autoProcessQueue: false,
+        init:
+            function () {
+                this.on("addedfile",function () {
+                    var images = this.element.childNodes.length;
+                    var counter = $('.advert-counter-value');
+                    counter.html(images-4);
+
+                    var usedInput = this.hiddenFileInput;
+                    setTimeout(() => {
+                        $('#form').append(usedInput);
+                        usedInput.name = "image[]";
+                    }, 0);
+
                     $('.upload-space').css({
                         'border': '1px dashed var(--mainRed)',
                         'width': '17.5%',
@@ -304,9 +312,30 @@ $(function () {
                         'border': 'none',
                         'justify-content': 'unset'
                     });
-                }
-            });
-        }
+
+                });
+
+                this.on("removedfile",function () {
+                    var images = this.element.childNodes.length;
+                    var counter = $('.advert-counter-value');
+                    counter.html(images-4);
+                });
+
+                var Dropzone = this;
+                $("#advertPost").click(function (e) {
+                    e.preventDefault();
+                    Dropzone.processQueue();
+                });
+                this.on('sending', function (file, xhr, formData) {
+                    // Append all form inputs to the formData Dropzone will POST
+                    console.log(file)
+                    var data = $('#frmTarget').serializeArray();
+                    $.each(data, function (key, el) {
+                        formData.append(el.name, el.value);
+                    });
+                })
+
+            }
     });
 });
 //dropzone param
@@ -315,6 +344,7 @@ Dropzone.options.dZUpload = {
     clickable: "#uploadIcon",
     thumbnailWidth:"250",
     thumbnailHeight:"250",
+    uploadMultiple:true,
     init: function () {
         this.on("complete", function (data) {
             var res = eval('(' + data.xhr.responseText + ')');
@@ -483,6 +513,15 @@ $(function () {
         })
     }
 });
+//input validation
+$(function () {
+    $('.advert-opt-input__num').keydown(function (e) {
+        var pressed = e.which;
+        if(pressed > 31 && (pressed < 48 || pressed > 57) && (pressed < 96 || pressed > 105)) {
+            return false
+        }
+    })
+})
 
 
 
