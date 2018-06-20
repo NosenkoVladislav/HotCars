@@ -1339,7 +1339,7 @@ body {
 }
 
 .seller-img {
-    width: 30%;
+    width: 50px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -1349,6 +1349,7 @@ body {
 
 .seller-img img {
     width: 100%;
+    height: 50px;
 }
 
 .seller-description {
@@ -1480,7 +1481,6 @@ body {
 
 .bet-item {
     display: flex;
-    align-items: center;
     padding: 10px 17px;
 }
 

@@ -3,6 +3,10 @@
         width: 100%;
     }
 
+    .sidebar-block {
+        padding: 15px;
+    }
+
     .sidebar-seller-svg {
         padding: 0;
     }
@@ -10,6 +14,10 @@
     .sidebar-seller__owner .seller-img {
         height: 100px;
         width: 100px;
+    }
+
+    .sidebar-price-btn .btn {
+        padding: 10px;
     }
 
 }
@@ -202,6 +210,10 @@
         margin-right: 10px;
     }
 
+    .sidebar-price-btn .btn {
+        width: 50%;
+    }
+
     .page-title-wrapper__advert .page-title {
         font-size: 1.6em;
     }
@@ -219,6 +231,18 @@
         margin-bottom: 10px;
     }
 
+    .timer-item {
+        width: 20%;
+    }
+
+    .bet-story {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .sidebar-price {
+        margin-bottom: 10px;
+    }
 
 }
 
@@ -365,6 +389,10 @@
         padding: 10px 5px;;
     }
 
+    .sidebar-price-btn .btn {
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width : 475px) {
@@ -413,5 +441,4 @@
         -moz-border-radius: 0;
         border-radius: 0;
     }
-    
 }
