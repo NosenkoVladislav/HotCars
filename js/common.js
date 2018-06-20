@@ -90,15 +90,10 @@ $(function() {
         placeholder: 'Выберите тип'
     });
     $('.filter-color-select').select2({
-        placeholder: 'Выберите тип'
+        placeholder: 'Выберите цвет'
     });
     $('.page-show-select').select2({
         minimumResultsForSearch: -1
-    });
-
-    $('.filter-model-select-2').select2({
-        placeholder: 'Выберите модель',
-        allowClear: true
     });
 });
 //filters range slider
