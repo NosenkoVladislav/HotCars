@@ -412,12 +412,12 @@ $(document).ready( function() {
     }
 
 
-    $('.show-filters').click(function () {
-        $('.filters').slideToggle('slow');
-        $('body, html').animate({
-            scrollTop: 0
-        }, 300);
-    });
+    // $('.show-filters').click(function () {
+    //     $('.filters').slideToggle('slow');
+    //     $('body, html').animate({
+    //         scrollTop: 0
+    //     }, 300);
+    // });
 
     // $(".show-filters").click(function(){
     //
@@ -463,22 +463,22 @@ $(".form-control").on('click', function (e) {
     }
 });
 //toggle logo/filters btn
-// $(function () {
-//     filter = $('.show-filters');
-//     $(window).scroll(function (event) {
-//         var scroll = $(window).scrollTop();
-//         // var smLogo = $('.navbar-brand-sm');
-//         if ($(window).width() < 768) {
-//             if (scroll > 20) {
-//                 filter.addClass('fixed-top');
-//                 // smLogo.fadeOut(0.1);
-//             } else {
-//                 filter.removeClass('fixed-top');
-//                 // smLogo.fadeIn(0.1);
-//             }
-//         }
-//     });
-// });
+$(function () {
+    filter = $('.show-filters');
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        // var smLogo = $('.navbar-brand-sm');
+        if ($(window).width() < 768) {
+            if (scroll > 20) {
+                filter.addClass('fixed-top');
+                // smLogo.fadeOut(0.1);
+            } else {
+                filter.removeClass('fixed-top');
+                // smLogo.fadeIn(0.1);
+            }
+        }
+    });
+});
 //bet list alignment
 $(function () {
     carBlock = $('.open-car');

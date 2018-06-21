@@ -16,6 +16,10 @@
         width: 100px;
     }
 
+    .sidebar-seller__owner .seller-img img {
+        height: 100%;
+    }
+
     .sidebar-price-btn .btn {
         padding: 10px;
     }
