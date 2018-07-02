@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7e978ac-c309-4601-8880-a0d000bc6cc3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/media-queries.css" afterPath="$PROJECT_DIR$/css/media-queries.css" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
       <change beforePath="$PROJECT_DIR$/requests-page.html" afterPath="$PROJECT_DIR$/requests-page.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -37,21 +33,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requests-page.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="requests-page.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requests-page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="190" column="43" lean-forward="false" selection-start-line="190" selection-start-column="43" selection-end-line="190" selection-end-column="43" />
+            <state relative-caret-position="592">
+              <caret line="222" column="86" lean-forward="false" selection-start-line="222" selection-start-column="86" selection-end-line="222" selection-end-column="86" />
+              <caret line="231" column="86" lean-forward="false" selection-start-line="231" selection-start-column="86" selection-end-line="231" selection-end-column="86" />
+              <caret line="240" column="86" lean-forward="false" selection-start-line="240" selection-start-column="86" selection-end-line="240" selection-end-column="86" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="2057" column="23" lean-forward="false" selection-start-line="2057" selection-start-column="23" selection-end-line="2057" selection-end-column="23" />
+            <state relative-caret-position="670">
+              <caret line="2100" column="13" lean-forward="false" selection-start-line="2100" selection-start-column="13" selection-end-line="2100" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -90,7 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>seller-</find>
       <find>sidebar-seller__owner</find>
       <find>.sidebar-seller__owner .seller-img</find>
       <find>scroll</find>
@@ -120,6 +117,7 @@
       <find>requests</find>
       <find>.num-request.num-request</find>
       <find>.requests-sidebar--content</find>
+      <find>requests-sidebar--title</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,8 +153,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/css/media-queries.css" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/requests-page.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -288,12 +286,12 @@
       <workItem from="1529064902492" duration="5193000" />
       <workItem from="1529075022337" duration="77730000" />
       <workItem from="1529916674462" duration="36346000" />
-      <workItem from="1530256576673" duration="7362000" />
+      <workItem from="1530256576673" duration="9671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="356597000" />
+    <option name="totallyTimeSpent" value="358906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -332,20 +330,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/images/chevron-left-transparent.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="87" column="16" lean-forward="false" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.344/jQuery-File-Upload-master/index.html" />
     <entry file="file://$PROJECT_DIR$/plugins/jquery-file-upload/css/jquery.fileupload.css" />
     <entry file="file://$PROJECT_DIR$/assets/images/x.svg">
       <provider selected="true" editor-type-id="images">
@@ -609,18 +593,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="2057" column="23" lean-forward="false" selection-start-line="2057" selection-start-column="23" selection-end-line="2057" selection-end-column="23" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/assets/images/plus-circle.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/search.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/Request icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requests-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="190" column="43" lean-forward="false" selection-start-line="190" selection-start-column="43" selection-end-line="190" selection-end-column="43" />
+        <state relative-caret-position="592">
+          <caret line="222" column="86" lean-forward="false" selection-start-line="222" selection-start-column="86" selection-end-line="222" selection-end-column="86" />
+          <caret line="231" column="86" lean-forward="false" selection-start-line="231" selection-start-column="86" selection-end-line="231" selection-end-column="86" />
+          <caret line="240" column="86" lean-forward="false" selection-start-line="240" selection-start-column="86" selection-end-line="240" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="2100" column="13" lean-forward="false" selection-start-line="2100" selection-start-column="13" selection-end-line="2100" selection-end-column="13" />
           <folding />
         </state>
       </provider>
