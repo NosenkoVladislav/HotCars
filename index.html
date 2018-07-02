@@ -143,19 +143,17 @@
                         </a>
                         <div class="pic-counter">12</div>
                     </li>
-                    <!--TODO-->
-                    <!--UNLOGIN USER ICON-->
-                    <!--<li class="link-grey">-->
-                        <!--<a href="#logIn-modal" class="logInPopup">-->
-                            <!--<div class="header-icon header-icon__unlogin">-->
-                                <!--<svg id="target" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">-->
-                                    <!--<path d="M12,8a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,12,8Zm0,4a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,12Z"/>-->
-                                    <!--<path d="M12,5a7,7,0,1,0,7,7A7,7,0,0,0,12,5ZM8.6,16.94a5.09,5.09,0,0,1,.22-.54,3.58,3.58,0,0,1,6.37.09c.07.15.13.31.19.47A6.06,6.06,0,0,1,12,18,6,6,0,0,1,8.6,16.94Zm7.58-.65c0-.08-.06-.18-.11-.27A4.57,4.57,0,0,0,8,15.92a2.28,2.28,0,0,0-.15.36,6,6,0,1,1,8.38,0Z"/>-->
-                                <!--</svg>-->
-                            <!--</div>-->
-                            <!--<span>Авторизация</span>-->
-                        <!--</a>-->
-                    <!--</li>-->
+                    <li class="link-grey">
+                        <a href="#logIn-modal" class="logInPopup">
+                            <div class="header-icon header-icon__unlogin">
+                                <svg id="target" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12,8a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,12,8Zm0,4a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,12Z"/>
+                                    <path d="M12,5a7,7,0,1,0,7,7A7,7,0,0,0,12,5ZM8.6,16.94a5.09,5.09,0,0,1,.22-.54,3.58,3.58,0,0,1,6.37.09c.07.15.13.31.19.47A6.06,6.06,0,0,1,12,18,6,6,0,0,1,8.6,16.94Zm7.58-.65c0-.08-.06-.18-.11-.27A4.57,4.57,0,0,0,8,15.92a2.28,2.28,0,0,0-.15.36,6,6,0,1,1,8.38,0Z"/>
+                                </svg>
+                            </div>
+                            <span>Авторизация</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -274,6 +272,25 @@
                             </div>
                         </div>
                         <div class="filter-item">
+                            <div class="filter-item-title clearfix">
+                                <span class="filter-item-name">пробег</span>
+                            </div>
+                            <div class="filter-item-content">
+                                <input type="text" placeholder="До(тыс.км)" class="filter-input filter-input-full">
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-item-title clearfix">
+                                <span class="filter-item-name">объем двигателя</span>
+                            </div>
+                            <div class="filter-item-content">
+                                <div class="filter-input-engine">
+                                    <input type="text" placeholder="От" class="filter-input filter-input-half">
+                                    <input type="text" placeholder="До" class="filter-input filter-input-half">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item">
                             <div class="filter-item-title filter-item-title__br clearfix">
                                 <span class="filter-item-name">топливо</span>
                                 <input class="filter-checkbox fliter-checkbox__all" type="checkbox" id="anyFuelFilter">
@@ -380,7 +397,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-9 col-lg-9">
+            <div class="col-md-9 col-lg-9">
                 <div class="auction-content">
                     <div class="page-title-wrapper">
                         <div class="page-title">
@@ -411,405 +428,407 @@
                             </select>
                         </div>
                     </div>
-                    <div class="auction-item">
-                        <a href='open-car.html' class="auction-item-img">
-                            <img src="assets/images/car-example.png" alt="auction car">
-                            <div class="pic-counter">
-                                <div class="pic-counter_value">2</div>
-                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 24 24"><title>
-                                    Image</title>
-                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
-                                    <circle cx="8.5" cy="9.5" r="1"/>
-                                </svg>
-                            </div>
-                        </a>
-                        <div class="auction-item-text">
-                            <a href='open-car.html' class="auction-item-title">Ford Edge Lux, 2017</a>
-                            <div class="auction-item-subtitle-wrapper">
-                                <div class="auction-item-subtitle auction-item-subtitle__city">Киев</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__date">11.03.2018</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__time">10:15</div>
-                            </div>
-                            <div class="auction-item-car-info-wrapper">
-                                <div class="auction-item-car-info auction-item-can-info__range">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 177.51 91.25"><title>probeg</title>
-                                            <path d="M89.54.67C40.79.67.79,40.67.79,89.42h12.5c0-41.88,34.38-76.25,76.25-76.25s76.25,34.37,76.25,76.25h12.5C178.92,40.67,138.92.67,89.54.67Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                            <path d="M97,83.8,114.54,45,75.79,62.55a15.65,15.65,0,0,0,7.5,29.38A14.84,14.84,0,0,0,97,83.8Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                        </svg>
-                                    </div>
-                                    <span>210 000 км</span>
+                    <div class="auction-items-wrapper">
+                        <div class="auction-item">
+                            <a href='open-car.html' class="auction-item-img">
+                                <img src="assets/images/car-example.png" alt="auction car">
+                                <div class="pic-counter">
+                                    <div class="pic-counter_value">2</div>
+                                    <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 24 24"><title>
+                                        Image</title>
+                                        <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
+                                        <circle cx="8.5" cy="9.5" r="1"/>
+                                    </svg>
                                 </div>
-                                <div class="auction-item-car-info auction-item-can-info__engine">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 159.5 114.76"><title>Dvig</title>
-                                            <path d="M155.19,33H134.31c-2.59,0-5.67,2.71-5.67,5v7.67h-7.33V37.6c0-1.72-1.71-2.87-3.33-3.22H107.23l-4.72-9.9a8.14,8.14,0,0,0-7.1-4.54H78.64V11.49H91.86c2.5,0,4.78-2.59,4.78-5.44C96.64,3.58,94.51.6,91.86.6h-36C53.36.6,51.08,3.2,51.08,6c0,2.47,2.13,5.44,4.78,5.44h15v8.44H54.08a8.55,8.55,0,0,0-6.93,4.41L42,33.06l-19-.46c-2.48,0-6.31,3.28-6.31,6.11V61.49H11.53V35.83a5.44,5.44,0,0,0-10.89,0v64a5.44,5.44,0,1,0,10.89,0V69.49h5.11V90.94C16.64,93.41,20.45,95,23,95H43.18l15.41,16.54c1.18,1.18,2.78,2.57,4.38,2.57h55.11c3.29,0,6.11-3.85,6.11-7V88.6h5.11v8.11c0,2.26,3,4.78,5,4.78h21.78c2.42,0,2.78-3,2.78-4.78V38C158.86,36,157.88,33,155.19,33ZM147.75,89.6h-.56v1h-7.44V77.72H113.08v25.56H65l-13.41-15-3.49-4.11H27.75V45H48.59l7.56-14.22H93.59l7.12,14.24,7.11.2,3-.34.22,11.67h28.24V43.72h8.44Z"/>
-                                        </svg>
-                                    </div>
-                                    <span>3.0 АМТ, 420 л.с.</span>
+                            </a>
+                            <div class="auction-item-text">
+                                <a href='open-car.html' class="auction-item-title">Ford Edge Lux, 2017</a>
+                                <div class="auction-item-subtitle-wrapper">
+                                    <div class="auction-item-subtitle auction-item-subtitle__city">Киев</div>
+                                    <div class="auction-item-subtitle auction-item-subtitle__date">11.03.2018</div>
+                                    <div class="auction-item-subtitle auction-item-subtitle__time">10:15</div>
                                 </div>
-                                <div class="auction-item-car-info auction-item-can-info__fuel">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 51.64 65.19"><title>Patrol</title>
-                                            <path d="M45,.76H21.9L13.27,9.62l-4-4L.37,14.07l4.17,4.5L.88,22.33v36.6a5.34,5.34,0,0,0,5.33,5.33H45a5.34,5.34,0,0,0,5.33-5.33V6.09A5.34,5.34,0,0,0,45,.76Zm-21,5H38.08L33.8,10.3H19.59ZM7.38,14.29l1.78-1.7.61.61L8,15Zm38,44.64a.33.33,0,0,1-.33.33H6.21a.33.33,0,0,1-.33-.33V24.36l8.84-9.06H36l9-9.54H45a.34.34,0,0,1,.33.33Z"/>
-                                            <path d="M27.87,24.57l-1.75-1.69-1.74,1.7c-.9.88-8.76,8.75-8.76,15.79a10.51,10.51,0,0,0,17.95,7.42,10.41,10.41,0,0,0,3.06-7.42C36.62,33.26,28.76,25.44,27.87,24.57ZM30,44.26a5.51,5.51,0,0,1-9.41-3.89c0-3.26,3.15-7.63,5.51-10.34,2.32,2.68,5.5,7.08,5.5,10.35A5.44,5.44,0,0,1,30,44.26Z"/>
-                                        </svg>
+                                <div class="auction-item-car-info-wrapper">
+                                    <div class="auction-item-car-info auction-item-can-info__range">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 177.51 91.25"><title>probeg</title>
+                                                <path d="M89.54.67C40.79.67.79,40.67.79,89.42h12.5c0-41.88,34.38-76.25,76.25-76.25s76.25,34.37,76.25,76.25h12.5C178.92,40.67,138.92.67,89.54.67Z"
+                                                      transform="translate(-0.79 -0.67)"/>
+                                                <path d="M97,83.8,114.54,45,75.79,62.55a15.65,15.65,0,0,0,7.5,29.38A14.84,14.84,0,0,0,97,83.8Z"
+                                                      transform="translate(-0.79 -0.67)"/>
+                                            </svg>
+                                        </div>
+                                        <span>210 000 км</span>
                                     </div>
-                                    <span>газ</span>
+                                    <div class="auction-item-car-info auction-item-can-info__engine">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 159.5 114.76"><title>Dvig</title>
+                                                <path d="M155.19,33H134.31c-2.59,0-5.67,2.71-5.67,5v7.67h-7.33V37.6c0-1.72-1.71-2.87-3.33-3.22H107.23l-4.72-9.9a8.14,8.14,0,0,0-7.1-4.54H78.64V11.49H91.86c2.5,0,4.78-2.59,4.78-5.44C96.64,3.58,94.51.6,91.86.6h-36C53.36.6,51.08,3.2,51.08,6c0,2.47,2.13,5.44,4.78,5.44h15v8.44H54.08a8.55,8.55,0,0,0-6.93,4.41L42,33.06l-19-.46c-2.48,0-6.31,3.28-6.31,6.11V61.49H11.53V35.83a5.44,5.44,0,0,0-10.89,0v64a5.44,5.44,0,1,0,10.89,0V69.49h5.11V90.94C16.64,93.41,20.45,95,23,95H43.18l15.41,16.54c1.18,1.18,2.78,2.57,4.38,2.57h55.11c3.29,0,6.11-3.85,6.11-7V88.6h5.11v8.11c0,2.26,3,4.78,5,4.78h21.78c2.42,0,2.78-3,2.78-4.78V38C158.86,36,157.88,33,155.19,33ZM147.75,89.6h-.56v1h-7.44V77.72H113.08v25.56H65l-13.41-15-3.49-4.11H27.75V45H48.59l7.56-14.22H93.59l7.12,14.24,7.11.2,3-.34.22,11.67h28.24V43.72h8.44Z"/>
+                                            </svg>
+                                        </div>
+                                        <span>3.0 АМТ, 420 л.с.</span>
+                                    </div>
+                                    <div class="auction-item-car-info auction-item-can-info__fuel">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 51.64 65.19"><title>Patrol</title>
+                                                <path d="M45,.76H21.9L13.27,9.62l-4-4L.37,14.07l4.17,4.5L.88,22.33v36.6a5.34,5.34,0,0,0,5.33,5.33H45a5.34,5.34,0,0,0,5.33-5.33V6.09A5.34,5.34,0,0,0,45,.76Zm-21,5H38.08L33.8,10.3H19.59ZM7.38,14.29l1.78-1.7.61.61L8,15Zm38,44.64a.33.33,0,0,1-.33.33H6.21a.33.33,0,0,1-.33-.33V24.36l8.84-9.06H36l9-9.54H45a.34.34,0,0,1,.33.33Z"/>
+                                                <path d="M27.87,24.57l-1.75-1.69-1.74,1.7c-.9.88-8.76,8.75-8.76,15.79a10.51,10.51,0,0,0,17.95,7.42,10.41,10.41,0,0,0,3.06-7.42C36.62,33.26,28.76,25.44,27.87,24.57ZM30,44.26a5.51,5.51,0,0,1-9.41-3.89c0-3.26,3.15-7.63,5.51-10.34,2.32,2.68,5.5,7.08,5.5,10.35A5.44,5.44,0,0,1,30,44.26Z"/>
+                                            </svg>
+                                        </div>
+                                        <span>газ</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="auction-item-descr">
-                                Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
-                                полностью обслужен.
-                            </div>
-                            <div class="auction-item-price">584 474 грн</div>
-                            <div class="auction-item-like-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-heart">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
+                                <div class="auction-item-descr">
+                                    Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
+                                    полностью обслужен.
+                                </div>
+                                <div class="auction-item-price">584 474 грн</div>
+                                <div class="auction-item-like-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round" class="feather feather-heart">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="auction-item">
-                        <a href='open-car.html' class="auction-item-img">
-                            <img src="assets/images/car-example.png" alt="auction car">
-                            <div class="pic-counter">
-                                <div class="pic-counter_value">2</div>
-                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 24 24"><title>
-                                    Image</title>
-                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
-                                    <circle cx="8.5" cy="9.5" r="1"/>
-                                </svg>
-                            </div>
-                        </a>
-                        <div class="auction-item-text">
-                            <a href='open-car.html' class="auction-item-title">Ford Edge Lux, 2017</a>
-                            <div class="auction-item-subtitle-wrapper">
-                                <div class="auction-item-subtitle auction-item-subtitle__city">Киев</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__date">11.03.2018</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__time">10:15</div>
-                            </div>
-                            <div class="auction-item-car-info-wrapper">
-                                <div class="auction-item-car-info auction-item-can-info__range">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 177.51 91.25"><title>probeg</title>
-                                            <path d="M89.54.67C40.79.67.79,40.67.79,89.42h12.5c0-41.88,34.38-76.25,76.25-76.25s76.25,34.37,76.25,76.25h12.5C178.92,40.67,138.92.67,89.54.67Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                            <path d="M97,83.8,114.54,45,75.79,62.55a15.65,15.65,0,0,0,7.5,29.38A14.84,14.84,0,0,0,97,83.8Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                        </svg>
-                                    </div>
-                                    <span>210 000 км</span>
+                        <div class="auction-item">
+                            <a href='open-car.html' class="auction-item-img">
+                                <img src="assets/images/car-example.png" alt="auction car">
+                                <div class="pic-counter">
+                                    <div class="pic-counter_value">2</div>
+                                    <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 24 24"><title>
+                                        Image</title>
+                                        <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
+                                        <circle cx="8.5" cy="9.5" r="1"/>
+                                    </svg>
                                 </div>
-                                <div class="auction-item-car-info auction-item-can-info__engine">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 159.5 114.76"><title>Dvig</title>
-                                            <path d="M155.19,33H134.31c-2.59,0-5.67,2.71-5.67,5v7.67h-7.33V37.6c0-1.72-1.71-2.87-3.33-3.22H107.23l-4.72-9.9a8.14,8.14,0,0,0-7.1-4.54H78.64V11.49H91.86c2.5,0,4.78-2.59,4.78-5.44C96.64,3.58,94.51.6,91.86.6h-36C53.36.6,51.08,3.2,51.08,6c0,2.47,2.13,5.44,4.78,5.44h15v8.44H54.08a8.55,8.55,0,0,0-6.93,4.41L42,33.06l-19-.46c-2.48,0-6.31,3.28-6.31,6.11V61.49H11.53V35.83a5.44,5.44,0,0,0-10.89,0v64a5.44,5.44,0,1,0,10.89,0V69.49h5.11V90.94C16.64,93.41,20.45,95,23,95H43.18l15.41,16.54c1.18,1.18,2.78,2.57,4.38,2.57h55.11c3.29,0,6.11-3.85,6.11-7V88.6h5.11v8.11c0,2.26,3,4.78,5,4.78h21.78c2.42,0,2.78-3,2.78-4.78V38C158.86,36,157.88,33,155.19,33ZM147.75,89.6h-.56v1h-7.44V77.72H113.08v25.56H65l-13.41-15-3.49-4.11H27.75V45H48.59l7.56-14.22H93.59l7.12,14.24,7.11.2,3-.34.22,11.67h28.24V43.72h8.44Z"/>
-                                        </svg>
-                                    </div>
-                                    <span>3.0 АМТ, 420 л.с.</span>
+                            </a>
+                            <div class="auction-item-text">
+                                <a href='open-car.html' class="auction-item-title">Ford Edge Lux, 2017</a>
+                                <div class="auction-item-subtitle-wrapper">
+                                    <div class="auction-item-subtitle auction-item-subtitle__city">Киев</div>
+                                    <div class="auction-item-subtitle auction-item-subtitle__date">11.03.2018</div>
+                                    <div class="auction-item-subtitle auction-item-subtitle__time">10:15</div>
                                 </div>
-                                <div class="auction-item-car-info auction-item-can-info__fuel">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 51.64 65.19"><title>Patrol</title>
-                                            <path d="M45,.76H21.9L13.27,9.62l-4-4L.37,14.07l4.17,4.5L.88,22.33v36.6a5.34,5.34,0,0,0,5.33,5.33H45a5.34,5.34,0,0,0,5.33-5.33V6.09A5.34,5.34,0,0,0,45,.76Zm-21,5H38.08L33.8,10.3H19.59ZM7.38,14.29l1.78-1.7.61.61L8,15Zm38,44.64a.33.33,0,0,1-.33.33H6.21a.33.33,0,0,1-.33-.33V24.36l8.84-9.06H36l9-9.54H45a.34.34,0,0,1,.33.33Z"/>
-                                            <path d="M27.87,24.57l-1.75-1.69-1.74,1.7c-.9.88-8.76,8.75-8.76,15.79a10.51,10.51,0,0,0,17.95,7.42,10.41,10.41,0,0,0,3.06-7.42C36.62,33.26,28.76,25.44,27.87,24.57ZM30,44.26a5.51,5.51,0,0,1-9.41-3.89c0-3.26,3.15-7.63,5.51-10.34,2.32,2.68,5.5,7.08,5.5,10.35A5.44,5.44,0,0,1,30,44.26Z"/>
-                                        </svg>
+                                <div class="auction-item-car-info-wrapper">
+                                    <div class="auction-item-car-info auction-item-can-info__range">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 177.51 91.25"><title>probeg</title>
+                                                <path d="M89.54.67C40.79.67.79,40.67.79,89.42h12.5c0-41.88,34.38-76.25,76.25-76.25s76.25,34.37,76.25,76.25h12.5C178.92,40.67,138.92.67,89.54.67Z"
+                                                      transform="translate(-0.79 -0.67)"/>
+                                                <path d="M97,83.8,114.54,45,75.79,62.55a15.65,15.65,0,0,0,7.5,29.38A14.84,14.84,0,0,0,97,83.8Z"
+                                                      transform="translate(-0.79 -0.67)"/>
+                                            </svg>
+                                        </div>
+                                        <span>210 000 км</span>
                                     </div>
-                                    <span>газ</span>
+                                    <div class="auction-item-car-info auction-item-can-info__engine">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 159.5 114.76"><title>Dvig</title>
+                                                <path d="M155.19,33H134.31c-2.59,0-5.67,2.71-5.67,5v7.67h-7.33V37.6c0-1.72-1.71-2.87-3.33-3.22H107.23l-4.72-9.9a8.14,8.14,0,0,0-7.1-4.54H78.64V11.49H91.86c2.5,0,4.78-2.59,4.78-5.44C96.64,3.58,94.51.6,91.86.6h-36C53.36.6,51.08,3.2,51.08,6c0,2.47,2.13,5.44,4.78,5.44h15v8.44H54.08a8.55,8.55,0,0,0-6.93,4.41L42,33.06l-19-.46c-2.48,0-6.31,3.28-6.31,6.11V61.49H11.53V35.83a5.44,5.44,0,0,0-10.89,0v64a5.44,5.44,0,1,0,10.89,0V69.49h5.11V90.94C16.64,93.41,20.45,95,23,95H43.18l15.41,16.54c1.18,1.18,2.78,2.57,4.38,2.57h55.11c3.29,0,6.11-3.85,6.11-7V88.6h5.11v8.11c0,2.26,3,4.78,5,4.78h21.78c2.42,0,2.78-3,2.78-4.78V38C158.86,36,157.88,33,155.19,33ZM147.75,89.6h-.56v1h-7.44V77.72H113.08v25.56H65l-13.41-15-3.49-4.11H27.75V45H48.59l7.56-14.22H93.59l7.12,14.24,7.11.2,3-.34.22,11.67h28.24V43.72h8.44Z"/>
+                                            </svg>
+                                        </div>
+                                        <span>3.0 АМТ, 420 л.с.</span>
+                                    </div>
+                                    <div class="auction-item-car-info auction-item-can-info__fuel">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 51.64 65.19"><title>Patrol</title>
+                                                <path d="M45,.76H21.9L13.27,9.62l-4-4L.37,14.07l4.17,4.5L.88,22.33v36.6a5.34,5.34,0,0,0,5.33,5.33H45a5.34,5.34,0,0,0,5.33-5.33V6.09A5.34,5.34,0,0,0,45,.76Zm-21,5H38.08L33.8,10.3H19.59ZM7.38,14.29l1.78-1.7.61.61L8,15Zm38,44.64a.33.33,0,0,1-.33.33H6.21a.33.33,0,0,1-.33-.33V24.36l8.84-9.06H36l9-9.54H45a.34.34,0,0,1,.33.33Z"/>
+                                                <path d="M27.87,24.57l-1.75-1.69-1.74,1.7c-.9.88-8.76,8.75-8.76,15.79a10.51,10.51,0,0,0,17.95,7.42,10.41,10.41,0,0,0,3.06-7.42C36.62,33.26,28.76,25.44,27.87,24.57ZM30,44.26a5.51,5.51,0,0,1-9.41-3.89c0-3.26,3.15-7.63,5.51-10.34,2.32,2.68,5.5,7.08,5.5,10.35A5.44,5.44,0,0,1,30,44.26Z"/>
+                                            </svg>
+                                        </div>
+                                        <span>газ</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="auction-item-descr">
-                                Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
-                                полностью обслужен.
-                            </div>
-                            <div class="auction-item-price">584 474 грн</div>
-                            <div class="auction-item-like-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-heart">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
+                                <div class="auction-item-descr">
+                                    Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
+                                    полностью обслужен.
+                                </div>
+                                <div class="auction-item-price">584 474 грн</div>
+                                <div class="auction-item-like-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round" class="feather feather-heart">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="auction-item">
-                        <a href='open-car.html' class="auction-item-img">
-                            <img src="assets/images/car-example.png" alt="auction car">
-                            <div class="pic-counter">
-                                <div class="pic-counter_value">2</div>
-                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 24 24"><title>
-                                    Image</title>
-                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
-                                    <circle cx="8.5" cy="9.5" r="1"/>
-                                </svg>
-                            </div>
-                        </a>
-                        <div class="auction-item-text">
-                            <a href='open-car.html' class="auction-item-title">Ford Edge Lux, 2017</a>
-                            <div class="auction-item-subtitle-wrapper">
-                                <div class="auction-item-subtitle auction-item-subtitle__city">Киев</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__date">11.03.2018</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__time">10:15</div>
-                            </div>
-                            <div class="auction-item-car-info-wrapper">
-                                <div class="auction-item-car-info auction-item-can-info__range">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 177.51 91.25"><title>probeg</title>
-                                            <path d="M89.54.67C40.79.67.79,40.67.79,89.42h12.5c0-41.88,34.38-76.25,76.25-76.25s76.25,34.37,76.25,76.25h12.5C178.92,40.67,138.92.67,89.54.67Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                            <path d="M97,83.8,114.54,45,75.79,62.55a15.65,15.65,0,0,0,7.5,29.38A14.84,14.84,0,0,0,97,83.8Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                        </svg>
-                                    </div>
-                                    <span>210 000 км</span>
+                        <div class="auction-item">
+                            <a href='open-car.html' class="auction-item-img">
+                                <img src="assets/images/car-example.png" alt="auction car">
+                                <div class="pic-counter">
+                                    <div class="pic-counter_value">2</div>
+                                    <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 24 24"><title>
+                                        Image</title>
+                                        <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
+                                        <circle cx="8.5" cy="9.5" r="1"/>
+                                    </svg>
                                 </div>
-                                <div class="auction-item-car-info auction-item-can-info__engine">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 159.5 114.76"><title>Dvig</title>
-                                            <path d="M155.19,33H134.31c-2.59,0-5.67,2.71-5.67,5v7.67h-7.33V37.6c0-1.72-1.71-2.87-3.33-3.22H107.23l-4.72-9.9a8.14,8.14,0,0,0-7.1-4.54H78.64V11.49H91.86c2.5,0,4.78-2.59,4.78-5.44C96.64,3.58,94.51.6,91.86.6h-36C53.36.6,51.08,3.2,51.08,6c0,2.47,2.13,5.44,4.78,5.44h15v8.44H54.08a8.55,8.55,0,0,0-6.93,4.41L42,33.06l-19-.46c-2.48,0-6.31,3.28-6.31,6.11V61.49H11.53V35.83a5.44,5.44,0,0,0-10.89,0v64a5.44,5.44,0,1,0,10.89,0V69.49h5.11V90.94C16.64,93.41,20.45,95,23,95H43.18l15.41,16.54c1.18,1.18,2.78,2.57,4.38,2.57h55.11c3.29,0,6.11-3.85,6.11-7V88.6h5.11v8.11c0,2.26,3,4.78,5,4.78h21.78c2.42,0,2.78-3,2.78-4.78V38C158.86,36,157.88,33,155.19,33ZM147.75,89.6h-.56v1h-7.44V77.72H113.08v25.56H65l-13.41-15-3.49-4.11H27.75V45H48.59l7.56-14.22H93.59l7.12,14.24,7.11.2,3-.34.22,11.67h28.24V43.72h8.44Z"/>
-                                        </svg>
-                                    </div>
-                                    <span>3.0 АМТ, 420 л.с.</span>
+                            </a>
+                            <div class="auction-item-text">
+                                <a href='open-car.html' class="auction-item-title">Ford Edge Lux, 2017</a>
+                                <div class="auction-item-subtitle-wrapper">
+                                    <div class="auction-item-subtitle auction-item-subtitle__city">Киев</div>
+                                    <div class="auction-item-subtitle auction-item-subtitle__date">11.03.2018</div>
+                                    <div class="auction-item-subtitle auction-item-subtitle__time">10:15</div>
                                 </div>
-                                <div class="auction-item-car-info auction-item-can-info__fuel">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 51.64 65.19"><title>Patrol</title>
-                                            <path d="M45,.76H21.9L13.27,9.62l-4-4L.37,14.07l4.17,4.5L.88,22.33v36.6a5.34,5.34,0,0,0,5.33,5.33H45a5.34,5.34,0,0,0,5.33-5.33V6.09A5.34,5.34,0,0,0,45,.76Zm-21,5H38.08L33.8,10.3H19.59ZM7.38,14.29l1.78-1.7.61.61L8,15Zm38,44.64a.33.33,0,0,1-.33.33H6.21a.33.33,0,0,1-.33-.33V24.36l8.84-9.06H36l9-9.54H45a.34.34,0,0,1,.33.33Z"/>
-                                            <path d="M27.87,24.57l-1.75-1.69-1.74,1.7c-.9.88-8.76,8.75-8.76,15.79a10.51,10.51,0,0,0,17.95,7.42,10.41,10.41,0,0,0,3.06-7.42C36.62,33.26,28.76,25.44,27.87,24.57ZM30,44.26a5.51,5.51,0,0,1-9.41-3.89c0-3.26,3.15-7.63,5.51-10.34,2.32,2.68,5.5,7.08,5.5,10.35A5.44,5.44,0,0,1,30,44.26Z"/>
-                                        </svg>
+                                <div class="auction-item-car-info-wrapper">
+                                    <div class="auction-item-car-info auction-item-can-info__range">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 177.51 91.25"><title>probeg</title>
+                                                <path d="M89.54.67C40.79.67.79,40.67.79,89.42h12.5c0-41.88,34.38-76.25,76.25-76.25s76.25,34.37,76.25,76.25h12.5C178.92,40.67,138.92.67,89.54.67Z"
+                                                      transform="translate(-0.79 -0.67)"/>
+                                                <path d="M97,83.8,114.54,45,75.79,62.55a15.65,15.65,0,0,0,7.5,29.38A14.84,14.84,0,0,0,97,83.8Z"
+                                                      transform="translate(-0.79 -0.67)"/>
+                                            </svg>
+                                        </div>
+                                        <span>210 000 км</span>
                                     </div>
-                                    <span>газ</span>
+                                    <div class="auction-item-car-info auction-item-can-info__engine">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 159.5 114.76"><title>Dvig</title>
+                                                <path d="M155.19,33H134.31c-2.59,0-5.67,2.71-5.67,5v7.67h-7.33V37.6c0-1.72-1.71-2.87-3.33-3.22H107.23l-4.72-9.9a8.14,8.14,0,0,0-7.1-4.54H78.64V11.49H91.86c2.5,0,4.78-2.59,4.78-5.44C96.64,3.58,94.51.6,91.86.6h-36C53.36.6,51.08,3.2,51.08,6c0,2.47,2.13,5.44,4.78,5.44h15v8.44H54.08a8.55,8.55,0,0,0-6.93,4.41L42,33.06l-19-.46c-2.48,0-6.31,3.28-6.31,6.11V61.49H11.53V35.83a5.44,5.44,0,0,0-10.89,0v64a5.44,5.44,0,1,0,10.89,0V69.49h5.11V90.94C16.64,93.41,20.45,95,23,95H43.18l15.41,16.54c1.18,1.18,2.78,2.57,4.38,2.57h55.11c3.29,0,6.11-3.85,6.11-7V88.6h5.11v8.11c0,2.26,3,4.78,5,4.78h21.78c2.42,0,2.78-3,2.78-4.78V38C158.86,36,157.88,33,155.19,33ZM147.75,89.6h-.56v1h-7.44V77.72H113.08v25.56H65l-13.41-15-3.49-4.11H27.75V45H48.59l7.56-14.22H93.59l7.12,14.24,7.11.2,3-.34.22,11.67h28.24V43.72h8.44Z"/>
+                                            </svg>
+                                        </div>
+                                        <span>3.0 АМТ, 420 л.с.</span>
+                                    </div>
+                                    <div class="auction-item-car-info auction-item-can-info__fuel">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 51.64 65.19"><title>Patrol</title>
+                                                <path d="M45,.76H21.9L13.27,9.62l-4-4L.37,14.07l4.17,4.5L.88,22.33v36.6a5.34,5.34,0,0,0,5.33,5.33H45a5.34,5.34,0,0,0,5.33-5.33V6.09A5.34,5.34,0,0,0,45,.76Zm-21,5H38.08L33.8,10.3H19.59ZM7.38,14.29l1.78-1.7.61.61L8,15Zm38,44.64a.33.33,0,0,1-.33.33H6.21a.33.33,0,0,1-.33-.33V24.36l8.84-9.06H36l9-9.54H45a.34.34,0,0,1,.33.33Z"/>
+                                                <path d="M27.87,24.57l-1.75-1.69-1.74,1.7c-.9.88-8.76,8.75-8.76,15.79a10.51,10.51,0,0,0,17.95,7.42,10.41,10.41,0,0,0,3.06-7.42C36.62,33.26,28.76,25.44,27.87,24.57ZM30,44.26a5.51,5.51,0,0,1-9.41-3.89c0-3.26,3.15-7.63,5.51-10.34,2.32,2.68,5.5,7.08,5.5,10.35A5.44,5.44,0,0,1,30,44.26Z"/>
+                                            </svg>
+                                        </div>
+                                        <span>газ</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="auction-item-descr">
-                                Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
-                                полностью обслужен.
-                            </div>
-                            <div class="auction-item-price">584 474 грн</div>
-                            <div class="auction-item-like-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-heart">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
+                                <div class="auction-item-descr">
+                                    Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
+                                    полностью обслужен.
+                                </div>
+                                <div class="auction-item-price">584 474 грн</div>
+                                <div class="auction-item-like-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round" class="feather feather-heart">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="auction-item">
-                        <a href='open-car.html' class="auction-item-img">
-                            <img src="assets/images/car-example.png" alt="auction car">
-                            <div class="pic-counter">
-                                <div class="pic-counter_value">2</div>
-                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 24 24"><title>
-                                    Image</title>
-                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
-                                    <circle cx="8.5" cy="9.5" r="1"/>
-                                </svg>
-                            </div>
-                        </a>
-                        <div class="auction-item-text">
-                            <a href='open-car.html' class="auction-item-title">Ford Edge Lux, 2017</a>
-                            <div class="auction-item-subtitle-wrapper">
-                                <div class="auction-item-subtitle auction-item-subtitle__city">Киев</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__date">11.03.2018</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__time">10:15</div>
-                            </div>
-                            <div class="auction-item-car-info-wrapper">
-                                <div class="auction-item-car-info auction-item-can-info__range">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 177.51 91.25"><title>probeg</title>
-                                            <path d="M89.54.67C40.79.67.79,40.67.79,89.42h12.5c0-41.88,34.38-76.25,76.25-76.25s76.25,34.37,76.25,76.25h12.5C178.92,40.67,138.92.67,89.54.67Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                            <path d="M97,83.8,114.54,45,75.79,62.55a15.65,15.65,0,0,0,7.5,29.38A14.84,14.84,0,0,0,97,83.8Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                        </svg>
-                                    </div>
-                                    <span>210 000 км</span>
+                        <div class="auction-item">
+                            <a href='open-car.html' class="auction-item-img">
+                                <img src="assets/images/car-example.png" alt="auction car">
+                                <div class="pic-counter">
+                                    <div class="pic-counter_value">2</div>
+                                    <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 24 24"><title>
+                                        Image</title>
+                                        <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
+                                        <circle cx="8.5" cy="9.5" r="1"/>
+                                    </svg>
                                 </div>
-                                <div class="auction-item-car-info auction-item-can-info__engine">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 159.5 114.76"><title>Dvig</title>
-                                            <path d="M155.19,33H134.31c-2.59,0-5.67,2.71-5.67,5v7.67h-7.33V37.6c0-1.72-1.71-2.87-3.33-3.22H107.23l-4.72-9.9a8.14,8.14,0,0,0-7.1-4.54H78.64V11.49H91.86c2.5,0,4.78-2.59,4.78-5.44C96.64,3.58,94.51.6,91.86.6h-36C53.36.6,51.08,3.2,51.08,6c0,2.47,2.13,5.44,4.78,5.44h15v8.44H54.08a8.55,8.55,0,0,0-6.93,4.41L42,33.06l-19-.46c-2.48,0-6.31,3.28-6.31,6.11V61.49H11.53V35.83a5.44,5.44,0,0,0-10.89,0v64a5.44,5.44,0,1,0,10.89,0V69.49h5.11V90.94C16.64,93.41,20.45,95,23,95H43.18l15.41,16.54c1.18,1.18,2.78,2.57,4.38,2.57h55.11c3.29,0,6.11-3.85,6.11-7V88.6h5.11v8.11c0,2.26,3,4.78,5,4.78h21.78c2.42,0,2.78-3,2.78-4.78V38C158.86,36,157.88,33,155.19,33ZM147.75,89.6h-.56v1h-7.44V77.72H113.08v25.56H65l-13.41-15-3.49-4.11H27.75V45H48.59l7.56-14.22H93.59l7.12,14.24,7.11.2,3-.34.22,11.67h28.24V43.72h8.44Z"/>
-                                        </svg>
-                                    </div>
-                                    <span>3.0 АМТ, 420 л.с.</span>
+                            </a>
+                            <div class="auction-item-text">
+                                <a href='open-car.html' class="auction-item-title">Ford Edge Lux, 2017</a>
+                                <div class="auction-item-subtitle-wrapper">
+                                    <div class="auction-item-subtitle auction-item-subtitle__city">Киев</div>
+                                    <div class="auction-item-subtitle auction-item-subtitle__date">11.03.2018</div>
+                                    <div class="auction-item-subtitle auction-item-subtitle__time">10:15</div>
                                 </div>
-                                <div class="auction-item-car-info auction-item-can-info__fuel">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 51.64 65.19"><title>Patrol</title>
-                                            <path d="M45,.76H21.9L13.27,9.62l-4-4L.37,14.07l4.17,4.5L.88,22.33v36.6a5.34,5.34,0,0,0,5.33,5.33H45a5.34,5.34,0,0,0,5.33-5.33V6.09A5.34,5.34,0,0,0,45,.76Zm-21,5H38.08L33.8,10.3H19.59ZM7.38,14.29l1.78-1.7.61.61L8,15Zm38,44.64a.33.33,0,0,1-.33.33H6.21a.33.33,0,0,1-.33-.33V24.36l8.84-9.06H36l9-9.54H45a.34.34,0,0,1,.33.33Z"/>
-                                            <path d="M27.87,24.57l-1.75-1.69-1.74,1.7c-.9.88-8.76,8.75-8.76,15.79a10.51,10.51,0,0,0,17.95,7.42,10.41,10.41,0,0,0,3.06-7.42C36.62,33.26,28.76,25.44,27.87,24.57ZM30,44.26a5.51,5.51,0,0,1-9.41-3.89c0-3.26,3.15-7.63,5.51-10.34,2.32,2.68,5.5,7.08,5.5,10.35A5.44,5.44,0,0,1,30,44.26Z"/>
-                                        </svg>
+                                <div class="auction-item-car-info-wrapper">
+                                    <div class="auction-item-car-info auction-item-can-info__range">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 177.51 91.25"><title>probeg</title>
+                                                <path d="M89.54.67C40.79.67.79,40.67.79,89.42h12.5c0-41.88,34.38-76.25,76.25-76.25s76.25,34.37,76.25,76.25h12.5C178.92,40.67,138.92.67,89.54.67Z"
+                                                      transform="translate(-0.79 -0.67)"/>
+                                                <path d="M97,83.8,114.54,45,75.79,62.55a15.65,15.65,0,0,0,7.5,29.38A14.84,14.84,0,0,0,97,83.8Z"
+                                                      transform="translate(-0.79 -0.67)"/>
+                                            </svg>
+                                        </div>
+                                        <span>210 000 км</span>
                                     </div>
-                                    <span>газ</span>
+                                    <div class="auction-item-car-info auction-item-can-info__engine">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 159.5 114.76"><title>Dvig</title>
+                                                <path d="M155.19,33H134.31c-2.59,0-5.67,2.71-5.67,5v7.67h-7.33V37.6c0-1.72-1.71-2.87-3.33-3.22H107.23l-4.72-9.9a8.14,8.14,0,0,0-7.1-4.54H78.64V11.49H91.86c2.5,0,4.78-2.59,4.78-5.44C96.64,3.58,94.51.6,91.86.6h-36C53.36.6,51.08,3.2,51.08,6c0,2.47,2.13,5.44,4.78,5.44h15v8.44H54.08a8.55,8.55,0,0,0-6.93,4.41L42,33.06l-19-.46c-2.48,0-6.31,3.28-6.31,6.11V61.49H11.53V35.83a5.44,5.44,0,0,0-10.89,0v64a5.44,5.44,0,1,0,10.89,0V69.49h5.11V90.94C16.64,93.41,20.45,95,23,95H43.18l15.41,16.54c1.18,1.18,2.78,2.57,4.38,2.57h55.11c3.29,0,6.11-3.85,6.11-7V88.6h5.11v8.11c0,2.26,3,4.78,5,4.78h21.78c2.42,0,2.78-3,2.78-4.78V38C158.86,36,157.88,33,155.19,33ZM147.75,89.6h-.56v1h-7.44V77.72H113.08v25.56H65l-13.41-15-3.49-4.11H27.75V45H48.59l7.56-14.22H93.59l7.12,14.24,7.11.2,3-.34.22,11.67h28.24V43.72h8.44Z"/>
+                                            </svg>
+                                        </div>
+                                        <span>3.0 АМТ, 420 л.с.</span>
+                                    </div>
+                                    <div class="auction-item-car-info auction-item-can-info__fuel">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 51.64 65.19"><title>Patrol</title>
+                                                <path d="M45,.76H21.9L13.27,9.62l-4-4L.37,14.07l4.17,4.5L.88,22.33v36.6a5.34,5.34,0,0,0,5.33,5.33H45a5.34,5.34,0,0,0,5.33-5.33V6.09A5.34,5.34,0,0,0,45,.76Zm-21,5H38.08L33.8,10.3H19.59ZM7.38,14.29l1.78-1.7.61.61L8,15Zm38,44.64a.33.33,0,0,1-.33.33H6.21a.33.33,0,0,1-.33-.33V24.36l8.84-9.06H36l9-9.54H45a.34.34,0,0,1,.33.33Z"/>
+                                                <path d="M27.87,24.57l-1.75-1.69-1.74,1.7c-.9.88-8.76,8.75-8.76,15.79a10.51,10.51,0,0,0,17.95,7.42,10.41,10.41,0,0,0,3.06-7.42C36.62,33.26,28.76,25.44,27.87,24.57ZM30,44.26a5.51,5.51,0,0,1-9.41-3.89c0-3.26,3.15-7.63,5.51-10.34,2.32,2.68,5.5,7.08,5.5,10.35A5.44,5.44,0,0,1,30,44.26Z"/>
+                                            </svg>
+                                        </div>
+                                        <span>газ</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="auction-item-descr">
-                                Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
-                                полностью обслужен.
-                            </div>
-                            <div class="auction-item-price">584 474 грн</div>
-                            <div class="auction-item-like-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-heart">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
+                                <div class="auction-item-descr">
+                                    Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
+                                    полностью обслужен.
+                                </div>
+                                <div class="auction-item-price">584 474 грн</div>
+                                <div class="auction-item-like-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round" class="feather feather-heart">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="auction-item">
-                        <a href='open-car.html' class="auction-item-img">
-                            <img src="assets/images/car-example.png" alt="auction car">
-                            <div class="pic-counter">
-                                <div class="pic-counter_value">2</div>
-                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 24 24"><title>
-                                    Image</title>
-                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
-                                    <circle cx="8.5" cy="9.5" r="1"/>
-                                </svg>
-                            </div>
-                        </a>
-                        <div class="auction-item-text">
-                            <a href='open-car.html' class="auction-item-title">Ford Edge Lux, 2017</a>
-                            <div class="auction-item-subtitle-wrapper">
-                                <div class="auction-item-subtitle auction-item-subtitle__city">Киев</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__date">11.03.2018</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__time">10:15</div>
-                            </div>
-                            <div class="auction-item-car-info-wrapper">
-                                <div class="auction-item-car-info auction-item-can-info__range">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 177.51 91.25"><title>probeg</title>
-                                            <path d="M89.54.67C40.79.67.79,40.67.79,89.42h12.5c0-41.88,34.38-76.25,76.25-76.25s76.25,34.37,76.25,76.25h12.5C178.92,40.67,138.92.67,89.54.67Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                            <path d="M97,83.8,114.54,45,75.79,62.55a15.65,15.65,0,0,0,7.5,29.38A14.84,14.84,0,0,0,97,83.8Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                        </svg>
-                                    </div>
-                                    <span>210 000 км</span>
+                        <div class="auction-item">
+                            <a href='open-car.html' class="auction-item-img">
+                                <img src="assets/images/car-example.png" alt="auction car">
+                                <div class="pic-counter">
+                                    <div class="pic-counter_value">2</div>
+                                    <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 24 24"><title>
+                                        Image</title>
+                                        <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
+                                        <circle cx="8.5" cy="9.5" r="1"/>
+                                    </svg>
                                 </div>
-                                <div class="auction-item-car-info auction-item-can-info__engine">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 159.5 114.76"><title>Dvig</title>
-                                            <path d="M155.19,33H134.31c-2.59,0-5.67,2.71-5.67,5v7.67h-7.33V37.6c0-1.72-1.71-2.87-3.33-3.22H107.23l-4.72-9.9a8.14,8.14,0,0,0-7.1-4.54H78.64V11.49H91.86c2.5,0,4.78-2.59,4.78-5.44C96.64,3.58,94.51.6,91.86.6h-36C53.36.6,51.08,3.2,51.08,6c0,2.47,2.13,5.44,4.78,5.44h15v8.44H54.08a8.55,8.55,0,0,0-6.93,4.41L42,33.06l-19-.46c-2.48,0-6.31,3.28-6.31,6.11V61.49H11.53V35.83a5.44,5.44,0,0,0-10.89,0v64a5.44,5.44,0,1,0,10.89,0V69.49h5.11V90.94C16.64,93.41,20.45,95,23,95H43.18l15.41,16.54c1.18,1.18,2.78,2.57,4.38,2.57h55.11c3.29,0,6.11-3.85,6.11-7V88.6h5.11v8.11c0,2.26,3,4.78,5,4.78h21.78c2.42,0,2.78-3,2.78-4.78V38C158.86,36,157.88,33,155.19,33ZM147.75,89.6h-.56v1h-7.44V77.72H113.08v25.56H65l-13.41-15-3.49-4.11H27.75V45H48.59l7.56-14.22H93.59l7.12,14.24,7.11.2,3-.34.22,11.67h28.24V43.72h8.44Z"/>
-                                        </svg>
-                                    </div>
-                                    <span>3.0 АМТ, 420 л.с.</span>
+                            </a>
+                            <div class="auction-item-text">
+                                <a href='open-car.html' class="auction-item-title">Ford Edge Lux, 2017</a>
+                                <div class="auction-item-subtitle-wrapper">
+                                    <div class="auction-item-subtitle auction-item-subtitle__city">Киев</div>
+                                    <div class="auction-item-subtitle auction-item-subtitle__date">11.03.2018</div>
+                                    <div class="auction-item-subtitle auction-item-subtitle__time">10:15</div>
                                 </div>
-                                <div class="auction-item-car-info auction-item-can-info__fuel">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 51.64 65.19"><title>Patrol</title>
-                                            <path d="M45,.76H21.9L13.27,9.62l-4-4L.37,14.07l4.17,4.5L.88,22.33v36.6a5.34,5.34,0,0,0,5.33,5.33H45a5.34,5.34,0,0,0,5.33-5.33V6.09A5.34,5.34,0,0,0,45,.76Zm-21,5H38.08L33.8,10.3H19.59ZM7.38,14.29l1.78-1.7.61.61L8,15Zm38,44.64a.33.33,0,0,1-.33.33H6.21a.33.33,0,0,1-.33-.33V24.36l8.84-9.06H36l9-9.54H45a.34.34,0,0,1,.33.33Z"/>
-                                            <path d="M27.87,24.57l-1.75-1.69-1.74,1.7c-.9.88-8.76,8.75-8.76,15.79a10.51,10.51,0,0,0,17.95,7.42,10.41,10.41,0,0,0,3.06-7.42C36.62,33.26,28.76,25.44,27.87,24.57ZM30,44.26a5.51,5.51,0,0,1-9.41-3.89c0-3.26,3.15-7.63,5.51-10.34,2.32,2.68,5.5,7.08,5.5,10.35A5.44,5.44,0,0,1,30,44.26Z"/>
-                                        </svg>
+                                <div class="auction-item-car-info-wrapper">
+                                    <div class="auction-item-car-info auction-item-can-info__range">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 177.51 91.25"><title>probeg</title>
+                                                <path d="M89.54.67C40.79.67.79,40.67.79,89.42h12.5c0-41.88,34.38-76.25,76.25-76.25s76.25,34.37,76.25,76.25h12.5C178.92,40.67,138.92.67,89.54.67Z"
+                                                      transform="translate(-0.79 -0.67)"/>
+                                                <path d="M97,83.8,114.54,45,75.79,62.55a15.65,15.65,0,0,0,7.5,29.38A14.84,14.84,0,0,0,97,83.8Z"
+                                                      transform="translate(-0.79 -0.67)"/>
+                                            </svg>
+                                        </div>
+                                        <span>210 000 км</span>
                                     </div>
-                                    <span>газ</span>
+                                    <div class="auction-item-car-info auction-item-can-info__engine">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 159.5 114.76"><title>Dvig</title>
+                                                <path d="M155.19,33H134.31c-2.59,0-5.67,2.71-5.67,5v7.67h-7.33V37.6c0-1.72-1.71-2.87-3.33-3.22H107.23l-4.72-9.9a8.14,8.14,0,0,0-7.1-4.54H78.64V11.49H91.86c2.5,0,4.78-2.59,4.78-5.44C96.64,3.58,94.51.6,91.86.6h-36C53.36.6,51.08,3.2,51.08,6c0,2.47,2.13,5.44,4.78,5.44h15v8.44H54.08a8.55,8.55,0,0,0-6.93,4.41L42,33.06l-19-.46c-2.48,0-6.31,3.28-6.31,6.11V61.49H11.53V35.83a5.44,5.44,0,0,0-10.89,0v64a5.44,5.44,0,1,0,10.89,0V69.49h5.11V90.94C16.64,93.41,20.45,95,23,95H43.18l15.41,16.54c1.18,1.18,2.78,2.57,4.38,2.57h55.11c3.29,0,6.11-3.85,6.11-7V88.6h5.11v8.11c0,2.26,3,4.78,5,4.78h21.78c2.42,0,2.78-3,2.78-4.78V38C158.86,36,157.88,33,155.19,33ZM147.75,89.6h-.56v1h-7.44V77.72H113.08v25.56H65l-13.41-15-3.49-4.11H27.75V45H48.59l7.56-14.22H93.59l7.12,14.24,7.11.2,3-.34.22,11.67h28.24V43.72h8.44Z"/>
+                                            </svg>
+                                        </div>
+                                        <span>3.0 АМТ, 420 л.с.</span>
+                                    </div>
+                                    <div class="auction-item-car-info auction-item-can-info__fuel">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 51.64 65.19"><title>Patrol</title>
+                                                <path d="M45,.76H21.9L13.27,9.62l-4-4L.37,14.07l4.17,4.5L.88,22.33v36.6a5.34,5.34,0,0,0,5.33,5.33H45a5.34,5.34,0,0,0,5.33-5.33V6.09A5.34,5.34,0,0,0,45,.76Zm-21,5H38.08L33.8,10.3H19.59ZM7.38,14.29l1.78-1.7.61.61L8,15Zm38,44.64a.33.33,0,0,1-.33.33H6.21a.33.33,0,0,1-.33-.33V24.36l8.84-9.06H36l9-9.54H45a.34.34,0,0,1,.33.33Z"/>
+                                                <path d="M27.87,24.57l-1.75-1.69-1.74,1.7c-.9.88-8.76,8.75-8.76,15.79a10.51,10.51,0,0,0,17.95,7.42,10.41,10.41,0,0,0,3.06-7.42C36.62,33.26,28.76,25.44,27.87,24.57ZM30,44.26a5.51,5.51,0,0,1-9.41-3.89c0-3.26,3.15-7.63,5.51-10.34,2.32,2.68,5.5,7.08,5.5,10.35A5.44,5.44,0,0,1,30,44.26Z"/>
+                                            </svg>
+                                        </div>
+                                        <span>газ</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="auction-item-descr">
-                                Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
-                                полностью обслужен.
-                            </div>
-                            <div class="auction-item-price">584 474 грн</div>
-                            <div class="auction-item-like-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-heart">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
+                                <div class="auction-item-descr">
+                                    Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
+                                    полностью обслужен.
+                                </div>
+                                <div class="auction-item-price">584 474 грн</div>
+                                <div class="auction-item-like-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round" class="feather feather-heart">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="auction-item">
-                        <a href='open-car.html' class="auction-item-img">
-                            <img src="assets/images/car-example.png" alt="auction car">
-                            <div class="pic-counter">
-                                <div class="pic-counter_value">2</div>
-                                <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 24 24"><title>
-                                    Image</title>
-                                    <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
-                                    <circle cx="8.5" cy="9.5" r="1"/>
-                                </svg>
-                            </div>
-                        </a>
-                        <div class="auction-item-text">
-                            <a href='open-car.html' class="auction-item-title">Ford Edge Lux, 2017</a>
-                            <div class="auction-item-subtitle-wrapper">
-                                <div class="auction-item-subtitle auction-item-subtitle__city">Киев</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__date">11.03.2018</div>
-                                <div class="auction-item-subtitle auction-item-subtitle__time">10:15</div>
-                            </div>
-                            <div class="auction-item-car-info-wrapper">
-                                <div class="auction-item-car-info auction-item-can-info__range">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 177.51 91.25"><title>probeg</title>
-                                            <path d="M89.54.67C40.79.67.79,40.67.79,89.42h12.5c0-41.88,34.38-76.25,76.25-76.25s76.25,34.37,76.25,76.25h12.5C178.92,40.67,138.92.67,89.54.67Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                            <path d="M97,83.8,114.54,45,75.79,62.55a15.65,15.65,0,0,0,7.5,29.38A14.84,14.84,0,0,0,97,83.8Z"
-                                                  transform="translate(-0.79 -0.67)"/>
-                                        </svg>
-                                    </div>
-                                    <span>210 000 км</span>
+                        <div class="auction-item">
+                            <a href='open-car.html' class="auction-item-img">
+                                <img src="assets/images/car-example.png" alt="auction car">
+                                <div class="pic-counter">
+                                    <div class="pic-counter_value">2</div>
+                                    <svg class="pic-counter-svg" id="target" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 24 24"><title>
+                                        Image</title>
+                                        <path d="M17,6.5H7A1.5,1.5,0,0,0,5.5,8v8A1.5,1.5,0,0,0,7,17.5H17A1.5,1.5,0,0,0,18.5,16V8A1.5,1.5,0,0,0,17,6.5ZM7,7.5H17a.5.5,0,0,1,.5.5v4.79l-2.56-2.56-2.51,2.58L10.9,11.28,6.5,15.8V8A.5.5,0,0,1,7,7.5Zm7.71,9H7.21l3.7-3.8ZM17.5,16a.5.5,0,0,1-.5.5h-.88l-3-3L15,11.66l2.55,2.55Z"/>
+                                        <circle cx="8.5" cy="9.5" r="1"/>
+                                    </svg>
                                 </div>
-                                <div class="auction-item-car-info auction-item-can-info__engine">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 159.5 114.76"><title>Dvig</title>
-                                            <path d="M155.19,33H134.31c-2.59,0-5.67,2.71-5.67,5v7.67h-7.33V37.6c0-1.72-1.71-2.87-3.33-3.22H107.23l-4.72-9.9a8.14,8.14,0,0,0-7.1-4.54H78.64V11.49H91.86c2.5,0,4.78-2.59,4.78-5.44C96.64,3.58,94.51.6,91.86.6h-36C53.36.6,51.08,3.2,51.08,6c0,2.47,2.13,5.44,4.78,5.44h15v8.44H54.08a8.55,8.55,0,0,0-6.93,4.41L42,33.06l-19-.46c-2.48,0-6.31,3.28-6.31,6.11V61.49H11.53V35.83a5.44,5.44,0,0,0-10.89,0v64a5.44,5.44,0,1,0,10.89,0V69.49h5.11V90.94C16.64,93.41,20.45,95,23,95H43.18l15.41,16.54c1.18,1.18,2.78,2.57,4.38,2.57h55.11c3.29,0,6.11-3.85,6.11-7V88.6h5.11v8.11c0,2.26,3,4.78,5,4.78h21.78c2.42,0,2.78-3,2.78-4.78V38C158.86,36,157.88,33,155.19,33ZM147.75,89.6h-.56v1h-7.44V77.72H113.08v25.56H65l-13.41-15-3.49-4.11H27.75V45H48.59l7.56-14.22H93.59l7.12,14.24,7.11.2,3-.34.22,11.67h28.24V43.72h8.44Z"/>
-                                        </svg>
-                                    </div>
-                                    <span>3.0 АМТ, 420 л.с.</span>
+                            </a>
+                            <div class="auction-item-text">
+                                <a href='open-car.html' class="auction-item-title">Ford Edge Lux, 2017</a>
+                                <div class="auction-item-subtitle-wrapper">
+                                    <div class="auction-item-subtitle auction-item-subtitle__city">Киев</div>
+                                    <div class="auction-item-subtitle auction-item-subtitle__date">11.03.2018</div>
+                                    <div class="auction-item-subtitle auction-item-subtitle__time">10:15</div>
                                 </div>
-                                <div class="auction-item-car-info auction-item-can-info__fuel">
-                                    <div class="car-info-svg">
-                                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 51.64 65.19"><title>Patrol</title>
-                                            <path d="M45,.76H21.9L13.27,9.62l-4-4L.37,14.07l4.17,4.5L.88,22.33v36.6a5.34,5.34,0,0,0,5.33,5.33H45a5.34,5.34,0,0,0,5.33-5.33V6.09A5.34,5.34,0,0,0,45,.76Zm-21,5H38.08L33.8,10.3H19.59ZM7.38,14.29l1.78-1.7.61.61L8,15Zm38,44.64a.33.33,0,0,1-.33.33H6.21a.33.33,0,0,1-.33-.33V24.36l8.84-9.06H36l9-9.54H45a.34.34,0,0,1,.33.33Z"/>
-                                            <path d="M27.87,24.57l-1.75-1.69-1.74,1.7c-.9.88-8.76,8.75-8.76,15.79a10.51,10.51,0,0,0,17.95,7.42,10.41,10.41,0,0,0,3.06-7.42C36.62,33.26,28.76,25.44,27.87,24.57ZM30,44.26a5.51,5.51,0,0,1-9.41-3.89c0-3.26,3.15-7.63,5.51-10.34,2.32,2.68,5.5,7.08,5.5,10.35A5.44,5.44,0,0,1,30,44.26Z"/>
-                                        </svg>
+                                <div class="auction-item-car-info-wrapper">
+                                    <div class="auction-item-car-info auction-item-can-info__range">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 177.51 91.25"><title>probeg</title>
+                                                <path d="M89.54.67C40.79.67.79,40.67.79,89.42h12.5c0-41.88,34.38-76.25,76.25-76.25s76.25,34.37,76.25,76.25h12.5C178.92,40.67,138.92.67,89.54.67Z"
+                                                      transform="translate(-0.79 -0.67)"/>
+                                                <path d="M97,83.8,114.54,45,75.79,62.55a15.65,15.65,0,0,0,7.5,29.38A14.84,14.84,0,0,0,97,83.8Z"
+                                                      transform="translate(-0.79 -0.67)"/>
+                                            </svg>
+                                        </div>
+                                        <span>210 000 км</span>
                                     </div>
-                                    <span>газ</span>
+                                    <div class="auction-item-car-info auction-item-can-info__engine">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 159.5 114.76"><title>Dvig</title>
+                                                <path d="M155.19,33H134.31c-2.59,0-5.67,2.71-5.67,5v7.67h-7.33V37.6c0-1.72-1.71-2.87-3.33-3.22H107.23l-4.72-9.9a8.14,8.14,0,0,0-7.1-4.54H78.64V11.49H91.86c2.5,0,4.78-2.59,4.78-5.44C96.64,3.58,94.51.6,91.86.6h-36C53.36.6,51.08,3.2,51.08,6c0,2.47,2.13,5.44,4.78,5.44h15v8.44H54.08a8.55,8.55,0,0,0-6.93,4.41L42,33.06l-19-.46c-2.48,0-6.31,3.28-6.31,6.11V61.49H11.53V35.83a5.44,5.44,0,0,0-10.89,0v64a5.44,5.44,0,1,0,10.89,0V69.49h5.11V90.94C16.64,93.41,20.45,95,23,95H43.18l15.41,16.54c1.18,1.18,2.78,2.57,4.38,2.57h55.11c3.29,0,6.11-3.85,6.11-7V88.6h5.11v8.11c0,2.26,3,4.78,5,4.78h21.78c2.42,0,2.78-3,2.78-4.78V38C158.86,36,157.88,33,155.19,33ZM147.75,89.6h-.56v1h-7.44V77.72H113.08v25.56H65l-13.41-15-3.49-4.11H27.75V45H48.59l7.56-14.22H93.59l7.12,14.24,7.11.2,3-.34.22,11.67h28.24V43.72h8.44Z"/>
+                                            </svg>
+                                        </div>
+                                        <span>3.0 АМТ, 420 л.с.</span>
+                                    </div>
+                                    <div class="auction-item-car-info auction-item-can-info__fuel">
+                                        <div class="car-info-svg">
+                                            <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 51.64 65.19"><title>Patrol</title>
+                                                <path d="M45,.76H21.9L13.27,9.62l-4-4L.37,14.07l4.17,4.5L.88,22.33v36.6a5.34,5.34,0,0,0,5.33,5.33H45a5.34,5.34,0,0,0,5.33-5.33V6.09A5.34,5.34,0,0,0,45,.76Zm-21,5H38.08L33.8,10.3H19.59ZM7.38,14.29l1.78-1.7.61.61L8,15Zm38,44.64a.33.33,0,0,1-.33.33H6.21a.33.33,0,0,1-.33-.33V24.36l8.84-9.06H36l9-9.54H45a.34.34,0,0,1,.33.33Z"/>
+                                                <path d="M27.87,24.57l-1.75-1.69-1.74,1.7c-.9.88-8.76,8.75-8.76,15.79a10.51,10.51,0,0,0,17.95,7.42,10.41,10.41,0,0,0,3.06-7.42C36.62,33.26,28.76,25.44,27.87,24.57ZM30,44.26a5.51,5.51,0,0,1-9.41-3.89c0-3.26,3.15-7.63,5.51-10.34,2.32,2.68,5.5,7.08,5.5,10.35A5.44,5.44,0,0,1,30,44.26Z"/>
+                                            </svg>
+                                        </div>
+                                        <span>газ</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="auction-item-descr">
-                                Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
-                                полностью обслужен.
-                            </div>
-                            <div class="auction-item-price">584 474 грн</div>
-                            <div class="auction-item-like-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round" class="feather feather-heart">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                </svg>
+                                <div class="auction-item-descr">
+                                    Срочно продаю автомобиль с минимальным пробегом по Украине, хорошая комплектация,
+                                    полностью обслужен.
+                                </div>
+                                <div class="auction-item-price">584 474 грн</div>
+                                <div class="auction-item-like-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round" class="feather feather-heart">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1058,7 +1077,7 @@
         <div class="popup-subtitle">На ваш телефон будет отправлено СМС с кодом подтверждения</div>
         <input type="text" id="logInPhoneConfirm" class="form-control popoup-phone popoup-phone-confirm"
                placeholder="0000">
-        <button class="btn btn-popup btn-accent">готово</button>
+        <button class="btn btn-popup btn-accent" id="loader-sms">готово</button>
     </div>
 </div>
 
@@ -1075,11 +1094,12 @@
     <div class="profile-set-wrapper">
         <div class="popup-title">Настройки профиля</div>
         <div class="profile-set-img">
-            <svg id="target" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>User</title>
+            <div class="profile-set-img-add" id="ProfSetDropzone"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>User</title>
                 <path d="M12,8a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,12,8Zm0,4a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,12Z"/>
                 <path d="M12,5a7,7,0,1,0,7,7A7,7,0,0,0,12,5ZM8.6,16.94a5.09,5.09,0,0,1,.22-.54,3.58,3.58,0,0,1,6.37.09c.07.15.13.31.19.47A6.06,6.06,0,0,1,12,18,6,6,0,0,1,8.6,16.94Zm7.58-.65c0-.08-.06-.18-.11-.27A4.57,4.57,0,0,0,8,15.92a2.28,2.28,0,0,0-.15.36,6,6,0,1,1,8.38,0Z"/>
             </svg>
-            <a href="#">Добавить фото</a>
+            <div class="profile-set-img-descr">Добавить фото</div>
         </div>
         <div class="profile-set">
             <div class="profile-set__title">имя</div>
@@ -1119,6 +1139,7 @@
         </div>
     </div>
 </div>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

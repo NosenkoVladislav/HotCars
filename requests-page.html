@@ -188,67 +188,91 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col-lg-3">
-                <div class="filters-content filters-content--requests">
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">область</span>
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                <div class="requests-sidebar">
+                    <div class="requests-sidebar--title">
+                        <div class="add-request">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="feather feather-info">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12" y2="8"></line>
+                            </svg>
                         </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-region-select" multiple="multiple">
-                                <option value="KY">Киевская</option>
-                                <option value="CH">Черниговская</option>
-                                <option value="LV">Львовская</option>
-                                <option value="KH">Харьковская</option>
-                            </select>
+                        <div class="num-request">
+                            <div class="num-request__text">Запросы</div>
+                            <div class="num-request__value">14</div>
                         </div>
-                    </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">город</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-city-select" multiple="multiple">
-                                <option value="KY">Киев</option>
-                                <option value="CH">Чернигов</option>
-                                <option value="LV">Львов</option>
-                                <option value="KH">Харьков</option>
-                            </select>
+                        <div class="search-request">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="feather feather-info">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12" y2="8"></line>
+                            </svg>
                         </div>
                     </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">марка</span>
+                    <div class="requests-sidebar--content">
+                        <div class="request-answer current">
+                            <div class="request-answer--img">
+                                <svg id="target" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>
+                                    User</title>
+                                    <path d="M12,8a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,12,8Zm0,4a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,12Z"/>
+                                    <path d="M12,5a7,7,0,1,0,7,7A7,7,0,0,0,12,5ZM8.6,16.94a5.09,5.09,0,0,1,.22-.54,3.58,3.58,0,0,1,6.37.09c.07.15.13.31.19.47A6.06,6.06,0,0,1,12,18,6,6,0,0,1,8.6,16.94Zm7.58-.65c0-.08-.06-.18-.11-.27A4.57,4.57,0,0,0,8,15.92a2.28,2.28,0,0,0-.15.36,6,6,0,1,1,8.38,0Z"/>
+                                </svg>
+                            </div>
+                            <div class="request-answer--text">
+                                <div class="request-answer--text__name">Ford Mustang I, 1975</div>
+                                <div class="request-answer--text__val"></div>
+                            </div>
                         </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-manufactor-select" multiple="multiple">
-                                <option value="KY">Honda</option>
-                                <option value="CH">Audi</option>
-                                <option value="LV">Ford</option>
-                                <option value="KH">Acura</option>
-                            </select>
+                        <div class="request-answer unread">
+                            <div class="request-answer--img">
+                                <svg id="target" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>
+                                    User</title>
+                                    <path d="M12,8a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,12,8Zm0,4a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,12Z"/>
+                                    <path d="M12,5a7,7,0,1,0,7,7A7,7,0,0,0,12,5ZM8.6,16.94a5.09,5.09,0,0,1,.22-.54,3.58,3.58,0,0,1,6.37.09c.07.15.13.31.19.47A6.06,6.06,0,0,1,12,18,6,6,0,0,1,8.6,16.94Zm7.58-.65c0-.08-.06-.18-.11-.27A4.57,4.57,0,0,0,8,15.92a2.28,2.28,0,0,0-.15.36,6,6,0,1,1,8.38,0Z"/>
+                                </svg>
+                            </div>
+                            <div class="request-answer--text">
+                                <div class="request-answer--text__name">Toyota Venza, 2012 -2015</div>
+                                <div class="request-answer--text__val">2</div>
+                            </div>
+                        </div>
+                        <div class="request-answer unread">
+                            <div class="request-answer--img">
+                                <svg id="target" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>
+                                    User</title>
+                                    <path d="M12,8a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,12,8Zm0,4a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,12Z"/>
+                                    <path d="M12,5a7,7,0,1,0,7,7A7,7,0,0,0,12,5ZM8.6,16.94a5.09,5.09,0,0,1,.22-.54,3.58,3.58,0,0,1,6.37.09c.07.15.13.31.19.47A6.06,6.06,0,0,1,12,18,6,6,0,0,1,8.6,16.94Zm7.58-.65c0-.08-.06-.18-.11-.27A4.57,4.57,0,0,0,8,15.92a2.28,2.28,0,0,0-.15.36,6,6,0,1,1,8.38,0Z"/>
+                                </svg>
+                            </div>
+                            <div class="request-answer--text">
+                                <div class="request-answer--text__name">Ford Mustang I, 1975</div>
+                                <div class="request-answer--text__val">14</div>
+                            </div>
+                        </div>
+                        <div class="request-answer">
+                            <div class="request-answer--img">
+                                <svg id="target" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>
+                                    User</title>
+                                    <path d="M12,8a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,12,8Zm0,4a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,12Z"/>
+                                    <path d="M12,5a7,7,0,1,0,7,7A7,7,0,0,0,12,5ZM8.6,16.94a5.09,5.09,0,0,1,.22-.54,3.58,3.58,0,0,1,6.37.09c.07.15.13.31.19.47A6.06,6.06,0,0,1,12,18,6,6,0,0,1,8.6,16.94Zm7.58-.65c0-.08-.06-.18-.11-.27A4.57,4.57,0,0,0,8,15.92a2.28,2.28,0,0,0-.15.36,6,6,0,1,1,8.38,0Z"/>
+                                </svg>
+                            </div>
+                            <div class="request-answer--text">
+                                <div class="request-answer--text__name">Ford Mustang I, 1975</div>
+                                <div class="request-answer--text__val"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="filter-item">
-                        <div class="filter-item-title clearfix">
-                            <span class="filter-item-name">модель</span>
-                        </div>
-                        <div class="filter-item-content">
-                            <select class="js-select filter-model-select" multiple="multiple">
-                                <option value="KY">Киевская</option>
-                                <option value="CH">Черниговская</option>
-                                <option value="LV">Львовская</option>
-                                <option value="KH">Харьковская</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button class="btn btn-round btn-change-req">изменить запрос</button>
-
                 </div>
             </div>
-            <div class="col-lg-9 col-lg-9">
+            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
                 <div class="requests-page-content">
-                    <div class="requests-title-new">Новые запросы</div>
+                    <div class="requests-block-title">Новые запросы</div>
                     <div class="request-item">
                         <div class="request-author">
                             <img src="assets/images/profile-avatar.png" alt="profile img">
@@ -318,6 +342,11 @@
                                 </svg>
                             </div>
                         </div>
+                    </div>
+                    <div class="request-date-separator">
+                        <div class="date-separator"></div>
+                        <div class="request-date-separator--date">23.03.2018</div>
+                        <div class="date-separator"></div>
                     </div>
                     <div class="request-item">
                         <div class="request-author">

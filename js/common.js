@@ -236,18 +236,19 @@ $('.open-car-slider-nav').slick({
 $(function() {
     var price = $('#auction-value');
     var priceConfirm = $('#auction-value2');
+    var step = 1000;
 
     $('.price-control').on('click',function () {
         if($(this).hasClass('incr-price')) {
-            price.val(parseInt(price.val()) + 1000);
+            price.val(parseInt(price.val()) + step);
             price.change();
-            priceConfirm.val(parseInt(priceConfirm.val()) + 1000);
+            priceConfirm.val(parseInt(priceConfirm.val()) + step);
             priceConfirm.change();
             return false;
         }else {
-            price.val(parseInt(price.val()) - 1000);
+            price.val(parseInt(price.val()) - step);
             price.change();
-            priceConfirm.val(parseInt(priceConfirm.val()) - 1000);
+            priceConfirm.val(parseInt(priceConfirm.val()) - step);
             priceConfirm.change();
             return false;
         };
@@ -314,6 +315,63 @@ $(function () {
                     var images = this.element.childNodes.length;
                     var counter = $('.advert-counter-value');
                     counter.html(images-4);
+                });
+
+                var Dropzone = this;
+                $("#advertPost").click(function (e) {
+                    e.preventDefault();
+                    Dropzone.processQueue();
+                });
+                this.on('sending', function (file, xhr, formData) {
+                    // Append all form inputs to the formData Dropzone will POST
+                    console.log(file)
+                    var data = $('#frmTarget').serializeArray();
+                    $.each(data, function (key, el) {
+                        formData.append(el.name, el.value);
+                    });
+                })
+
+            }
+    });
+});
+
+$(function () {
+    Dropzone.autoDiscover = false;
+    $("#ProfSetDropzone").dropzone({
+        url: "http://hotcar-dev.wayappdevelopment.tech/adverts/new",
+        addRemoveLinks: true,
+        autoProcessQueue: false,
+        init:
+            function () {
+            var text = $('.profile-set-img-descr');
+            var imgForm = $('.profile-set-img')
+                this.on("addedfile",function () {
+                    var usedInput = this.hiddenFileInput;
+                    setTimeout(() => {
+                        $('#form').append(usedInput);
+                    usedInput.name = "image[]";
+                    text.fadeOut(0.1);
+                    imgForm.addClass('with-img')
+                }, 0);
+
+                    $('.upload-space').css({
+                        'border': '1px dashed var(--mainRed)',
+                        'width': '17.5%',
+                        'minHeight': 'auto'
+                    });
+                    $('.dropzone').css({
+                        'border': 'none',
+                        'justify-content': 'unset'
+                    });
+
+                });
+
+                this.on("removedfile",function () {
+                    var images = this.element.childNodes.length;
+                    var counter = $('.advert-counter-value');
+                    counter.html(images-4);
+                    text.fadeIn(0.1);
+                    imgForm.removeClass('with-img')
                 });
 
                 var Dropzone = this;
@@ -509,14 +567,75 @@ $(function () {
     }
 });
 //input validation
+
+class Valdiation{
+    constructor(selector) {
+        this.element = $(selector);
+        this.isValid();
+    }
+
+    isValid() {
+        this.element.keydown(function (e) {
+            var pressed = e.which;
+            if (pressed > 31 && (pressed < 48 || pressed > 57) && (pressed < 96 || pressed > 105)) {
+                return false
+            }
+        })
+    }
+}
+
 $(function () {
-    $('.advert-opt-input__num').keydown(function (e) {
-        var pressed = e.which;
-        if(pressed > 31 && (pressed < 48 || pressed > 57) && (pressed < 96 || pressed > 105)) {
-            return false
-        }
-    })
+    var advertInput = new Valdiation('.advert-opt-input__num');
+    var filterInputHalf = new Valdiation('.filter-input-half');
+    var filterInput = new Valdiation('.filter-input')
 })
+
+class Loader {
+    constructor(selector) {
+        this.element = $(selector);
+        // this.appeareLoad();
+        // this.goodParent();
+    }
+
+    appeareLoad() {
+        var dotsNum = 4;
+
+        $('<div />', {
+            class: 'loader'
+        }).appendTo(this.element);
+
+        $('<div />', {
+            class: 'line-pulse'
+        }).appendTo(this.element.find('.loader'));
+
+        for (var i = 0; i < dotsNum; i++) {
+            $('<div />').appendTo(this.element.find('.line-pulse'));
+        }
+        this.goodParent();
+    }
+
+    goodParent() {
+        console.log(this.element);
+        this.element.addClass('isLoading');
+    }
+
+    deleteLoader() {
+        this.element.removeClass('isLoading');
+        this.element.find('.loader').remove();
+    }
+}
+
+$(function () {
+    function createLoader(selector) {
+        var loader = new Loader(selector);
+        loader.appeareLoad();
+        // loader.deleteLoader();
+        return loader;
+    }
+
+    createLoader($('#loader-sms'));
+    createLoader($('#regSelect'));
+});
 
 
 
