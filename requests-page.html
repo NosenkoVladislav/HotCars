@@ -191,7 +191,7 @@
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
                 <div class="requests-sidebar">
                     <div class="requests-sidebar--title">
-                        <div class="add-request">
+                        <div class="add-request" href="#createRequest">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                  stroke-linejoin="round" class="feather feather-plus-circle">
@@ -205,10 +205,32 @@
                             <div class="num-request__value">14</div>
                         </div>
                         <div class="search-request">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="open-search-request">
+                                <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                                <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="close-search-request">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
                         </div>
                     </div>
                     <div class="requests-sidebar--content">
+                        <div class="requests-search">
+                            <input type="text" class="requests-search-field" placeholder="Найти запрос...">
+                            <div class="requests-search-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="search-request-svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                     stroke-linejoin="round">
+                                    <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                                    <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+                                </svg>
+                            </div>
+                        </div>
                         <div class="request-answer current">
                             <div class="request-answer--img">
                                 <img src="assets/images/Request%20icon.png" alt="Img">
@@ -719,6 +741,159 @@
         </div>
         <div class="popup-btn-wrapper">
             <button class="btn btn-popup btn-accent">сохранить</button>
+        </div>
+    </div>
+</div>
+
+<div class="request-popup" id="createRequest">
+    <div class="request-popup-content">
+        <div class="request-popup-header clearfix">
+            <a class="popup-modal-dismiss" href="#" id="popup-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </a>
+        </div>
+        <div class="page-title page-title-centred">
+            <div class="page-title__name">Создание запроса</div>
+        </div>
+        <div class="request-popup-body">
+            <div class="advert-content clearfix">
+                <div class="advert-opt">
+                    <div class="advert-opt-name">модель</div>
+                    <div class="advert-opt-select">
+                        <select class="js-select">
+                            <option value="KY">Киевская</option>
+                            <option value="CH">Черниговская</option>
+                            <option value="LV">Львовская</option>
+                            <option value="KH">Харьковская</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="advert-opt">
+                    <div class="advert-opt-name">год выпуска</div>
+                    <div class="advert-opt-select">
+                        <select class="js-select">
+                            <option value="KY">Киевская</option>
+                            <option value="CH">Черниговская</option>
+                            <option value="LV">Львовская</option>
+                            <option value="KH">Харьковская</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="advert-opt">
+                    <div class="advert-opt-name">пробег</div>
+                    <div class="advert-counter-value">км</div>
+                    <input type="text" class="advert-opt-input advert-opt-input__num" placeholder="Укажите пробег">
+                </div>
+                <div class="advert-opt">
+                    <div class="advert-opt-name">область</div>
+                    <div class="advert-opt-select">
+                        <select class="js-select">
+                            <option value="KY">Киевская</option>
+                            <option value="CH">Черниговская</option>
+                            <option value="LV">Львовская</option>
+                            <option value="KH">Харьковская</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="advert-opt">
+                    <div class="advert-opt-name">город</div>
+                    <div class="advert-opt-select">
+                        <select class="js-select">
+                            <option value="KY">Киевская</option>
+                            <option value="CH">Черниговская</option>
+                            <option value="LV">Львовская</option>
+                            <option value="KH">Харьковская</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="advert-opt">
+                    <div class="advert-opt-name">кпп</div>
+                    <div class="advert-opt-list">
+                        <input type="radio" class="advert-radio" id="kppAuto" name="advertKpp">
+                        <label for="kppAuto" class="advert-opt-list-item">автомат</label>
+                        <input type="radio" class="advert-radio" id="kppVariator" name="advertKpp">
+                        <label for="kppVariator" class="advert-opt-list-item">вариатор</label>
+                        <input type="radio" class="advert-radio" id="kppMix" name="advertKpp">
+                        <label for="kppMix" class="advert-opt-list-item">ручная/механика</label>
+                    </div>
+                </div>
+                <div class="advert-opt">
+                    <div class="advert-opt-name">тип привода</div>
+                    <div class="advert-opt-list">
+                        <input type="radio" class="advert-radio" id="driveFront" name="advertDrive">
+                        <label for="driveFront" class="advert-opt-list-item">передний</label>
+                        <input type="radio" class="advert-radio" id="driveBack" name="advertDrive">
+                        <label for="driveBack" class="advert-opt-list-item">задний</label>
+                        <input type="radio" class="advert-radio" id="driveFull" name="advertDrive">
+                        <label for="driveFull" class="advert-opt-list-item">полный</label>
+                    </div>
+                </div>
+                <div class="advert-opt">
+                    <div class="advert-opt-name">топливо</div>
+                    <div class="advert-opt-select">
+                        <select class="js-select">
+                            <option value="KY">бензин</option>
+                            <option value="CH">газ</option>
+                            <option value="LV">газ/бензин</option>
+                            <option value="KH">дизель</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="advert-opt">
+                    <div class="advert-opt-name">пробег</div>
+                    <div class="advert-counter-value">км</div>
+                    <input type="text" class="advert-opt-input advert-opt-input__num"
+                           placeholder="Укажите объем двигателя">
+                </div>
+                <div class="advert-opt">
+                    <div class="advert-opt-name">цвет</div>
+                    <div class="advert-opt-select">
+                        <select class="js-select">
+                            <option value="KY">Киевская</option>
+                            <option value="CH">Черниговская</option>
+                            <option value="LV">Львовская</option>
+                            <option value="KH">Харьковская</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="advert-opt">
+                    <div class="advert-opt-name">кузов</div>
+                    <div class="advert-opt-select">
+                        <select class="js-select">
+                            <option value="KY">Киевская</option>
+                            <option value="CH">Черниговская</option>
+                            <option value="LV">Львовская</option>
+                            <option value="KH">Харьковская</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="advert-opt">
+                    <div class="advert-opt-name">растаможка</div>
+                    <div class="advert-opt-list">
+                        <input type="radio" class="advert-radio" id="borderYes" name="advertBorder">
+                        <label for="borderYes" class="advert-opt-list-item">растаможена</label>
+                        <input type="radio" class="advert-radio" id="borderNo" name="advertBorder">
+                        <label for="borderNo" class="advert-opt-list-item">не растаможена</label>
+                    </div>
+                </div>
+                <div class="advert-opt">
+                    <div class="advert-opt-name">состояние</div>
+                    <div class="advert-opt-list">
+                        <input type="radio" class="advert-radio" id="stateYes" name="advertState">
+                        <label for="stateYes" class="advert-opt-list-item">в порядке</label>
+                        <input type="radio" class="advert-radio" id="stateNo" name="advertState">
+                        <label for="stateNo" class="advert-opt-list-item">битая / не на ходу</label>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="request-popup-btn-wrapper">
+                <div class="btn btn-accent btn-round btn-reset">сбросить</div>
+                <div class="btn btn-accent btn-round">сохранить</div>
+            </div>
         </div>
     </div>
 </div>

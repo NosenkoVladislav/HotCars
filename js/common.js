@@ -32,6 +32,13 @@ $(function () {
         modal: true
     });
 
+    $('.add-request').magnificPopup({
+        type: 'inline',
+        preloader: true,
+        focus: '#username',
+        modal: true
+    });
+
     $(document).on('click', '.popup-modal-dismiss', function (e) {
         e.preventDefault();
         $.magnificPopup.close();
@@ -638,5 +645,13 @@ $(function () {
 });
 
 
+/*request search toggle*/
 
+$(function () {
+    $('.search-request').click(function () {
+        $('.requests-search').fadeToggle(100);
+        $('.open-search-request').fadeToggle(0);
+        $('.close-search-request').fadeToggle(0);
+    })
+})
 

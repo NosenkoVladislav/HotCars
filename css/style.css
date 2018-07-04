@@ -2022,6 +2022,19 @@ body {
     align-items: center;
 }
 
+.search-request {
+    display: flex;
+}
+
+.add-request svg,
+.search-request svg{
+    cursor: pointer;
+}
+
+.search-request-svg {
+    cursor: pointer;
+}
+
 .num-request {
     flex-grow: 1;
     display: flex;
@@ -2056,6 +2069,7 @@ body {
     padding: 18px;
     margin-top: 18px;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .request-answer {
@@ -2139,6 +2153,54 @@ body {
     font-size: 13px;
     font-weight: 600;
     color: var(--regGtey)
+}
+
+.requests-search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.requests-search-field {
+    width: 100%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid #e9e9e9;
+    padding: 6px 14px;
+    font-size: 13px;
+}
+
+.requests-search-icon {
+    position: absolute;
+    top: 50%;
+    right: -7px;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background-color: var(--mainRed);
+    color: #fff;
+    height: 57%;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.close-search-request {
+    display: none;
 }
 
   /***************/
@@ -2393,4 +2455,28 @@ body {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     display: inline-block;
+}
+
+.request-popup-content {
+    background-color: #fff;
+    padding: 18px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.request-popup-content .popup-modal-dismiss {
+    margin: 0;
+}
+
+.request-popup-btn-wrapper {
+    text-align: center;
+}
+
+.request-popup-btn-wrapper .btn-reset {
+    margin-right: 30px;
+    background-color: var(--regGtey) !important;
+}
+
+.request-popup-btn-wrapper {
+    margin-bottom: 25px;
 }
