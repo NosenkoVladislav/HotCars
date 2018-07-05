@@ -239,6 +239,10 @@ body {
     height: 80px;
 }
 
+.link-grey a.active > .header-icon svg g {
+    fill: var(--mainRed);
+}
+
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     color: var(--mainRed);
 }
@@ -610,17 +614,23 @@ body {
 }
 
 .car-info-svg {
-    display: inline-block;
+    display: flex;
     height: 20px;
+    width: 20px;
     margin-right: 5px;
 }
 
 .car-info-svg svg {
     fill: var(--regGtey);
+    width: inherit;
 }
 
 .auction-item-can-info__range .car-info-svg {
-    height: 17px;
+    height: 20px;
+}
+
+.auction-item-can-info__fuel .car-info-svg {
+    width: 17px;
 }
 
 .auction-item-descr {
@@ -2203,6 +2213,39 @@ body {
 
 .close-search-request {
     display: none;
+}
+
+.page-title__flexed {
+    width: 100%;
+    display: flex;
+}
+
+.page-title-left {
+    width: 100%;
+    text-align: center;
+}
+
+.request-control {
+    display: flex;
+}
+
+.request-control div:last-child{
+    margin-left: 10px;
+}
+
+.request-top-svg {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.request-top-svg svg {
+    height: inherit;
+    width: inherit;
+    color: var(--regGtey);
+    cursor: pointer;
 }
 
   /***************/

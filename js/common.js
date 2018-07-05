@@ -629,13 +629,18 @@ class Loader {
     deleteLoader() {
         this.element.removeClass('isLoading');
         this.element.find('.loader').remove();
+        this.element.prop('disabled', false);
+    }
+
+    disableBtn() {
+        this.element.prop('disabled', true);
     }
 }
 
 $(function () {
     function createLoader(selector) {
         var loader = new Loader(selector);
-        loader.appeareLoad();
+        loader.disableBtn();
         // loader.deleteLoader();
         return loader;
     }
