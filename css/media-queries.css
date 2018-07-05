@@ -184,6 +184,10 @@
         width: 100%;
     }
 
+    .auction-item-img img {
+        height: 300px;
+    }
+
     .auction-item-text {
         width: 100%;
         margin: 10px 0 0 0;

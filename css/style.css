@@ -533,6 +533,8 @@ body {
 
 .auction-item-img img {
     width: 100%;
+    height: 177.5px;
+    object-fit: cover;
 }
 
 .auction-item-text {
