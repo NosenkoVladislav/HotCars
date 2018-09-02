@@ -38,6 +38,19 @@ $(function () {
         focus: '#username',
         modal: true
     });
+    $('.leaveGrp').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#username',
+        modal: true
+    });
+    $('.createGrp').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#username',
+        modal: true
+    });
+
 
     $(document).on('click', '.popup-modal-dismiss', function (e) {
         e.preventDefault();
